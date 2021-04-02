@@ -5,7 +5,7 @@ Stack-based programming language
 - Literate programming
 - Debugging
   - Read Eval Print Loop
-- [Denotational semantics](#denotational-semantics)
+- Denotational semantics
 - Axiomatic semantics
   - [Hoare triples]: Pre- and Post-conditions. Possibly also while-conditions.
 - Stupidly Simple Grammar
