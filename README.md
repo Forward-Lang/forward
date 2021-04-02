@@ -14,9 +14,6 @@ Stack-based programming language
   - Intuitive Grammar (on layer 2, after macros are applied)
   - Code as Data, but not Data as Code.
 
-
-[Hoare triples]: https://en.wikipedia.org/wiki/Hoare_logic#Hoare_triple
-
 ### Denotational semantics
 
 - Atoms/Elements:
@@ -27,6 +24,18 @@ Stack-based programming language
   - Bitarrays
   - Strings
 
+# [Waterfall] process
+
+1. Requirements
+2. Design
+3. Implementation
+4. Verification
+5. Maintenance 
 
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+
+
+[Hoare triples]: https://en.wikipedia.org/wiki/Hoare_logic#Hoare_triple
+[Waterfall]: https://en.wikipedia.org/wiki/Waterfall_model#Model
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This README is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
