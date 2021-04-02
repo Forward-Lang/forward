@@ -1,5 +1,5 @@
 # forward
-Stack-based programming language
+A stack-based programming language
 
 ## Features
 - Literate programming
