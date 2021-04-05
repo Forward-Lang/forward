@@ -7,5 +7,21 @@ This is an AsciiDoc footnote:[https://powerman.name/doc/asciidoc] footnote:[http
 toc::[]
 
 
+== Big Design Up Front - Wikipedia footnote:[https://en.wikipedia.org/wiki/Big_Design_Up_Front]
+
+> argue that BDUF is poorly adaptable to changing requirements 
+
+> the needs of the business evolve at a pace faster than large projects are completed in - making the Big Design outdated by the time the system is completed. 
+
+> If the cost of planning is greater than the cost of fixing then time spent planning is wasted. 
+
+> run-time fixes are vastly more costly than design fixes 
+
+> Improving software with the benefit of user feedback is generally less expensive than trying to anticipate and document every aspect of a system with BDUF 
+
+> in most projects there is a significant lack of comprehensive written (or even well known) requirements. So in BDUF a lot of assumptions are made that later prove to be false 
+
+> much easier to fix a requirements bug in the requirements phase than to fix that same bug in the implementation phase 
+
 
 
