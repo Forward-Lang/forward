@@ -29,9 +29,10 @@ A stack-based programming language
 
 1. Requirements
 2. Design
-3. Implementation
-4. Verification
-5. Maintenance 
+3. Specification
+4. Implementation
+5. Verification
+6. Maintenance 
 
 
 
