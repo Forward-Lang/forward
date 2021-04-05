@@ -23,5 +23,11 @@ toc::[]
 
 > much easier to fix a requirements bug in the requirements phase than to fix that same bug in the implementation phase 
 
+== Analysis paralysis - Wikipedia footnote:[https://en.wikipedia.org/wiki/Analysis_paralysis]
+
+> exceedingly long phases of project planning, requirements gathering, program design, and data modeling, which can create little or no extra value
+
+> Analysis paralysis can also arise from extensive experience or expertise, which serves to increase the number of options and considerations that appear at every decision point.
+
 
 
