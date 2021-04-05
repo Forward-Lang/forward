@@ -95,3 +95,36 @@ toc::[]
 
 > TLA+
 
+== Formal specification - Wikipedia footnote:[https://en.wikipedia.org/wiki/Formal_specification]
+
+> formal specifications are mathematically based
+
+> describe a system
+
+> formal in the sense that they have a syntax, their semantics fall within one domain
+
+> Given such a specification, it is possible to use formal verification techniques to demonstrate that a system design is correct with respect to its specification
+
+> This allows incorrect system designs to be revised before any major investments have been made into an actual implementation
+
+> Formal specifications describe what a system should do, not how the system should do it.
+
+> good specification must have some of the following attributes: adequate, internally consistent, unambiguous, complete, satisfied, minimal
+
+> A design (or implementation) cannot ever be declared “correct” on its own. It can only ever be “correct with respect to a given specification”. Whether the formal specification correctly describes the problem to be solved is a separate issue
+
+> Implementations of formal specifications will differ depending on what kind of system they are attempting to model
+
+> State-based specification[3]
+  behavior based on system states
+  series of sequential steps, (e.g. a financial transaction)
+  languages such as Z, VDM or B rely on this paradigm
+
+> Transition-based specification[3]
+  behavior based on transitions from state-to-state of the system
+  best used with a reactive system
+
+> Functional specification[3]
+  specify a system as a structure of mathematical functions
+  OBJ, ASL, PLUSS, LARCH, HOL or PVS rely on this paradigm
+
