@@ -29,5 +29,28 @@ toc::[]
 
 > Analysis paralysis can also arise from extensive experience or expertise, which serves to increase the number of options and considerations that appear at every decision point.
 
+== Waterfall model - Wikipedia footnote:[https://en.wikipedia.org/wiki/Waterfall_model#Model]
+
+> However he also felt it had major flaws stemming from the fact that testing only happened at the end of the process, which he described as being "risky and invites failure".
+
+> Time spent early in the software production cycle can reduce costs at later stages
+
+> a problem found in the early stages (such as requirements specification) is cheaper to fix than the same bug found later on in the process (by a factor of 50 to 200)
+
+> emphasis on documentation
+
+> new team members or even entirely new teams should be able to familiarise themselves by reading the documents
+
+> In less thoroughly designed and documented methodologies, knowledge is lost if team members leave before the project is completed
+
+> the model itself progresses linearly through discrete, easily understandable and explainable phases and thus is easy to understand
+
+> Royce also advocated large quantities of documentation, doing the job "twice if possible"
+
+> Designers may not be aware of future difficulties
+
+> better to revise the design than persist in a design that does not account for any newly discovered constraints, requirements, or problems
+
+
 
 
