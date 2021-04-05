@@ -51,6 +51,13 @@ toc::[]
 
 > better to revise the design than persist in a design that does not account for any newly discovered constraints, requirements, or problems
 
+== Cleanroom software engineering - Wikipedia footnote:[https://en.wikipedia.org/wiki/Cleanroom_software_engineering]
 
+> intended to produce software with a certifiable level of reliability
 
+> defect prevention, rather than defect removal
+
+> Software development based on formal methods
+
+> Verification that the design correctly implements the specification is performed through team review, often with software tool support
 
