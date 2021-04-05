@@ -1,7 +1,7 @@
 # forward
 A stack-based programming language
 
-## Features
+## Goals
 - Literate programming
 - Debugging
   - Read Eval Print Loop
