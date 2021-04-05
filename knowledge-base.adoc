@@ -2,15 +2,10 @@
 :toc:
 :toc-placement!:
 
+This is an AsciiDoc footnote:[https://powerman.name/doc/asciidoc] footnote:[https://asciidoc.org/userguide.html] acting as a knowledge base, of the background research being done while developing link:README.md[forward].
 
 toc::[]
 
 
-=== test 1
-hello
 
-=== test 2
-
-
-This is an AsciiDoc footnote:[https://powerman.name/doc/asciidoc] footnote:[https://asciidoc.org/userguide.html] acting as a knowledge base, of the background research being done while developing link:README.md[forward]
 
