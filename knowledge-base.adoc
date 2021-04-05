@@ -128,3 +128,39 @@ toc::[]
   specify a system as a structure of mathematical functions
   OBJ, ASL, PLUSS, LARCH, HOL or PVS rely on this paradigm
 
+== Formal verification - Wikipedia footnote:[https://en.wikipedia.org/wiki/Formal_verification]
+
+> formal verification is the act of proving or disproving the correctness of intended algorithms underlying a system with respect to a certain formal specification
+
+> Examples of mathematical objects often used to model systems are: finite state machines
+
+> One approach and formation is model checking, which consists of a systematically exhaustive exploration of the mathematical model
+
+> this is possible for finite models
+
+> exploring all states
+
+> Another approach is deductive verification
+
+> It consists of generating from the system and its specifications (and possibly other annotations) a collection of mathematical proof obligations
+
+> proof assistants (interactive theorem provers) (such as HOL, ACL2, Isabelle, Coq or PVS)
+
+> requires the user to understand in detail why the system works correctly
+
+> A promising type-based verification approach is dependently typed programming
+
+> techniques can be sound, meaning that the verified properties can be logically deduced from the semantics, or unsound, meaning that there is no such guarantee
+
+> A sound technique yields a result only once it has searched the entire space of possibilities
+
+> An example of an unsound technique is one that searches only a subset of the possibilities, for instance only integers up to a certain number, and give a "good-enough" result
+
+> Techniques can also be decidable, meaning that their algorithmic implementations are guaranteed to terminate with an answer, or undecidable, meaning that they may never terminate
+
+> Verification: "Have we made what we were trying to make?", i.e., does the product conform to the specifications?
+
+> Validation: "Are we trying to make the right thing?", i.e., is the product specified to the user's actual needs?
+
+> use in the software industry is still languishing
+
