@@ -61,3 +61,37 @@ toc::[]
 
 > Verification that the design correctly implements the specification is performed through team review, often with software tool support
 
+== Formal methods - Wikipedia footnote:[https://en.wikipedia.org/wiki/Formal_methods]
+
+> Specification
+
+> description of the system to be developed
+
+> formalising system requirements
+
+> Development
+
+> If the formal specification is in axiomatic semantics, the preconditions and postconditions of the specification may become assertions in the executable code
+
+> Verification
+
+> prove that a formal model of a system implementation satisfies its specification
+
+> Human-directed proof
+
+> a desire to understand the system better
+
+> Automated proof
+
+> Critics note that some of those systems are like oracles: they make a pronouncement of truth, yet give no explanation of that truth. There is also the problem of "verifying the verifier";
+
+> For sequential software, examples of formal methods include the B-Method, the specification languages used in automated theorem proving, RAISE, and the Z notation.
+
+> In functional programming, property-based testing has allowed the mathematical specification and testing (if not exhaustive testing) of the expected behaviour of individual functions.
+
+> For concurrent software and systems, Petri nets, process algebra, and finite state machines
+
+> SPARK Ada
+
+> TLA+
+
