@@ -164,3 +164,23 @@ toc::[]
 
 > use in the software industry is still languishing
 
+== Group-like structures - Wikipedia footnote:[https://en.wikipedia.org/wiki/Template:Group-like_structures]
+
+.Group-like structures
+[format="csv"]
+|====================================================================================
+            ,       Totality,	Associativity,	Identity,	Invertibility,	Commutativity
+Semigroupoid,       Unneeded,	Required,	      Unneeded,	Unneeded,     	Unneeded
+Small Category,	    Unneeded,	Required,	      Required,	Unneeded,     	Unneeded
+Groupoid,     	    Unneeded,	Required,     	Required,	Required,     	Unneeded
+Magma,        	    Required,	Unneeded,     	Unneeded,	Unneeded,     	Unneeded
+Quasigroup,   	    Required,	Unneeded,     	Unneeded,	Required,     	Unneeded
+Unital Magma, 	    Required,	Unneeded,     	Required,	Unneeded,     	Unneeded
+Loop,         	    Required,	Unneeded,     	Required,	Required,     	Unneeded
+Semigroup,    	    Required,	Required,     	Unneeded,	Unneeded,     	Unneeded
+Inverse Semigroup,	Required,	Required,     	Unneeded,	Required,     	Unneeded
+Monoid,           	Required,	Required,     	Required,	Unneeded,     	Unneeded
+Commutative monoid,	Required,	Required,     	Required,	Unneeded,     	Required
+Group,            	Required,	Required,     	Required,	Required,     	Unneeded
+Abelian group,    	Required,	Required,     	Required,	Required,     	Required
+|====================================================================================
