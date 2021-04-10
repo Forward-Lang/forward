@@ -17,13 +17,21 @@ A stack-based programming language
 
 ### Denotational semantics
 
+#### Informal definitions
+
 - Atoms/Elements:
-  - Numbers
+  - Booleans
   - Characters
+  - Numbers
 - Arrays
-  - Matrixes
   - Bitarrays
   - Strings
+  - Vectors
+  - Matrixes
+
+#### Formal definitions
+
+
 
 # [Waterfall] process
 
