@@ -4,16 +4,16 @@ A stack-based programming language
 ## Goals
 - Literate programming
 - Debugging
-  - Read Eval Print Loop
+- - Read Eval Print Loop
 - Denotational semantics
 - Axiomatic semantics
-  - [Hoare triples]: Pre- and Post-conditions. Possibly also while-conditions aka invariants.
-  - [Dependent types]
+- - [Hoare triples]: Pre- and Post-conditions. Possibly also while-conditions aka invariants.
+- - [Dependent types]
 - Stupidly Simple Grammar
 - Pattern Matching
-  - Macros
-  - Intuitive Grammar (on layer 2, after macros are applied)
-  - Code as Data, but not Data as Code.
+- - Macros
+- - Intuitive Grammar (on layer 2, after macros are applied)
+- - Code as Data, but not Data as Code.
 
 ### Denotational semantics
 
