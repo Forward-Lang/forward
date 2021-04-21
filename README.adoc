@@ -14,6 +14,7 @@ Powerful, Simple, Correct.
 * "Correct" mental mapping of models to the problem domains. (Once learnt,) it should stay out of the way, you should focus on solving your problem, not fixing your tools.
 * Simplicity, through the removal of unnecessities
 * "Simply Correct", easy to use tools to formally specify and verfiy implementations
+* Fast (enough), no one likes a blunt, dull tool. Make it sharp, make it fast.
 
 |===========
 
