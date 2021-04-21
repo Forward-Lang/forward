@@ -23,10 +23,15 @@ Currently being inspired mainly by:
 - Numerical semantics of [APL]
 - Textual semantics of the unix shell.
 
-### Denotational semantics
+## Grammar
+
+Unfortunately stack-based/concatenative languages don't really have a grammar, as there is no syntax.
+These languages are made up of words. 
+
+## Denotational semantics
 
 
-#### Informal definitions
+### Informal definitions
 
 - Atoms/Elements:
   - Booleans
@@ -38,7 +43,7 @@ Currently being inspired mainly by:
   - Vectors
   - Matrixes
 
-#### Formal definitions
+### Formal definitions
 
 
 
