@@ -8,10 +8,10 @@ Powerful, Simple, Correct.
 [cols="h,a"]
 |===========
 | Mission | To create a programming language that is simple enough to be understood fully under a week, but with powerful enough mental models to allow for its effective use and application within different problem domains.
-| Vision | That due to its simplicity it sees widespread use whithin its problem domains, remaining in the background ready to be used, like the shell, but as effective as a scalpel. 
+| Vision | That due to its simplicity it sees widespread use whithin its problem domains, remaining in the background, out of the way, ready to be used. Ubiquitous like the shell, but as effective as a scalpel. 
 | Values |
 
-* "Correct" mental mapping of models to the problem domains 
+* "Correct" mental mapping of models to the problem domains. (Once learnt,) it should stay out of the way, you should focus on solving your problem, not fixing your tools.
 * Simplicity, through the removal of unnecessities
 * "Simply Correct", easy to use tools to formally specify and verfiy implementations
 
