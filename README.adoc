@@ -1,4 +1,7 @@
 # forward
+:toc:
+:toc-placement!:
+
 A stack-based programming language
 
 ## Goals
