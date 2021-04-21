@@ -67,9 +67,9 @@ These languages are made up of words.
 
 References
 
-* [[Hoare%20triples]] https://en.wikipedia.org/wiki/Hoare_logic#Hoare_triple
+* [[Hoare triples]] https://en.wikipedia.org/wiki/Hoare_logic#Hoare_triple
 * [[Waterfall]] https://en.wikipedia.org/wiki/Waterfall_model#Model
-* [[Dependent%20types]] https://en.wikipedia.org/wiki/Dependent_type
+* [[Dependent types]] https://en.wikipedia.org/wiki/Dependent_type
 * [[factor]] https://github.com/factor/factor/
 * [[APL]] https://tryapl.org/
 * [[pharo]] https://github.com/pharo-project/pharo
