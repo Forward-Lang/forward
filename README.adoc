@@ -5,26 +5,28 @@
 A stack-based programming language
 
 ## Goals
-- Literate programming
-- Debugging
-  - Read Eval Print Loop
-- Denotational semantics
-- Axiomatic semantics
-  - [Hoare triples]: Pre- and Post-conditions. Possibly also while-conditions aka invariants.
-  - [Dependent types]
-- Stupidly Simple Grammar
-- Pattern Matching
-  - Macros
-  - Intuitive Grammar (on layer 2, after macros are applied)
-  - Code as Data, but not Data as Code.
+
+* Literate programming
+* Debugging
+** Read Eval Print Loop
+* Denotational semantics
+* Axiomatic semantics
+** [Hoare triples]: Pre- and Post-conditions. Possibly also while-conditions aka invariants.
+** [Dependent types]
+* Stupidly Simple Grammar
+* Pattern Matching
+** Macros
+** Intuitive Grammar (on layer 2, after macros are applied)
+** Code as Data, but not Data as Code.
 
 ### Inspiration sources
 
 Currently being inspired mainly by:
-- UI/UX of [factor], [pharo] and especially [:r4]
-- - Holistic approach of Lisp Machines, Oberon, Smalltalk, Forth
-- Numerical semantics of [APL]
-- Textual semantics of the unix shell.
+
+* UI/UX of [factor], [pharo] and especially [:r4]
+** Holistic approach of Lisp Machines, Oberon, Smalltalk, Forth
+* Numerical semantics of [APL]
+* Textual semantics of the unix shell.
 
 ## Grammar
 
@@ -36,15 +38,15 @@ These languages are made up of words.
 
 ### Informal definitions
 
-- Atoms/Elements:
-  - Booleans
-  - Characters
-  - Numbers
-- Arrays
-  - Bitarrays
-  - Strings
-  - Vectors
-  - Matrixes
+* Atoms/Elements:
+** Booleans
+** Characters
+** Numbers
+* Arrays
+** Bitarrays
+** Strings
+** Vectors
+** Matrixes
 
 ### Formal definitions
 
