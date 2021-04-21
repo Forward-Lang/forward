@@ -16,6 +16,12 @@ Powerful, Simple, Correct.
 
 |===========
 
+## Quotes
+
+[quote, Antoine de Saint Exupéry]
+In anything at all, perfection is finally attained not when there is no longer anything to add, but when there is no longer anything to take away, when a body has been stripped down to its nakedness.
+
+
 ---
 
 toc::[]
