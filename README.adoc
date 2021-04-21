@@ -66,6 +66,8 @@ These languages are made up of words.
 
 
 [bibliography]
+= References
+
 * [[[Hoare]]] https://en.wikipedia.org/wiki/Hoare_logic#Hoare_triple
 * [[[Waterfall]]] https://en.wikipedia.org/wiki/Waterfall_model#Model
 * [[[Dependent]]] https://en.wikipedia.org/wiki/Dependent_type
