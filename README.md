@@ -19,7 +19,10 @@ A stack-based programming language
 
 #### Inspiration sources
 
-Currently being inspired mainly by [factor] and [APL].
+Currently being inspired mainly by:
+- UI/UX of [factor], [pharo] and especially [:r4]
+- Numerical semantics of [APL]
+- Textual semantics of the unix shell.
 
 #### Informal definitions
 
@@ -54,5 +57,7 @@ Currently being inspired mainly by [factor] and [APL].
 [Dependent types]: https://en.wikipedia.org/wiki/Dependent_type
 [factor]: https://github.com/factor/factor/
 [APL]: https://tryapl.org/
+[pharo]: https://github.com/pharo-project/pharo
+[:r4]: https://github.com/phreda4/r4
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This README is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
