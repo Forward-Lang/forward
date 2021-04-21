@@ -4,6 +4,8 @@
 
 A stack-based programming language
 
+toc::[]
+
 ## Goals
 
 * Literate programming
