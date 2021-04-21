@@ -8,7 +8,7 @@ Powerful, Simple, Correct.
 [cols="h,a"]
 |===========
 | Mission | To create a programming language that is simple enough to be understood fully under a week, but with powerful enough mental models to allow for its effective use and application within different problem domains.
-| Vision | That due to its simplicity it sees widespread use whithin its problem domains, remaining in the background, out of the way, ready to be used. Ubiquitous like the shell, but as effective as a scalpel. 
+| Vision | That due to its simplicity it sees widespread use whithin its problem domains, remaining in the background, out of the way, ready to be used. Ubiquitous like the shell, but as effective as a scalpel, not a <<chainsaw>>! 
 | Values |
 
 * "Correct" mental mapping of models to the problem domains. (Once learnt,) it should stay out of the way, you should focus on solving your problem, not fixing your tools.
@@ -95,6 +95,7 @@ These languages are made up of words.
 * [[[APL]]] https://tryapl.org/
 * [[[pharo]]] https://github.com/pharo-project/pharo
 * [[[r4]]] https://github.com/phreda4/r4
+* [[[chainsaw]]] The Unix shell is sometimes referred to as a chainsaw (see `rm -rf *`)
 
 +++
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This README is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
