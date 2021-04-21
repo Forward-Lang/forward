@@ -13,8 +13,8 @@ toc::[]
 ** Read Eval Print Loop
 * Denotational semantics
 * Axiomatic semantics
-** <<Hoare%20triples>>: Pre- and Post-conditions. Possibly also while-conditions aka invariants.
-** <<Dependent%20types>>
+** <<Hoare triples>>: Pre- and Post-conditions. Possibly also while-conditions aka invariants.
+** <<Dependent types>>
 * Stupidly Simple Grammar
 * Pattern Matching
 ** Macros
@@ -67,9 +67,9 @@ These languages are made up of words.
 
 References
 
-* [[Hoare triples]] https://en.wikipedia.org/wiki/Hoare_logic#Hoare_triple
+* [[Hoare%20triples]] https://en.wikipedia.org/wiki/Hoare_logic#Hoare_triple
 * [[Waterfall]] https://en.wikipedia.org/wiki/Waterfall_model#Model
-* [[Dependent types]] https://en.wikipedia.org/wiki/Dependent_type
+* [[Dependent%20types]] https://en.wikipedia.org/wiki/Dependent_type
 * [[factor]] https://github.com/factor/factor/
 * [[APL]] https://tryapl.org/
 * [[pharo]] https://github.com/pharo-project/pharo
