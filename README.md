@@ -15,14 +15,16 @@ A stack-based programming language
   - Intuitive Grammar (on layer 2, after macros are applied)
   - Code as Data, but not Data as Code.
 
-### Denotational semantics
-
-#### Inspiration sources
+### Inspiration sources
 
 Currently being inspired mainly by:
 - UI/UX of [factor], [pharo] and especially [:r4]
+- - Holistic approach of Lisp Machines, Oberon, Smalltalk, Forth
 - Numerical semantics of [APL]
 - Textual semantics of the unix shell.
+
+### Denotational semantics
+
 
 #### Informal definitions
 
