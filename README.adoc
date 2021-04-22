@@ -77,12 +77,13 @@ These languages are made up of words.
 
 # <<Waterfall>> process
 
-1. Requirements
-2. Design
-3. Specification
-4. Implementation
-5. Verification
-6. Maintenance 
+. Integration Requirements
+. Feature Design
+. Properties
+. Specification
+. Implementation
+. Verification
+. Maintenance 
 
 
 
