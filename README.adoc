@@ -12,7 +12,7 @@ Powerful, Simple, Correct.
 | Values |
 
 * "Correct" mental mapping of models to the problem domains. (Once learnt,) it should stay out of the way, you should focus on solving your problem, not fixing your tools.
-* Simplicity, through the removal of unnecessities
+* Simplicity, through the removal of unnecessities. Being simplex footnote:[https://www.infoq.com/presentations/Simple-Made-Easy/] by reducing interleaving complexity.
 * "Simply Correct", easy to use tools to formally specify and verfiy implementations
 * Fast (enough), no one likes a blunt, dull tool. Make it sharp, make it fast.
 
