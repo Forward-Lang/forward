@@ -12,7 +12,7 @@ Powerful, Simple, Correct.
 | Values |
 
 * "Correct" mental mapping of models to the problem domains. (Once learnt,) it should stay out of the way, you should focus on solving your problem, not fixing your tools.
-* Simplicity, through the removal of unnecessities
+* Simplicity, through the removal of unnecessities. Being <<simplex>>, by choosing to untangle and compose concepts rather than to interleave them.
 * "Simply Correct", easy to use tools to formally specify and verfiy implementations
 * Fast (enough), no one likes a blunt, dull tool. Make it sharp, make it fast.
 
@@ -98,6 +98,7 @@ These languages are made up of words.
 * [[[pharo]]] https://github.com/pharo-project/pharo
 * [[[r4]]] https://github.com/phreda4/r4
 * [[[chainsaw]]] The Unix shell is sometimes referred to as a chainsaw (see `rm -rf *`)
+* [[[simplex]]] https://www.infoq.com/presentations/Simple-Made-Easy/
 
 +++
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This README is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
