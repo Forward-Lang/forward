@@ -94,18 +94,12 @@ On the other hand, factor has clear documentation discussing its syntax.
 [graphviz]
 ----
 digraph D {
-  input ->
-"\"open quote" -> "\"close quote"
-  -> string
-  input ->
-"\'open quote" -> "\'close quote"
-  -> string  
-  input ->
-"\[open bracket" -> "\]close bracket"
-  -> array  
-  input ->
-"\" \"open space" -> "\" \"close space"
-  -> word  
+  input -> "\"open quote" -> "\"close quote" -> string
+  input -> "\'open quote" -> "\'close quote" -> string 
+  
+  input -> "\[open bracket" -> "\]close bracket" -> array  
+  
+  input -> "\" \"open space" -> "\" \"close space" -> word  
 }
 ----
 
