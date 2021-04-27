@@ -85,23 +85,25 @@ forward's grammar, (using the <<BNF-playground>> based on <<Nearly>>):
 
 [source,bnf]
 ----
-/* basing the syntax on the ASCII charset */
+/* limiting the syntax to the ASCII charset */
 
 /* one or more words */
 /* one or more characters */
-<words> ::= <word> | <word> <words>
-<chars> ::= <char> | <char> <chars>
+<words>  ::= <word> | <word> <words>
+<lowers> ::= <lower> | <lower> <lowers>
 
 /* words have to end with a space */
-/* regular words just have lowercase alphabetical characters, but strings may have other printable characters */
-<word>  ::= <chars> " " | <string> " "
+/* regular words just have lowercase alphabetical characters, but string may have other printable characters */
+<word>  ::= <lowers> " " | <string> " "
 
-<char>  ::= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m"
+<lower> ::= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m"
           | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
+<upper> ::= "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M"
+          | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z"
 <num>   ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
-<punct> ::= "." | "!" | "?"
+<punct> ::= "," | ";" | "." | "!" | "?"
 <space> ::= " "
-<print> ::= <char> | <num> | <punct> | <space>
+<print> ::= <lower> | <upper> | <num> | <punct> | <space>
 <prints> ::= <print> | <print> <prints>
 
 /* strings can be delimited with " or ' */
