@@ -93,17 +93,19 @@ forward's grammar, (using the <<BNF-playground>> based on <<Nearly>>):
 <chars> ::= <char> | <char> <chars>
 
 /* words have to end with a space */
-/* regular words just have lowercase alphabetical characters, but string may have other printable characters */
+/* regular words just have lowercase alphabetical characters, but strings may have other printable characters */
 <word>  ::= <chars> " " | <string> " "
 
 <char>  ::= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m"
           | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
 <num>   ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
 <punct> ::= "." | "!" | "?"
-<print> ::= <char> | <num> | <punct>
+<space> ::= " "
+<print> ::= <char> | <num> | <punct> | <space>
+<prints> ::= <print> | <print> <prints>
 
 /* strings can be delimited with " or ' */
-<string> ::= "'" <print> "'" | "\"" <print> "\""
+<string> ::= "'" <prints> "'" | "\"" <prints> "\""
 ----
 
 
