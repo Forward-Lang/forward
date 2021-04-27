@@ -58,7 +58,10 @@ Whether stack-based/concatenative languages have grammars is a bit unclear, due 
 1) most, if not all, of the program is made of space-delimited words/tokens
 2) the parsing of stack-based languages can often be extended at runtime. 
 So supposedly, due to the aforementioned reasons, forth doesn't really have a grammar, as there is no syntax.
+  footnote:[https://softwareengineering.stackexchange.com/questions/370518/why-does-forths-flexibility-make-a-grammar-inappropriate-for-it]
   footnote:[https://groups.google.com/g/comp.lang.forth/c/nbVrIzbafKM]
+  footnote:[https://skilldrick.github.io/easyforth/#defining-words]
+  footnote:[https://users.ece.cmu.edu/~koopman/forth/hopl.html]
 On the other hand, factor has clear documentation discussing its syntax.
   footnote:[https://docs.factorcode.org/content/article-parser-algorithm.html]
   footnote:[https://docs.factorcode.org/content/article-syntax-literals.html]
