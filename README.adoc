@@ -1,6 +1,7 @@
 # forward
 :toc:
 :toc-placement!:
+:toclevel: 3
 
 A stack-based programming language.
 Powerful, Simple, Correct.
