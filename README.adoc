@@ -181,7 +181,7 @@ image:https://kroki.io/ditaa/svg/eNqFkD8LwjAQxfd-ijcqIQX_ZNFJ0N3Nufai3GBa2lAr5MN
 * [[[chainsaw]]] The Unix shell is sometimes referred to as a chainsaw (see `rm -rf *`)
 * [[[simplex]]] https://www.infoq.com/presentations/Simple-Made-Easy/
 * [[[BNF-playground]]] https://bnfplayground.pauliankline.com/
-* [[[Nearly]] https://nearley.js.org/ (two cool things about nearley: it can output railroad diagrams for documentation and it can be inverted to form generators which output random strings that match a grammar)
+* [[[Nearly]]] https://nearley.js.org/ (two cool things about nearley: it can output railroad diagrams for documentation and it can be inverted to form generators which output random strings that match a grammar)
 
 
 +++
