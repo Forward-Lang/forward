@@ -81,9 +81,30 @@ Luckily, there are other LISPs, such as Shen, which does have a specification of
   footnote:[http://shenlanguage.org/shendoc.htm#The%20Syntax%20of%20Symbols]
   footnote:[http://shenlanguage.org/shendoc.htm#Numbers]
 
-Our grammar, (using the <<BNF-playground>> based on <<Nearly>>):
+forward's grammar, (using the <<BNF-playground>> based on <<Nearly>>):
 
+[source,bnf]
 ----
+/* basing the syntax on the ASCII charset */
+
+/* one or more words */
+/* one or more characters */
+<words> ::= <word> | <word> <words>
+<chars> ::= <char> | <char> <chars>
+
+/* words have to end with a space */
+/* regular words just have alphabetical characters, but string may have other printable characters */
+<word>  ::= <chars> " " | <string> " "
+
+<char>  ::= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m"
+         | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
+         
+<num>   ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+
+<print> ::= <char> | <num>
+
+/* strings can be delimited with " or ' */
+<string> ::= "'" <print> "'" | "\"" <print> "\""
 ----
 
 
