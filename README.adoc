@@ -66,6 +66,20 @@ On the other hand, factor has clear documentation discussing its syntax.
   footnote:[https://docs.factorcode.org/content/article-parser-algorithm.html]
   footnote:[https://docs.factorcode.org/content/article-syntax-literals.html]
 
+Ironically, the same claims are made about LISP.
+  footnote:[https://groups.google.com/g/comp.lang.lisp/c/_JYqG712WvU]
+Although, LISP very clearly has a syntax. It is probably the first thing people notice.
+The Common Lisp HyperSpec defines a standard syntax,
+  footnote:[http://www.lispworks.com/documentation/HyperSpec/Body/02_a.htm]
+and supposedly uses BNF to describe the syntax of its macro forms and special forms.
+  footnote:[http://www.lispworks.com/documentation/HyperSpec/Body/01_dab.htm]
+Unfortunately the Common Lisp HyperSpec doesn't seem to be consistent with its use of BNF,
+as (it seems like) its only the syntax for numeric tokens that is defined with BNF.
+  footnote:[http://www.lispworks.com/documentation/HyperSpec/Body/02_ca.htm]
+Luckily, there are other LISPs, such as Shen, which does have a specification of its syntax in BNF.
+  footnote:[http://shenlanguage.org/osmanual.htm#12%20The%20Syntax%20of%20Shen]
+  footnote:[http://shenlanguage.org/shendoc.htm#The%20Syntax%20of%20Symbols]
+  footnote:[http://shenlanguage.org/shendoc.htm#Numbers]
 
 ## Denotational semantics
 
