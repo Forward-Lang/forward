@@ -54,8 +54,13 @@ Currently being inspired mainly by:
 
 ## Grammar
 
-Unfortunately stack-based/concatenative languages don't really have a grammar, as there is no syntax.
-These languages are made up of words. 
+Whether stack-based/concatenative languages have grammars is a bit unclear, due to 2 main reasons:
+1) most, if not all, of the program is made of space-delimited words/tokens
+2) the parsing of stack-based languages can often be extended at runtime. 
+So supposedly, due to the aforementioned reasons, forth doesn't really have a grammar, as there is no syntax.
+On the other hand, factor has clear documentation discussing its syntax.
+footnote:[https://docs.factorcode.org/content/article-parser-algorithm.html]
+
 
 ## Denotational semantics
 
