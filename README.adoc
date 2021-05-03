@@ -2,6 +2,8 @@
 :toc:
 :toc-placement!:
 
+image:https://img.shields.io/github/workflow/status/bruno-366/forward/asciidoctor-ghpages?label=asciidoctor-ghpages[GitHub Workflow Status]
+
 A stack-based programming language.
 Powerful Enough, Simple, Correct.
 
