@@ -1,0 +1,53 @@
+name: asciidoctor-ghpages
+
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+      
+    - name: asciidoctor-ghpages
+      # You may pin to the exact commit or the version.
+      # uses: manoelcampos/asciidoctor-ghpages-action@488fb1539697be68af8ef8e0c7f97b1fc629e8b6
+      uses: manoelcampos/asciidoctor-ghpages-action@v2
+      with:
+          # Extra parameters to passs to the asciidoctor command to customize the process of building adoc files
+          asciidoctor_params: ""
+          # The extension you are using for your AsciiDoc Files
+          adoc_file_ext: ".adoc"
+          # Defines if a PDF ebook should be built along with the html files.
+          # That will generate an ebook.pdf file inside the gh-pages branch.
+          pdf_build: true
+          # Defines the name of the main AsciiDoc file that will be used if you are generating an ebook in PDF
+          # or any other supported format.
+          # For instance, if the main ebook file is "ebook.adoc", just inform "ebook" here.
+          ebook_main_adoc_file: README
+          # Defines if a slides.html file should be built using AsciiDoc Reveal.js.
+          # The slides.html file is generated inside the gh-pages branch.
+          slides_build: false
+          # Defines the name of the main AsciiDoc file that will be used if you are generating slides with Reveal.js.
+          # For instance, if the slides file is "slides.adoc", just inform "slides" here.
+          slides_main_adoc_file: README
+          # If slides are being generated using AsciiDoc Reveal.js,
+          # you may not want to build the regular html files using the asciidoctor command,
+          # but just using the asciidoctor-revealjs command.
+          # In order to generate only the slides.html instead of the regular html files, set this config to true.
+          slides_skip_asciidoctor_build: false
