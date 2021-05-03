@@ -2,7 +2,7 @@
 :toc:
 :toc-placement!:
 
-image:https://img.shields.io/github/workflow/status/bruno-366/forward/asciidoctor-ghpages?label=asciidoctor-ghpages[GitHub Workflow Status]
+link:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml[image:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml/badge.svg[asciidoctor-ghpages]]
 
 A stack-based programming language.
 Powerful Enough, Simple, Correct.
