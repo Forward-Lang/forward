@@ -1,7 +1,7 @@
 # forward
 :toc:
 :toc-placement!:
-:revealjs_width: 50%
+:revealjs_width: 100%
 :revealjs_height: 100%
 
 
