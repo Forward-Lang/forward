@@ -41,7 +41,7 @@ jobs:
           ebook_main_adoc_file: README
           # Defines if a slides.html file should be built using AsciiDoc Reveal.js.
           # The slides.html file is generated inside the gh-pages branch.
-          slides_build: false
+          slides_build: true
           # Defines the name of the main AsciiDoc file that will be used if you are generating slides with Reveal.js.
           # For instance, if the slides file is "slides.adoc", just inform "slides" here.
           slides_main_adoc_file: README
