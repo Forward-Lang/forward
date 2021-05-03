@@ -26,7 +26,7 @@ jobs:
     - name: asciidoctor-ghpages
       # You may pin to the exact commit or the version.
       # uses: manoelcampos/asciidoctor-ghpages-action@488fb1539697be68af8ef8e0c7f97b1fc629e8b6
-      uses: Bruno-366/asciidoctor-ghpages-action@159210bf5f28c4106d8ea41653dd96ddf63979ed
+      uses: Bruno-366/asciidoctor-ghpages-action@f7559fc5d8da18ce755725636c14c67001f31c33
       with:
           # Extra parameters to passs to the asciidoctor command to customize the process of building adoc files
           asciidoctor_params: ""
