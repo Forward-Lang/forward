@@ -12,7 +12,7 @@ Documentation:
 - link:knowledge-base.adoc[Knowledge Base]
 - link:https://github.com/Bruno-366/forward/blob/gh-pages/ebook.pdf[Ebook]
 
-[cols="1h,5a"]
+[cols="1h,6a"]
 |===========
 | Mission | To create a programming language that is simple enough to be understood fully under a week, but with **powerful enough mental models** to allow for its effective use and application within different problem domains.
 | Vision | That due to its simplicity it sees widespread use whithin its problem domains, remaining in the background, out of the way, ready to be used. Ubiquitous like the shell, but as effective as a scalpel, not a <<chainsaw>>! 
