@@ -2,7 +2,7 @@
 :toc:
 :toc-placement!:
 :revealjs_width: 100%
-:revealjs_height: 100%
+:revealjs_height: 50%
 
 
 link:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml[image:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml/badge.svg[asciidoctor-ghpages]]
