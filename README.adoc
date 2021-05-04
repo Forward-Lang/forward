@@ -76,79 +76,9 @@ Currently being inspired mainly by:
 * Numerical semantics of <<APL>>
 * Textual semantics of the unix shell.
 
-== Grammar
 
-Whether stack-based/concatenative languages have grammars is a bit unclear, due to 2 main reasons:
-1) most, if not all, of the program is made of space-delimited words/tokens
-2) the parsing of stack-based languages can often be extended at runtime. 
-So supposedly, due to the aforementioned reasons, forth doesn't really have a grammar, as there is no syntax.
-  footnote:[https://softwareengineering.stackexchange.com/questions/370518/why-does-forths-flexibility-make-a-grammar-inappropriate-for-it]
-  footnote:[https://groups.google.com/g/comp.lang.forth/c/nbVrIzbafKM]
-  footnote:[https://skilldrick.github.io/easyforth/#defining-words]
-  footnote:[https://users.ece.cmu.edu/~koopman/forth/hopl.html]
-On the other hand, factor has clear documentation discussing its syntax.
-  footnote:[https://docs.factorcode.org/content/article-parser-algorithm.html]
-  footnote:[https://docs.factorcode.org/content/article-syntax-literals.html]
+include::Grammar.adoc[]
 
-Ironically, the same claims are made about LISP.
-  footnote:[https://groups.google.com/g/comp.lang.lisp/c/_JYqG712WvU]
-Although, LISP very clearly has a syntax. It is probably the first thing people notice.
-The Common Lisp HyperSpec defines a standard syntax,
-  footnote:[http://www.lispworks.com/documentation/HyperSpec/Body/02_a.htm]
-and supposedly uses BNF to describe the syntax of its macro forms and special forms.
-  footnote:[http://www.lispworks.com/documentation/HyperSpec/Body/01_dab.htm]
-Unfortunately the Common Lisp HyperSpec doesn't seem to be consistent with its use of BNF,
-as (it seems like) its only the syntax for numeric tokens that is defined with BNF.
-  footnote:[http://www.lispworks.com/documentation/HyperSpec/Body/02_ca.htm]
-Luckily, there are other LISPs, such as Shen, which does have a specification of its syntax in BNF.
-  footnote:[http://shenlanguage.org/osmanual.htm#12%20The%20Syntax%20of%20Shen]
-  footnote:[http://shenlanguage.org/shendoc.htm#The%20Syntax%20of%20Symbols]
-  footnote:[http://shenlanguage.org/shendoc.htm#Numbers]
-
-=== Properties
-We want proof of termination for parsing of the grammar.
-We also want a non-ambigous grammar.
-Parsing Expression Grammars, for example, have an ordered choice operator that results in an unambiguous grammar.
-Last but not least, we want composability of grammars,
-as each DSL might require its own syntax, and should be able to do so without interupting the surrounding source code.
-
-[source,math]
-----
-S -> a
-----
-
-=== Specification
-forward's level 1 grammar, (using the <<BNF-playground>> based on <<Nearly>>):
-
-
-[source,bnf]
-----
-/* limiting the syntax to the ASCII charset */
-
-/* one or more words */
-/* one or more characters */
-<words>  ::= <word> | <word> <words>
-<lowers> ::= <lower> | <lower> <lowers>
-
-/* words have to end with a space */
-/* regular words just have lowercase alphabetical characters */
-<word>  ::= <lowers> " "
-
-<lower> ::= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m"
-          | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
-----
-
-NOTE: the level 1 grammar doesn't have support for string literals, or lists/arrays,
-which means writing higher-order functions at this level is non-intuitive.
-
-==== Formal Grammar
-
-[source,math]
-----
-Alphabet = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m"
-          | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
-          | " "
-----
 
 == Denotational semantics
 
