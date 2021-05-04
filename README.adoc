@@ -1,14 +1,38 @@
-# forward
+= forward
 :toc:
 :toc-placement!:
 :toclevels: 3
 
-A stack-based programming language.
-Powerful, Simple, Correct.
+link:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml[image:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml/badge.svg[asciidoctor-ghpages]]
 
-[cols="h,a"]
+A stack-based programming language.
+Powerful Enough, Simple, Correct.
+
+Documentation:
+- link:https://bruno-366.github.io/forward/[Website]
+- <<knowledge-base.adoc#,Knowledge Base>>
+- link:https://github.com/Bruno-366/forward/blob/gh-pages/ebook.pdf[Ebook]
+
+//////////////////////////////////////////
+Warning: Interleaving
+This Document (README.adoc) has links to the website, knowledge base, and ebook.
+This Document (README.adoc) gets passed to the GitHub Action asciidoctor-ghpages
+  which is configured on the main branch under .github/workflows/
+  and outputs to the gh-pages branch, which is destroyed and rebuilt from scratch on each commit
+
+README.adoc
+  --through--> asciidoctor-ghpages
+    --produces--> Website on GitHub Pages
+  AND
+    --produces--> Ebook on GitHub
+
+https://github.com/manoelcampos/asciidoctor-ghpages-action
+//////////////////////////////////////////
+
+
+[cols="1h,8a"]
 |===========
-| Mission | To create a programming language that is simple enough to be understood fully under a week, but with powerful enough mental models to allow for its effective use and application within different problem domains.
+| Mission | To create a programming language that is simple enough to be understood fully under a week, but with **powerful enough mental models** to allow for its effective use and application within different problem domains.
 | Vision | That due to its simplicity it sees widespread use whithin its problem domains, remaining in the background, out of the way, ready to be used. Ubiquitous like the shell, but as effective as a scalpel, not a <<chainsaw>>! 
 | Values |
 
@@ -19,7 +43,7 @@ Powerful, Simple, Correct.
 
 |===========
 
-## Quotes
+== Quotes
 
 [quote, Antoine de Saint Exupéry]
 In anything at all, perfection is finally attained not when there is no longer anything to add, but when there is no longer anything to take away, when a body has been stripped down to its nakedness.
@@ -28,7 +52,7 @@ In anything at all, perfection is finally attained not when there is no longer a
 
 toc::[]
 
-## Goals
+== Goals
 
 * Literate programming
 * Debugging
@@ -43,7 +67,7 @@ toc::[]
 ** Intuitive Grammar (on layer 2, after macros are applied)
 ** Code as Data, but not Data as Code.
 
-### Inspiration sources
+=== Inspiration sources
 
 Currently being inspired mainly by:
 
@@ -52,7 +76,7 @@ Currently being inspired mainly by:
 * Numerical semantics of <<APL>>
 * Textual semantics of the unix shell.
 
-## Grammar
+== Grammar
 
 Whether stack-based/concatenative languages have grammars is a bit unclear, due to 2 main reasons:
 1) most, if not all, of the program is made of space-delimited words/tokens
@@ -126,10 +150,10 @@ Alphabet = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l"
           | " "
 ----
 
-## Denotational semantics
+== Denotational semantics
 
 
-### Informal definitions
+=== Informal definitions
 
 * Dictionary
 * Atoms/Elements:
@@ -142,60 +166,7 @@ Alphabet = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l"
 ** Vectors
 ** Matrixes
 
-### Formal definitions
-
-
-
-
-==== Parser
-
-[graphviz]
-----
-digraph D {
-  input -> "\"open quote" -> "\"close quote" -> string
-  input -> "\'open quote" -> "\'close quote" -> string 
-  
-  input -> "\[open bracket" -> "\]close bracket" -> array  
-  
-  input -> "\" \"open space" -> "\" \"close space" -> word  
-}
-----
-
-image:https://kroki.io/graphviz/svg/eNp1zkEKwjAUhOF9TzFk05VXcOUtWhfPNLTBksSXBBHp3X2YRKji9mc-mMnOTGHBCc8OsC7khMOxU6PywTjcsk9GSYEUvfpoapKxxJjYunkP-x_Y_4PAng5vemHSV5MqPhfcYuHETI9vrVBPx0D6cxrtd6nF3z1PwrcX9XhK3Q==[]
-
-
-==== Evaluation
-
-[ditaa]
-----
-
-Word being defined
-+-------------------------+
-| : add5 ( x -- x ) 5 + ; | 
-+-------------------------+
-|
-| Access primitives dictionary
-|
-v
-+---------------------------+
-| Primitives Dictionary...  |
-+---+---+---+---+---+---+---+
-| 1 | 2 | 3 | 4 | 5 | + | - |
-+---+---+---+---+---+---+---+
-|
-| Expand word and add to dictionary
-| 
-v
-+--------------+
-| Dictionary...|
-+-------+------+
-| add 5 | 5  + |
-+-------+------+
-
-----
-
-image:https://kroki.io/ditaa/svg/eNqFkD8LwjAQxfd-ijcqIQX_ZNFJ0N3Nufai3GBa2lAr5MN7qdBSSuvBOzK8393L3YqKcLfsniD7YGcpUXquVBJwQEZksEILraWtYaBwRMAyKOgpz21do6z4xZ4bW4M491y4rPqIoVkY8Nt9HchzT6ZpCoSOnZWwG0m4Fe1Ee5ERKZH-zwp9acvMEd7xWvEhN4AvRvkx_UDcOwoaeocaHHGW6RLFQFPHFyfUZU4=[]
-
+=== Formal definitions
 
 == <<Waterfall>> process | https://github.com/Bruno-366/forward/milestones?direction=asc&sort=title[Milestones]
 
@@ -210,7 +181,7 @@ image:https://kroki.io/ditaa/svg/eNqFkD8LwjAQxfd-ijcqIQX_ZNFJ0N3Nufai3GBa2lAr5MN
 
 
 [bibliography]
-= References
+== References
 
 * [[[Hoare]]] https://en.wikipedia.org/wiki/Hoare_logic#Hoare_triple
 * [[[Waterfall]]] https://en.wikipedia.org/wiki/Waterfall_model#Model
