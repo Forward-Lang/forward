@@ -1,0 +1,33 @@
+==== Evaluation
+
+[ditaa]
+----
+
+Word being defined
++-------------------------+
+| : add5 ( x -- x ) 5 + ; | 
++-------------------------+
+|
+| Access primitives dictionary
+|
+v
++---------------------------+
+| Primitives Dictionary...  |
++---+---+---+---+---+---+---+
+| 1 | 2 | 3 | 4 | 5 | + | - |
++---+---+---+---+---+---+---+
+|
+| Expand word and add to dictionary
+| 
+v
++--------------+
+| Dictionary...|
++-------+------+
+| add 5 | 5  + |
++-------+------+
+
+----
+
+image:https://kroki.io/ditaa/svg/eNqFkD8LwjAQxfd-ijcqIQX_ZNFJ0N3Nufai3GBa2lAr5MN7qdBSSuvBOzK8393L3YqKcLfsniD7YGcpUXquVBJwQEZksEILraWtYaBwRMAyKOgpz21do6z4xZ4bW4M491y4rPqIoVkY8Nt9HchzT6ZpCoSOnZWwG0m4Fe1Ee5ERKZH-zwp9acvMEd7xWvEhN4AvRvkx_UDcOwoaeocaHHGW6RLFQFPHFyfUZU4=[]
+
+
