@@ -1,4 +1,4 @@
-# forward
+= forward
 :toc:
 :toc-placement!:
 
@@ -42,7 +42,7 @@ https://github.com/manoelcampos/asciidoctor-ghpages-action
 
 |===========
 
-## Quotes
+== Quotes
 
 [quote, Antoine de Saint Exupéry]
 In anything at all, perfection is finally attained not when there is no longer anything to add, but when there is no longer anything to take away, when a body has been stripped down to its nakedness.
@@ -51,7 +51,7 @@ In anything at all, perfection is finally attained not when there is no longer a
 
 toc::[]
 
-## Goals
+== Goals
 
 * Literate programming
 * Debugging
@@ -66,7 +66,7 @@ toc::[]
 ** Intuitive Grammar (on layer 2, after macros are applied)
 ** Code as Data, but not Data as Code.
 
-### Inspiration sources
+=== Inspiration sources
 
 Currently being inspired mainly by:
 
@@ -75,15 +75,15 @@ Currently being inspired mainly by:
 * Numerical semantics of <<APL>>
 * Textual semantics of the unix shell.
 
-## Grammar
+== Grammar
 
 Unfortunately stack-based/concatenative languages don't really have a grammar, as there is no syntax.
 These languages are made up of words. 
 
-## Denotational semantics
+== Denotational semantics
 
 
-### Informal definitions
+=== Informal definitions
 
 * Atoms/Elements:
 ** Booleans
@@ -95,11 +95,11 @@ These languages are made up of words.
 ** Vectors
 ** Matrixes
 
-### Formal definitions
+=== Formal definitions
 
 
 
-# <<Waterfall>> process | https://github.com/Bruno-366/forward/milestones?direction=asc&sort=title[Milestones]
+== <<Waterfall>> process | https://github.com/Bruno-366/forward/milestones?direction=asc&sort=title[Milestones]
 
 . Integration Requirements
 . Feature Design
@@ -112,7 +112,7 @@ These languages are made up of words.
 
 
 [bibliography]
-= References
+== References
 
 * [[[Hoare]]] https://en.wikipedia.org/wiki/Hoare_logic#Hoare_triple
 * [[[Waterfall]]] https://en.wikipedia.org/wiki/Waterfall_model#Model
