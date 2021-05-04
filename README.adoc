@@ -12,7 +12,7 @@ Powerful Enough, Simple, Correct.
 
 Documentation:
 - link:https://bruno-366.github.io/forward/[Website]
-- link:knowledge-base.adoc[Knowledge Base]
+- <<knowledge-base.adoc,Knowledge Base>>
 - link:https://github.com/Bruno-366/forward/blob/gh-pages/ebook.pdf[Ebook]
 
 //////////////////////////////////////////
