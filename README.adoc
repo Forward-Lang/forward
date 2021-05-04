@@ -109,7 +109,6 @@ forward's level 1 grammar, (using the <<BNF-playground>> based on <<Nearly>>):
 
 <lower> ::= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m"
           | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
-<num>   ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
 ----
 
 NOTE: the level 1 grammar doesn't have support for string literals, or lists/arrays,
