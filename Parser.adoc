@@ -1,0 +1,17 @@
+==== Parser
+
+[graphviz]
+----
+digraph D {
+  input -> "\"open quote" -> "\"close quote" -> string
+  input -> "\'open quote" -> "\'close quote" -> string 
+  
+  input -> "\[open bracket" -> "\]close bracket" -> array  
+  
+  input -> "\" \"open space" -> "\" \"close space" -> word  
+}
+----
+
+image:https://kroki.io/graphviz/svg/eNp1zkEKwjAUhOF9TzFk05VXcOUtWhfPNLTBksSXBBHp3X2YRKji9mc-mMnOTGHBCc8OsC7khMOxU6PywTjcsk9GSYEUvfpoapKxxJjYunkP-x_Y_4PAng5vemHSV5MqPhfcYuHETI9vrVBPx0D6cxrtd6nF3z1PwrcX9XhK3Q==[]
+
+
