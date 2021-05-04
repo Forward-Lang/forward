@@ -144,11 +144,10 @@ Alphabet = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l"
 
 ### Formal definitions
 
-#### Strings
 
 
 
-#### Kernel
+==== Parser
 
 [graphviz]
 ----
@@ -163,6 +162,9 @@ digraph D {
 ----
 
 image:https://kroki.io/graphviz/svg/eNp1zkEKwjAUhOF9TzFk05VXcOUtWhfPNLTBksSXBBHp3X2YRKji9mc-mMnOTGHBCc8OsC7khMOxU6PywTjcsk9GSYEUvfpoapKxxJjYunkP-x_Y_4PAng5vemHSV5MqPhfcYuHETI9vrVBPx0D6cxrtd6nF3z1PwrcX9XhK3Q==[]
+
+
+==== Evaluation
 
 [ditaa]
 ----
