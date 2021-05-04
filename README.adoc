@@ -1,9 +1,6 @@
 # forward
 :toc:
 :toc-placement!:
-:revealjs_width: 700
-:revealjs_height: 700
-
 
 link:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml[image:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml/badge.svg[asciidoctor-ghpages]]
 
