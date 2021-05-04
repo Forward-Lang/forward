@@ -81,7 +81,18 @@ Luckily, there are other LISPs, such as Shen, which does have a specification of
   footnote:[http://shenlanguage.org/shendoc.htm#The%20Syntax%20of%20Symbols]
   footnote:[http://shenlanguage.org/shendoc.htm#Numbers]
 
-forward's grammar, (using the <<BNF-playground>> based on <<Nearly>>):
+=== Properties
+We want proof of termination for parsing of the grammar.
+We also want a non-ambigous grammar.
+Parsing Expression Grammars, for example, have an ordered choice operator that results in an unambiguous grammar.
+
+[source,math]
+----
+S -> a
+----
+
+=== Specification
+forward's level 1 grammar, (using the <<BNF-playground>> based on <<Nearly>>):
 
 [source,bnf]
 ----
@@ -109,7 +120,6 @@ forward's grammar, (using the <<BNF-playground>> based on <<Nearly>>):
 /* strings can be delimited with " or ' */
 <string> ::= "'" <prints> "'" | "\"" <prints> "\""
 ----
-
 
 ## Denotational semantics
 
