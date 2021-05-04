@@ -168,6 +168,57 @@ Alphabet = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l"
 
 === Formal definitions
 
+
+==== Parser
+
+[graphviz]
+----
+digraph D {
+  input -> "\"open quote" -> "\"close quote" -> string
+  input -> "\'open quote" -> "\'close quote" -> string 
+  
+  input -> "\[open bracket" -> "\]close bracket" -> array  
+  
+  input -> "\" \"open space" -> "\" \"close space" -> word  
+}
+----
+
+image:https://kroki.io/graphviz/svg/eNp1zkEKwjAUhOF9TzFk05VXcOUtWhfPNLTBksSXBBHp3X2YRKji9mc-mMnOTGHBCc8OsC7khMOxU6PywTjcsk9GSYEUvfpoapKxxJjYunkP-x_Y_4PAng5vemHSV5MqPhfcYuHETI9vrVBPx0D6cxrtd6nF3z1PwrcX9XhK3Q==[]
+
+
+==== Evaluation
+
+[ditaa]
+----
+
+Word being defined
++-------------------------+
+| : add5 ( x -- x ) 5 + ; | 
++-------------------------+
+|
+| Access primitives dictionary
+|
+v
++---------------------------+
+| Primitives Dictionary...  |
++---+---+---+---+---+---+---+
+| 1 | 2 | 3 | 4 | 5 | + | - |
++---+---+---+---+---+---+---+
+|
+| Expand word and add to dictionary
+| 
+v
++--------------+
+| Dictionary...|
++-------+------+
+| add 5 | 5  + |
++-------+------+
+
+----
+
+image:https://kroki.io/ditaa/svg/eNqFkD8LwjAQxfd-ijcqIQX_ZNFJ0N3Nufai3GBa2lAr5MN7qdBSSuvBOzK8393L3YqKcLfsniD7YGcpUXquVBJwQEZksEILraWtYaBwRMAyKOgpz21do6z4xZ4bW4M491y4rPqIoVkY8Nt9HchzT6ZpCoSOnZWwG0m4Fe1Ee5ERKZH-zwp9acvMEd7xWvEhN4AvRvkx_UDcOwoaeocaHHGW6RLFQFPHFyfUZU4=[]
+
+
 == <<Waterfall>> process | https://github.com/Bruno-366/forward/milestones?direction=asc&sort=title[Milestones]
 
 . Integration Requirements
