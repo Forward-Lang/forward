@@ -1,5 +1,7 @@
 = Grammar
 
+WARNING: work in progress
+
 Whether stack-based/concatenative languages have grammars is a bit unclear, due to 2 main reasons:
 1) most, if not all, of the program is made of space-delimited words/tokens
 2) the parsing of stack-based languages can often be extended at runtime. 
