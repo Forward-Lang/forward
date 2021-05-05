@@ -63,7 +63,7 @@ forward's level 1 grammar, (using the <<BNF-playground>> based on <<Nearly>>):
 NOTE: the level 1 grammar doesn't have support for string literals, or lists/arrays,
 which means writing higher-order functions at this level is non-intuitive.
 
-==== Formal Grammar
+=== Formal Grammar
 
 [source,math]
 ----
