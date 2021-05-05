@@ -77,7 +77,7 @@ Currently being inspired mainly by:
 * Textual semantics of the unix shell.
 
 
-include::Grammar.adoc[]
+include::Grammar.adoc[leveloffset=+1]
 
 
 == Denotational semantics
@@ -98,8 +98,8 @@ include::Grammar.adoc[]
 
 === Formal definitions
 
-include::Parser.adoc[]
-include::Evaluation.adoc[]
+include::Parser.adoc[leveloffset=+3]
+include::Evaluation.adoc[leveloffset=+3]
 
 == <<Waterfall>> process | https://github.com/Bruno-366/forward/milestones?direction=asc&sort=title[Milestones]
 
