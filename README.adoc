@@ -125,9 +125,6 @@ include::Evaluation.adoc[leveloffset=+3]
 * [[[r4]]] https://github.com/phreda4/r4
 * [[[chainsaw]]] The Unix shell is sometimes referred to as a chainsaw (see `rm -rf *`)
 * [[[simplex]]] https://www.infoq.com/presentations/Simple-Made-Easy/
-* [[[BNF-playground]]] https://bnfplayground.pauliankline.com/
-* [[[Nearly]]] https://nearley.js.org/ (two cool things about nearley: it can output railroad diagrams for documentation and it can be inverted to form generators which output random strings that match a grammar)
-
 
 +++
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This README is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
