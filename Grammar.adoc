@@ -1,4 +1,4 @@
-== Grammar
+= Grammar
 
 Whether stack-based/concatenative languages have grammars is a bit unclear, due to 2 main reasons:
 1) most, if not all, of the program is made of space-delimited words/tokens
@@ -27,7 +27,7 @@ Luckily, there are other LISPs, such as Shen, which does have a specification of
   footnote:[http://shenlanguage.org/shendoc.htm#The%20Syntax%20of%20Symbols]
   footnote:[http://shenlanguage.org/shendoc.htm#Numbers]
 
-=== Properties
+== Properties
 We want proof of termination for parsing of the grammar.
 We also want a non-ambigous grammar.
 Parsing Expression Grammars, for example, have an ordered choice operator that results in an unambiguous grammar.
@@ -39,7 +39,7 @@ as each DSL might require its own syntax, and should be able to do so without in
 S -> a
 ----
 
-=== Specification
+== Specification
 forward's level 1 grammar, (using the <<BNF-playground>> based on <<Nearly>>):
 
 
