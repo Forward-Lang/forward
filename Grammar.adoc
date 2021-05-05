@@ -71,3 +71,11 @@ Alphabet = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l"
           | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
           | " "
 ----
+
+
+[bibliography]
+== References
+
+* [[[BNF-playground]]] https://bnfplayground.pauliankline.com/
+* [[[Nearly]]] https://nearley.js.org/ (two cool things about nearley: it can output railroad diagrams for documentation and it can be inverted to form generators which output random strings that match a grammar)
+
