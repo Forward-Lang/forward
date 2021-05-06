@@ -79,7 +79,7 @@ Alphabet = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l"
 ----
 
 
-== Executable Specification
+=== Executable Specification
 
 forward’s level 1 grammar, (using the <<scratchpad>> of <<jscoq>> based on <<coq>>):
 
