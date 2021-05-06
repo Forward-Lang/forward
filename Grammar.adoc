@@ -31,6 +31,8 @@ Luckily, there are other LISPs, such as Shen, which does have a specification of
 
 == Properties
 We want proof of termination for parsing of the grammar.
+  footnote:[https://github.com/coq/coq/wiki/CoqTerminationDiscussion
+  Coq has a termination checker]
 We also want a non-ambigous grammar.
 Parsing Expression Grammars, for example, have an ordered choice operator that results in an unambiguous grammar.
 Last but not least, we want composability of grammars,
