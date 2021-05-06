@@ -44,6 +44,8 @@ S -> a
 ----
 
 == Specification
+
+=== Informal defintion: Backus–Naur form
 forward's level 1 grammar, (using the <<BNF-playground>> based on <<Nearly>>):
 
 
@@ -67,7 +69,7 @@ forward's level 1 grammar, (using the <<BNF-playground>> based on <<Nearly>>):
 NOTE: the level 1 grammar doesn't have support for string literals, or lists/arrays,
 which means writing higher-order functions at this level is non-intuitive.
 
-=== Formal Grammar
+=== Formal definition: Formal Grammar
 
 [source,math]
 ----
@@ -77,9 +79,18 @@ Alphabet = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l"
 ----
 
 
+== Executable Specification
+
+forward’s level 1 grammar, (using the <<scratchpad>> of <<jscoq>> based on <<coq>>):
+
+
+
 [bibliography]
 == References
 
 * [[[BNF-playground]]] https://bnfplayground.pauliankline.com/
 * [[[Nearly]]] https://nearley.js.org/ (two cool things about nearley: it can output railroad diagrams for documentation and it can be inverted to form generators which output random strings that match a grammar)
+* [[[scratchpad]]] https://jscoq.github.io/scratchpad.html
+* [[[jscoq]]] https://github.com/jscoq/jscoq
+* [[[coq]]] https://coq.inria.fr/
 
