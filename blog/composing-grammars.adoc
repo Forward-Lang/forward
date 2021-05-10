@@ -1,4 +1,8 @@
+:relfileprefix: ../
+
 include::../README.adoc[tag=preamble]
+
+:relfileprefix:
 
 # Composing grammars
 
