@@ -1,9 +1,11 @@
+# Composing grammars
+
 Parsers can be composed using parser combinators,
   footnote:[https://en.wikipedia.org/wiki/Parser_combinator]
 but what about the grammars themselves?
 How does that work?
 
-# From Wikipedia:
+## From Wikipedia:
 
 In the classic formalization of generative grammars first proposed by Noam Chomsky in the 1950s, a grammar 𝐆 consists of the following components:
   footnote:[https://en.wikipedia.org/wiki/Formal_grammar#The_syntax_of_grammars]
@@ -18,7 +20,7 @@ A grammar is formally defined as the tuple (𝐍, 𝚺, 𝐏, 𝐒).
 
 ---
 
-# Composing regular grammars
+## Composing regular grammars
 
 The first grammar 𝐆: (𝐍, 𝚺, 𝐏, 𝐒). 
 
