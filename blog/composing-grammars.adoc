@@ -53,3 +53,15 @@ Since 𝐒 is a nonterminal 𝐍, we can think in more abstract terms: what do w
 Well, we can concatenate them, or alternate them. 
 
 footnote:[https://en.wikipedia.org/wiki/Formal_language#Operations_on_languages]
+
+
++++
+<script src="https://utteranc.es/client.js"
+        repo="bruno-366/forward"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
++++
