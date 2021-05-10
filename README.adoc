@@ -21,7 +21,7 @@ Documentation:
 //////////////////////////////////////////
 Warning: Transclusion
 This Document (README.adoc) is partially transcluded in the blog posts.
-  The part transcluded is above delimited by tag::preamble[] and end::preamble[]
+  The part transcluded is the tagged region above delimited with the word "preamble"
 This Document (README.adoc) transcludes other asciidoc documents
   for the production of the ebook and the webpage.
 
