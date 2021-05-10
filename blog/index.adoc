@@ -1,6 +1,6 @@
-Posts
+= Posts
 
-* link:composing-grammars.adoc[]
-* link:test-comments.adoc[]
+* xref:composing-grammars.adoc[]
+* xref:test-comments.adoc[]
 
 > This file should really be filled automatically, but oh well...
