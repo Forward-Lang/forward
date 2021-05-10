@@ -1,0 +1,13 @@
+Hello!
+Don't mind me, just testing link:https://utteranc.es/[utterances], A lightweight comments widget built on GitHub issues.
+
++++
+<script src="https://utteranc.es/client.js"
+        repo="bruno-366/forward"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
++++
