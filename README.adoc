@@ -5,6 +5,8 @@
 
 link:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml[image:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml/badge.svg[asciidoctor-ghpages]]
 
+// tag::preamble[]
+
 A stack-based programming language.
 Powerful Enough, Simple, Correct.
 
@@ -13,7 +15,15 @@ Documentation:
 - <<knowledge-base.adoc#,Knowledge Base>>
 - link:https://github.com/Bruno-366/forward/blob/gh-pages/ebook.pdf[Ebook]
 
+// end::preamble[]
+
 //////////////////////////////////////////
+Warning: Transclusion
+This Document (README.adoc) is partially transcluded in the blog posts.
+  The part transcluded is above delimited by tag::preamble[] and end::preamble[]
+This Document (README.adoc) transcludes other asciidoc documents
+  for the production of the ebook and the webpage.
+
 Warning: Interleaving
 This Document (README.adoc) has links to the website, knowledge base, and ebook.
 This Document (README.adoc) gets passed to the GitHub Action asciidoctor-ghpages
