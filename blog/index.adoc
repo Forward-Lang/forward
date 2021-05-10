@@ -1,3 +1,5 @@
+include::../README.adoc[tag=preamble]
+
 = Posts
 
 * xref:composing-grammars.adoc[]
