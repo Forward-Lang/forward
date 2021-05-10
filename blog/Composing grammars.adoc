@@ -1,0 +1,53 @@
+Parsers can be composed using parser combinators,
+  footnote:[https://en.wikipedia.org/wiki/Parser_combinator]
+but what about the grammars themselves?
+How does that work?
+
+# From Wikipedia:
+
+In the classic formalization of generative grammars first proposed by Noam Chomsky in the 1950s, a grammar 𝐆 consists of the following components:
+  footnote:[https://en.wikipedia.org/wiki/Formal_grammar#The_syntax_of_grammars]
+
+* A finite set 𝐍 of nonterminal symbols, that is disjoint with the strings formed from 𝐒.
+* A finite set 𝚺 of terminal symbols that is disjoint from 𝐍.
+* A finite set 𝐏 of production rules, each rule of the form (𝚺 ∪ 𝐍)^\*^𝐍(𝚺 ∪ 𝐍)^\*^ -> (𝚺 ∪ 𝐍)^\*^
+where ^\*^ is the Kleene star operator and ∪ denotes set union. 
+* A distinguished symbol 𝐒 ∈ 𝐍 that is the start symbol, also called the sentence symbol.
+
+A grammar is formally defined as the tuple (𝐍, 𝚺, 𝐏, 𝐒). 
+
+---
+
+# Composing regular grammars
+
+The first grammar 𝐆: (𝐍, 𝚺, 𝐏, 𝐒). 
+
+* A finite set 𝐍 = { 𝐒 }.
+* A finite set 𝚺  = { a }.
+* A finite set 𝐏 of production rules, each rule of the form 𝐍 -> (𝚺 ∪ 𝐍)^\*^
+footnote:[regular gammars have restrictions on the production rules]
+
+This grammar defines the language L(𝐆) = { a^n^ | n = 1 } where a^n^ denotes a string of n consecutive a's.
+
+The second grammar 𝐆': (𝐍', 𝚺', 𝐏', 𝐒'). 
+
+* A finite set 𝐍' = { 𝐒' }.
+* A finite set 𝚺'  = { b }.
+* A finite set 𝐏' of production rules, each rule of the form 𝐍 -> (𝚺 ∪ 𝐍)^\*^
+
+This grammar defines the language L(𝐆') = { b^n^ | n = 1 }.
+
+
+Composing the two grammars:
+
+𝐆 + 𝐆': (𝐍 ∪ 𝐍', 𝚺 ∪ 𝚺', 𝐏 ∪ 𝐏', ???)
+
+Since 𝐍, 𝚺, and 𝐏 are finite sets, the easiest thing to do is a union of the two grammars.
+However 𝐒, the start symbol, is supposed to be unique in the 𝐍 set, ie there is only one starting point for a grammar.
+That is at least a common underlying assumption.
+So what do we do when we are trying to compose grammars, and end up with several starting symbols?
+
+Since 𝐒 is a nonterminal 𝐍, we can think in more abstract terms: what do we do when we have several nonterminals?
+Well, we can concatenate them, or alternate them. 
+
+footnote:[https://en.wikipedia.org/wiki/Formal_language#Operations_on_languages]
