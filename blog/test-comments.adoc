@@ -1,3 +1,5 @@
+include::../README.adoc[tag=preamble]
+
 Hello!
 Don't mind me, just testing link:https://utteranc.es/[utterances], A lightweight comments widget built on GitHub issues.
 
