@@ -1,3 +1,5 @@
+include::../README.adoc[tag=preamble]
+
 # Composing grammars
 
 Parsers can be composed using parser combinators,
