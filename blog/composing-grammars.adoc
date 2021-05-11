@@ -12,6 +12,8 @@ Parsers can be composed using parser combinators,
 but what about the grammars themselves?
 How does that work?
 
+toc::[]
+
 === From Wikipedia:
 
 In the classic formalization of generative grammars first proposed by Noam Chomsky in the 1950s, a grammar 𝐆 consists of the following components:
@@ -19,8 +21,8 @@ In the classic formalization of generative grammars first proposed by Noam Choms
 
 * A finite set 𝐍 of nonterminal symbols, that is disjoint with the strings formed from 𝐒.
 * A finite set 𝚺 of terminal symbols that is disjoint from 𝐍.
-* A finite set 𝐏 of production rules, each rule of the form (𝚺 ∪ 𝐍)^\*^𝐍(𝚺 ∪ 𝐍)^\*^ -> (𝚺 ∪ 𝐍)^\*^
-where ^\*^ is the Kleene star operator and ∪ denotes set union. 
+* A finite set 𝐏 of production rules, each rule of the form pass:[(𝚺 ∪ 𝐍)* 𝐍 (𝚺 ∪ 𝐍)* → (𝚺 ∪ 𝐍)*]
+where pass:[*] is the Kleene star operator and ∪ denotes set union. 
 * A distinguished symbol 𝐒 ∈ 𝐍 that is the start symbol, also called the sentence symbol.
 
 A grammar is formally defined as the tuple (𝐍, 𝚺, 𝐏, 𝐒). 
@@ -33,8 +35,9 @@ The first grammar 𝐆: (𝐍, 𝚺, 𝐏, 𝐒).
 
 * A finite set 𝐍 = { 𝐒 }.
 * A finite set 𝚺  = { a }.
-* A finite set 𝐏 of production rules, each rule of the form 𝐍 -> (𝚺 ∪ 𝐍)^\*^
+* A finite set 𝐏 of production rules, each rule of the form pass:[𝐍 → (𝚺 ∪ 𝐍)*]
 footnote:[regular gammars have restrictions on the production rules]
+** 𝐒 -> a
 
 This grammar defines the language L(𝐆) = { a^n^ | n = 1 } where a^n^ denotes a string of n consecutive a's.
 
@@ -42,21 +45,75 @@ The second grammar 𝐆': (𝐍', 𝚺', 𝐏', 𝐒').
 
 * A finite set 𝐍' = { 𝐒' }.
 * A finite set 𝚺'  = { b }.
-* A finite set 𝐏' of production rules, each rule of the form 𝐍 -> (𝚺 ∪ 𝐍)^\*^
+* A finite set 𝐏' of production rules, each rule of the form pass:[𝐍 → (𝚺 ∪ 𝐍)*]
+** 𝐒' -> b
 
 This grammar defines the language L(𝐆') = { b^n^ | n = 1 }.
 
-
 Composing the two grammars:
 
-𝐆 + 𝐆': (𝐍 ∪ 𝐍', 𝚺 ∪ 𝚺', 𝐏 ∪ 𝐏', ???)
+ 𝐆 + 𝐆': (𝐍 ∪ 𝐍', 𝚺 ∪ 𝚺', 𝐏 ∪ 𝐏', ???)
 
 Since 𝐍, 𝚺, and 𝐏 are finite sets, the easiest thing to do is a union of the two grammars.
 However 𝐒, the start symbol, is supposed to be unique in the 𝐍 set, ie there is only one starting point for a grammar.
 That is at least a common underlying assumption.
 So what do we do when we are trying to compose grammars, and end up with several starting symbols?
 
-Since 𝐒 is a nonterminal 𝐍, we can think in more abstract terms: what do we do when we have several nonterminals?
-Well, we can concatenate them, or alternate them. 
+==== What to do with the Start symbols?
 
-footnote:[https://en.wikipedia.org/wiki/Formal_language#Operations_on_languages]
+Since 𝐒 is a nonterminal 𝐍, we can think in more abstract terms: what do we do when we have several nonterminals?
+Well, we can concatenate them, or alternate them.
+If we concatenate them we would say that the language has to start with both starting symbols. 
+If we alternate them we would say that the language has to start with either starting symbol. 
+
+But, what happens to the production rules, then? Since, they also include the starting symbols.
+Well alternating them, would result in no needed changes to the existing production rules.
+Whereas, concatenating, would introduce some interesting interactions with the existing production rules.
+Consider a situation where we define 𝐒'' as the "true" starting symbol:
+
+----
+# choosing to alternate starting symbols
+𝐒'' → 𝐒' | 𝐒              <1>
+𝐒' → b
+𝐒 → a
+
+# choosing to concatenate starting symbols
+𝐒'' → 𝐒' 𝐒                <2>
+𝐒' → b
+𝐒 → a
+----
+<1> I'm mixing notations, using `|` as an explicit alternation operator,
+even though normally it would be defined as `𝐒'' -> 𝐒'` on one line and `𝐒'' -> 𝐒` on the next.
+<2> As we can see, writing it out, this is clearly equivalent to `𝐒'' → b a`.
+In other words, what happens when concatenating is that the order of the starting symbols affects the resulting language.
+
+Ok, having observed the results of alternating or concatenating the starting symbols, what left is to denote the language.
+The first grammar, the "alternation" grammar, defines the language `{ x^n^ | n = 1 ; x ∈ {a,b} }`.
+  footnote:Operations[See and compare with https://en.wikipedia.org/wiki/Formal_language#Operations_on_languages]
+The second grammar, the "concatenation" grammar, defines the language `{ b^n^a^n^ | n = 1 }`. 
+  footnote:Operations[]
+  
+==== Attempt 2
+
+Up until now, during the last section, we have been talking about the grammar in terms of the production rules.
+However, before that we were also talking about the grammar in terms of a tuple.
+Lets get back to that. This is what we had so far:
+
+ 𝐆 + 𝐆': (𝐍 ∪ 𝐍', 𝚺 ∪ 𝚺', 𝐏 ∪ 𝐏', ???)
+
+Since 𝐍 ∪ 𝐍' and 𝐒 ∈ 𝐍 the missing part has to be 𝐒 ∪ 𝐒'
+
+ 𝐆 + 𝐆': (𝐍 ∪ 𝐍', 𝚺 ∪ 𝚺', 𝐏 ∪ 𝐏', 𝐒 ∪ 𝐒')
+
+If we state that `𝐒 = 𝐒'` then we would get `𝐒 → b` and `𝐒 → a`, which is equivalent to the "alternation" grammar above.
+  footnote:Operations[]
+
+If we want the grammar tuple for the "concatenation" grammar above then perhaps this is it: 
+
+----
+𝐆 + 𝐆': (𝐍 ∪ 𝐍', 𝚺 ∪ 𝚺', 𝐏 ∪ 𝐏' ∪ 𝐏'', 𝐒'')
+where 𝐏'' = { 𝐒'' → 𝐒' 𝐒 }
+and 𝐒'' is the only starting symbol
+----
+
+
