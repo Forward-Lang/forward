@@ -73,6 +73,12 @@ when a body has been stripped down to its nakedness."
 "The ability to simplify means to eliminate the unnecessary so that the necessary may speak."
 -- Hans Hofmann
 
+.From a computer science professor:
+
+"If you cannot grok the overall structure of a program while taking a shower,
+you are not ready to code it."
+-- Richard E. Pattis
+
 .From a software engineer:
 
 "Walking on water and developing software from a specification are easy if both are frozen."
