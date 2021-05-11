@@ -1,5 +1,8 @@
 :subtitle: Posts
-include::/README.adoc[tag=preamble]
+:relfileprefix: ../
+include::../README.adoc[tag=preamble]
+
+:relfileprefix:
 
 == {subtitle}
 
