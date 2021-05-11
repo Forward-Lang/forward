@@ -6,6 +6,7 @@ include::{relfileprefix}README.adoc[tag=preamble]
 
 == {subtitle}
 
+* xref:tokenizer-vs-parser.adoc[]
 * xref:composing-grammars.adoc[]
 * xref:test-comments.adoc[]
 
