@@ -79,16 +79,16 @@ when a body has been stripped down to its nakedness."
 you are not ready to code it."
 -- Richard E. Pattis
 
-.From a software engineer:
-
-"Walking on water and developing software from a specification are easy if both are frozen."
--- Edward V. Berard, Essays on object-oriented software engineering (1993)
-
-.From a pioneer in computing science:
+.From a pioneer in computer science:
 
 "The purpose of abstraction is not to be vague,
 but to create a new semantic level in which one can be absolutely precise."
 -- Edsger W. Dijkstra, The Humble Programmer (1972)
+
+.From a software engineer:
+
+"Walking on water and developing software from a specification are easy if both are frozen."
+-- Edward V. Berard, Essays on object-oriented software engineering (1993)
 
 ---
 
