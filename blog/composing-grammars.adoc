@@ -1,5 +1,8 @@
 :subtitle: Composing grammars
-include::/README.adoc[tag=preamble]
+:relfileprefix: ../
+include::{relfileprefix}README.adoc[tag=preamble]
+
+:relfileprefix:
 
 == {subtitle}
 
