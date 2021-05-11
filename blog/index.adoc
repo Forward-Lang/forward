@@ -1,10 +1,7 @@
-:relfileprefix: ../
+:subtitle: Posts
+include::/README.adoc[tag=preamble]
 
-include::../README.adoc[tag=preamble]
-
-:relfileprefix:
-
-= Posts
+== {subtitle}
 
 * xref:composing-grammars.adoc[]
 * xref:test-comments.adoc[]
