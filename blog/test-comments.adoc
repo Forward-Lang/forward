@@ -1,4 +1,5 @@
 :subtitle: test comments
+:docinfo: shared
 :relfileprefix: ../
 include::{relfileprefix}README.adoc[tag=preamble]
 
