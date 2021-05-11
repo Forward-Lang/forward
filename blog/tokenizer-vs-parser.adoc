@@ -4,6 +4,17 @@ include::{relfileprefix}README.adoc[tag=preamble]
 
 :relfileprefix:
 
++++
+<script src="https://utteranc.es/client.js"
+        repo="bruno-366/forward"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
++++
+
 == {subtitle}
 
 consider a more <<general>> grammar allowing all words
