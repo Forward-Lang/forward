@@ -1,4 +1,5 @@
 :subtitle: Tokenizer vs Parser
+:docinfo: shared
 :relfileprefix: ../
 include::{relfileprefix}README.adoc[tag=preamble]
 
