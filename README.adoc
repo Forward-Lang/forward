@@ -1,4 +1,8 @@
-= forward
+:subtitle: A stack-based programming language.
+
+// tag::preamble[]
+
+= forward: {subtitle}
 Bruno Arias <https://github.com/Bruno-366>
 0.0, Fall 2021: Work in Progress
 :toc:
@@ -6,8 +10,6 @@ Bruno Arias <https://github.com/Bruno-366>
 :toclevels: 3
 
 link:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml[image:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml/badge.svg[asciidoctor-ghpages]]
-
-// tag::preamble[]
 
 A stack-based programming language.
 Powerful Enough, Simple, Correct.
