@@ -11,3 +11,7 @@ include::{relfileprefix}README.adoc[tag=preamble]
 * xref:test-comments.adoc[]
 
 > This file should really be filled automatically, but oh well...
+
++++
+<a href="https://github.com/Bruno-366" rel="me">It's-a-me... Mario!</a>
++++
