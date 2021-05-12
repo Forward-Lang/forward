@@ -3,7 +3,7 @@
 // tag::preamble[]
 
 = forward: {subtitle}
-Bruno Arias link:https://github.com/Bruno-366[Github Profile,rel=me]
+Bruno Arias <https://github.com/Bruno-366>
 0.0, Fall 2021: Work in Progress
 :toc:
 :toc-placement!:
