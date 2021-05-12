@@ -7,3 +7,10 @@ include::{relfileprefix}README.adoc[tag=preamble]
 
 Hello!
 Don't mind me, just testing link:https://utteranc.es/[utterances], A lightweight comments widget built on GitHub issues.
+
+Also added webmentions using 
+ link:https://github.com/PlaidWeb/webmention.js/[webmention.js]
+and
+ link:https://webmention.io/[webmention.io].
+Shout out to Ana Ulin, for creating a clear, concise
+ link:https://anaulin.org/blog/adding-webmentions/[tutorial].
