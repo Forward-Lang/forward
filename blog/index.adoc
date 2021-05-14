@@ -6,9 +6,11 @@ include::{relfileprefix}README.adoc[tag=preamble]
 
 == {subtitle}
 
-* xref:grammar-subsets.adoc[]
-* xref:composing-grammars.adoc[]
-* xref:test-comments.adoc[]
+// order: oldest post first
+
+. xref:test-comments.adoc[]
+. xref:composing-grammars.adoc[]
+. xref:grammar-subsets.adoc[]
 
 > This file should really be filled automatically, but oh well...
 
