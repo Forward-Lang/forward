@@ -1,4 +1,4 @@
-:subtitle: Tokenizer vs Parser
+:subtitle: Grammar subsets
 :docinfo: shared
 :relfileprefix: ../
 include::{relfileprefix}README.adoc[tag=preamble]
@@ -6,6 +6,8 @@ include::{relfileprefix}README.adoc[tag=preamble]
 :relfileprefix:
 
 == {subtitle}
+
+=== Tokenizer vs Parser
 
 consider a more <<general>> grammar allowing all words
 
@@ -28,9 +30,17 @@ bnfplayground:
 * [[[general]]] https://bnfplayground.pauliankline.com/?bnf=%3Cchar%3E%20%3A%3A%3D%20%22a%22%20%7C%20%22b%22%20%7C%20%22c%22%20%7C%20%22d%22%20%7C%20%22e%22%20%7C%20%22f%22%20%7C%20%22g%22%20%7C%20%22h%22%20%7C%20%22i%22%20%7C%20%22j%22%20%7C%20%22k%22%20%7C%20%22l%22%20%7C%20%22m%22%20%7C%20%22n%22%20%7C%20%22o%22%20%7C%20%22p%22%20%7C%20%22q%22%20%7C%20%22r%22%20%7C%20%22s%22%20%7C%20%22t%22%20%7C%20%22u%22%20%7C%20%22v%22%20%7C%20%22w%22%20%7C%20%22x%22%20%7C%20%22y%22%20%7C%20%22z%22%0A%3Cword%3E%20%3A%3A%3D%20%3Cchars%3E%20%22%20%22%0A%3Cchars%3E%20%3A%3A%3D%20%3Cchar%3E%20%3Cchars%3E%20%7C%20%3Cchar%3E%0A%3Cwords%3E%20%3A%3A%3D%20%3Cword%3E%20%3Cwords%3E%20%7C%20%3Cword%3E%0A&name=[link]
 * [[[specific]]] https://bnfplayground.pauliankline.com/?bnf=%3Cword%3E%20%3A%3A%3D%20%22hello%22%20%7C%20%22world%22%20%7C%20%22bye%22%0A%3Csentence%3E%20%3A%3A%3D%20%3Cword%3E%20%22.%22%20%7C%20%3Cword%3E%20%22%20%22%20%3Csentence%3E%0A&name=[link]
 
----
+=== Subsets
 
 We know that the more specific grammar is NOT a subset of the more general grammar, due to the punctuation mark.
+
 However, it would be cool to be able to reason about grammars in such a way.
-In other words, if we removed the period (`<sentence> ::= <word> | <word> " " <sentence>`), could we prove that the specifc grammar is a subset of the more general grammar?
+In other words, if we removed the period (`<sentence> ::= <word> | <word> " " <sentence>`),
+could we prove that the specifc grammar is a subset of the more general grammar?
+
+Let's give a try:
+
+A grammar is <<composing-grammars.adoc#from-wikipedia,formally defined>> as the tuple (𝐍, 𝚺, 𝐏, 𝐒).
+𝐍 is non-terminals, 𝚺 is terminals, 𝐏 is production rules, 𝐒 is the starting symbol.
+
 
