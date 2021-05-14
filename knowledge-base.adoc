@@ -3,6 +3,13 @@
 :toc-placement!:
 
 This is an AsciiDoc footnote:[https://powerman.name/doc/asciidoc] footnote:[https://asciidoc.org/userguide.html] footnote:[https://github.com/powerman/asciidoc-cheatsheet] acting as a knowledge base, of the background research being done while developing <<README.adoc#,forward>>.
+I'm using Wikipedia,
+since it covers a wide range of topics,
+and aligns with the FOSS spirit of being free (ie not behind a paywall) and libre (ie licensed link:https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License[CC BY-SA]).
+
+TIP: If you know of any other source that is free available, and can be accessed by anyone,
+that would be useful as a knowledge source for the this knowledge base,
+then feel free to open up an link:https://github.com/Bruno-366/forward/issues[issue] on the GitHub repository.
 
 toc::[]
 
