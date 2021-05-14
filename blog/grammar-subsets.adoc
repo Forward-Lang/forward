@@ -32,15 +32,21 @@ bnfplayground:
 
 === Subsets
 
-We know that the more specific grammar is NOT a subset of the more general grammar, due to the punctuation mark.
+We know that the more specific grammar is NOT a subset of the more general grammar,
+  due to the punctuation mark.
 
 However, it would be cool to be able to reason about grammars in such a way.
 In other words, if we removed the period (`<sentence> ::= <word> | <word> " " <sentence>`),
-could we prove that the specifc grammar is a subset of the more general grammar?
+  could we prove that the specifc grammar is a subset of the more general grammar?
 
 Let's give a try:
 
 A grammar is <<composing-grammars.adoc#from-wikipedia,formally defined>> as the tuple (𝐍, 𝚺, 𝐏, 𝐒).
 𝐍 is non-terminals, 𝚺 is terminals, 𝐏 is production rules, 𝐒 is the starting symbol.
+Well, right of the bat, we can see the production rules in their current formulation are disjoint,
+  ie the grammars don't have any production rules in common.
+The non-terminals are also disjoint, although one could make the case that
+  (after removing the punctuation mark) the non-terminals of the specific grammar
+  are made up of the non-terminals of the general grammar. 
 
 
