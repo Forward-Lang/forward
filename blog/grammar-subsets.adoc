@@ -11,19 +11,21 @@ include::{relfileprefix}README.adoc[tag=preamble]
 
 consider a more <<general>> grammar allowing all words
 
-```yacc
+[source,yacc]
+----
 <char> ::= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
 <word> ::= <chars> " "
 <chars> ::= <char> <chars> | <char>
 <words> ::= <word> <words> | <word>
-```
+----
 
 or, a more <<specific>> grammar, defining the exactly the words we are going to use
 
-```yacc
+[source,yacc]
+----
 <word> ::= "hello" | "world" | "bye"
 <sentence> ::= <word> "." | <word> " " <sentence>
-```
+----
 
 bnfplayground:
 [bibliography]
@@ -45,8 +47,68 @@ A grammar is <<composing-grammars.adoc#from-wikipedia,formally defined>> as the 
 𝐍 is non-terminals, 𝚺 is terminals, 𝐏 is production rules, 𝐒 is the starting symbol.
 Well, right of the bat, we can see the production rules in their current formulation are disjoint,
   ie the grammars don't have any production rules in common.
-The non-terminals are also disjoint, although one could make the case that
-  (after removing the punctuation mark) the non-terminals of the specific grammar
-  are made up of the non-terminals of the general grammar. 
+The terminals are also disjoint, although one could make the case that
+  (after removing the punctuation mark) the terminals of the specific grammar
+  are made up of the terminals of the general grammar.
+Let's try that, by changing the notational a bit:
 
+==== Subsets of terminals
+
+The general grammar:
+
+----
+CHAR -> a
+CHAR -> b
+CHAR -> c
+CHAR -> d
+CHAR -> e
+CHAR -> f
+CHAR -> g
+CHAR -> h
+CHAR -> i
+CHAR -> j
+CHAR -> k
+CHAR -> l
+CHAR -> m
+CHAR -> n
+CHAR -> o
+CHAR -> p
+CHAR -> q
+CHAR -> r
+CHAR -> s
+CHAR -> t
+CHAR -> u
+CHAR -> v
+CHAR -> w
+CHAR -> x
+CHAR -> y
+CHAR -> z
+WORD -> CHAR " "
+CHARS -> CHAR
+CHARS -> CHAR CHARS
+WORDS -> WORD
+WORDS -> WORD WORDS
+----
+
+Our terminals for the general grammar are clearly all of the lowercase letters of the english alphabet, plus space.
+
+  𝚺 = { a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, " " }
+
+The specific grammar:
+
+----
+WORD -> h e l l o
+WORD -> w o r l d
+WORD -> b y e
+SENTENCE -> WORD
+SENTENCE -> WORD " " SENTENCE
+----
+
+Our terminals for the specific grammar are the following lowercase letters, plus space:
+
+  𝚺' = { b, d, e, h, l, o, r, w, y, " " }
+  
+So clearly: 𝚺' ⊊ 𝚺
+  
+==== Subsets of production rules
 
