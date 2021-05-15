@@ -13,9 +13,9 @@ consider a more <<general>> grammar allowing all words
 
 [source,yacc]
 ----
-<char> ::= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
-<word> ::= <chars> " "
+<char>  ::= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
 <chars> ::= <char> <chars> | <char>
+<word>  ::= <chars> " "
 <words> ::= <word> <words> | <word>
 ----
 
@@ -83,9 +83,9 @@ CHAR -> w
 CHAR -> x
 CHAR -> y
 CHAR -> z
-WORD -> CHAR " "
 CHARS -> CHAR
 CHARS -> CHAR CHARS
+WORD -> CHARS " "
 WORDS -> WORD
 WORDS -> WORD WORDS
 ----
@@ -109,6 +109,35 @@ Our terminals for the specific grammar are the following lowercase letters, plus
   𝚺' = { b, d, e, h, l, o, r, w, y, " " }
   
 So clearly: 𝚺' ⊊ 𝚺
+(the terminals of the specific grammar are a subset of the general grammar's) 
   
-==== Subsets of production rules
+==== Subsets of non-terminals
 
+If we rename the non-terminals rules of the specific grammar,
+  so that they match those of the general grammar:
+
+----
+WORD -> h e l l o
+WORD -> w o r l d
+WORD -> b y e
+WORDS -> WORD
+WORDS -> WORD " " WORDS
+----
+
+So, we had `𝐍' = { WORD, SENTENCE }`.
+Now, we have:
+
+  𝐍' = { WORD, WORDS }
+
+And for the general grammar:
+
+  𝐍 = { CHAR, CHARS, WORD, WORDS }
+
+So clearly: 𝐍' ⊊ 𝐍
+(the non-terminals of the specific grammar are a subset of the general grammar's) 
+
+Here's the
+  link:https://bnfplayground.pauliankline.com/?bnf=%3Cword%3E%20%3A%3A%3D%20%22hello%22%20%7C%20%22world%22%20%7C%20%22bye%22%0A%3Cwords%3E%20%3A%3A%3D%20%3Cword%3E%20%20%7C%20%3Cword%3E%20%22%20%22%20%3Cwords%3E%0A&name=[link]
+to the specifc grammar, without the punctuation marks, and the renamed non-terminals.
+
+==== Subsets of production rules
