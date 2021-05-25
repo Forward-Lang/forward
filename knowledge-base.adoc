@@ -65,6 +65,25 @@ toc::[]
 
 > better to revise the design than persist in a design that does not account for any newly discovered constraints, requirements, or problems
 
+[#incremental-build-model-wikipedia]
+== Incremental build model - Wikipedia footnote:[https://en.wikipedia.org/wiki/Incremental_build_model]
+
+> product is designed, implemented and tested incrementally (a little more is added each time) until the product is finished
+
+> The product is decomposed into a number of components, each of which is designed and built separately
+
+> allows partial utilization of the product and avoids a long development time
+
+> System is broken down into many mini development projects.
+  Partial systems are built to produce the final system.
+  First tackled highest priority requirements.
+
+> As additional functionality is added to the product, problems may arise related to system architecture which were not evident in earlier prototypes
+
+> termed as builds). Each component is delivered to the client when it is complete
+
+> The incremental model applies the waterfall model incrementally
+
 [#cleanroom-software-engineering-wikipedia]
 == Cleanroom software engineering - Wikipedia footnote:[https://en.wikipedia.org/wiki/Cleanroom_software_engineering]
 
