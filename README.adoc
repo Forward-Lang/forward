@@ -7,6 +7,9 @@
 Bruno Arias <https://github.com/Bruno-366>
 0.0, Fall 2021: Work in Progress
 :favicon: {relfileprefix}favicon/favicon.ico
+:sectnums:
+:sectlinks:
+:sectanchors:
 :toc:
 :toc-placement!:
 :toclevels: 3
