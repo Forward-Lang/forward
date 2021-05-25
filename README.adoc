@@ -1,11 +1,12 @@
 :subtitle: A stack-based programming language.
+:relfileprefix:
 
 // tag::preamble[]
 
 = forward: {subtitle}
 Bruno Arias <https://github.com/Bruno-366>
 0.0, Fall 2021: Work in Progress
-:favicon: /favicon/favicon.ico
+:favicon: {relfileprefix}favicon/favicon.ico
 :toc:
 :toc-placement!:
 :toclevels: 3
