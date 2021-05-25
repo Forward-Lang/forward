@@ -155,7 +155,10 @@ include::Evaluation.adoc[leveloffset=+3]
 . Verification
 . Maintenance 
 
-
+We are applying the above "waterfall" process to each Domain Specific Language,
+ in order to avoid <<analysis-paralysis>> and to have something to show.
+This means that forward as a programming language will grow incrementally,
+ as new vocabularies are added.
 
 [bibliography]
 == References
@@ -169,6 +172,7 @@ include::Evaluation.adoc[leveloffset=+3]
 * [[[r4]]] https://github.com/phreda4/r4
 * [[[chainsaw]]] The Unix shell is sometimes referred to as a chainsaw (see `rm -rf *`)
 * [[[simplex]]] https://www.infoq.com/presentations/Simple-Made-Easy/
+* [[[analysis-paralysis]]] xref:knowledge-base.adoc#analysis-paralysis-wikipedia[]
 
 +++
 <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
