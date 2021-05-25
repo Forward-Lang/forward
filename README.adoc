@@ -135,10 +135,6 @@ We are applying the above "waterfall" process to each Domain Specific Language,
 This means that forward as a programming language will grow incrementally,
  as new vocabularies are added.
 
-
-include::Grammar.adoc[leveloffset=+1]
-
-
 == Denotational semantics
 
 
@@ -157,6 +153,7 @@ include::Grammar.adoc[leveloffset=+1]
 
 === Formal definitions
 
+include::Grammar.adoc[leveloffset=+3]
 include::Parser.adoc[leveloffset=+3]
 include::Evaluation.adoc[leveloffset=+3]
 
