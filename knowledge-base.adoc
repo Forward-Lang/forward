@@ -2,11 +2,23 @@
 :toc:
 :toc-placement!:
 
-This is an AsciiDoc footnote:[https://powerman.name/doc/asciidoc] footnote:[https://asciidoc.org/userguide.html] footnote:[https://github.com/powerman/asciidoc-cheatsheet] acting as a knowledge base, of the background research being done while developing <<README.adoc#,forward>>.
+This is an AsciiDoc document
+  footnote:[https://powerman.name/doc/asciidoc]
+  footnote:[https://asciidoc.org/userguide.html]
+  footnote:[https://github.com/powerman/asciidoc-cheatsheet]
+acting as a knowledge base, of the background research being done while developing <<README.adoc#,forward>>.
+
+I'm using Wikipedia,
+since it covers a wide range of topics,
+and aligns with the FOSS spirit of being free (ie not behind a paywall) and libre (ie licensed link:https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License[CC BY-SA]).
+
+TIP: If you know of any other source that is freely available, can be accessed by anyone,
+and that would be useful as a knowledge source for this knowledge base,
+then feel free to open up an link:https://github.com/Bruno-366/forward/issues[issue] on forward's GitHub repository.
 
 toc::[]
 
-
+[#big-design-up-front-wikipedia]
 == Big Design Up Front - Wikipedia footnote:[https://en.wikipedia.org/wiki/Big_Design_Up_Front]
 
 > argue that BDUF is poorly adaptable to changing requirements 
@@ -23,12 +35,14 @@ toc::[]
 
 > much easier to fix a requirements bug in the requirements phase than to fix that same bug in the implementation phase 
 
+[#analysis-paralysis-wikipedia]
 == Analysis paralysis - Wikipedia footnote:[https://en.wikipedia.org/wiki/Analysis_paralysis]
 
 > exceedingly long phases of project planning, requirements gathering, program design, and data modeling, which can create little or no extra value
 
 > Analysis paralysis can also arise from extensive experience or expertise, which serves to increase the number of options and considerations that appear at every decision point.
 
+[#waterfall-model-wikipedia]
 == Waterfall model - Wikipedia footnote:[https://en.wikipedia.org/wiki/Waterfall_model#Model]
 
 > However he also felt it had major flaws stemming from the fact that testing only happened at the end of the process, which he described as being "risky and invites failure".
@@ -51,6 +65,7 @@ toc::[]
 
 > better to revise the design than persist in a design that does not account for any newly discovered constraints, requirements, or problems
 
+[#cleanroom-software-engineering-wikipedia]
 == Cleanroom software engineering - Wikipedia footnote:[https://en.wikipedia.org/wiki/Cleanroom_software_engineering]
 
 > intended to produce software with a certifiable level of reliability
@@ -61,6 +76,7 @@ toc::[]
 
 > Verification that the design correctly implements the specification is performed through team review, often with software tool support
 
+[#formal-methods-wikipedia]
 == Formal methods - Wikipedia footnote:[https://en.wikipedia.org/wiki/Formal_methods]
 
 > Specification
@@ -95,6 +111,7 @@ toc::[]
 
 > TLA+
 
+[#formal-specification-wikipedia]
 == Formal specification - Wikipedia footnote:[https://en.wikipedia.org/wiki/Formal_specification]
 
 > formal specifications are mathematically based
@@ -128,6 +145,7 @@ toc::[]
   specify a system as a structure of mathematical functions
   OBJ, ASL, PLUSS, LARCH, HOL or PVS rely on this paradigm
 
+[#formal-verification-wikipedia]
 == Formal verification - Wikipedia footnote:[https://en.wikipedia.org/wiki/Formal_verification]
 
 > formal verification is the act of proving or disproving the correctness of intended algorithms underlying a system with respect to a certain formal specification
@@ -164,6 +182,7 @@ toc::[]
 
 > use in the software industry is still languishing
 
+[#group-like-structures-wikipedia]
 == Group-like structures - Wikipedia footnote:[https://en.wikipedia.org/wiki/Template:Group-like_structures]
 
 .Group-like structures

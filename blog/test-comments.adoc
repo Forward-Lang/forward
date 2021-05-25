@@ -1,19 +1,16 @@
+:subtitle: test comments
+:docinfo: shared
 :relfileprefix: ../
-
-include::../README.adoc[tag=preamble]
+include::{relfileprefix}README.adoc[tag=preamble]
 
 :relfileprefix:
 
 Hello!
 Don't mind me, just testing link:https://utteranc.es/[utterances], A lightweight comments widget built on GitHub issues.
 
-+++
-<script src="https://utteranc.es/client.js"
-        repo="bruno-366/forward"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
-+++
+Also added webmentions using 
+ link:https://github.com/PlaidWeb/webmention.js/[webmention.js]
+and
+ link:https://webmention.io/[webmention.io].
+Shout out to Ana Ulin, for creating a clear, concise
+ link:https://anaulin.org/blog/adding-webmentions/[tutorial].

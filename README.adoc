@@ -1,12 +1,16 @@
-= forward
+:subtitle: A stack-based programming language.
+
+// tag::preamble[]
+
+= forward: {subtitle}
+Bruno Arias <https://github.com/Bruno-366>
+0.0, Fall 2021: Work in Progress
 :favicon: ./favicon/favicon.ico
 :toc:
 :toc-placement!:
 :toclevels: 3
 
 link:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml[image:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml/badge.svg[asciidoctor-ghpages]]
-
-// tag::preamble[]
 
 A stack-based programming language.
 Powerful Enough, Simple, Correct.
@@ -57,8 +61,35 @@ https://github.com/manoelcampos/asciidoctor-ghpages-action
 
 == Quotes
 
-[quote, Antoine de Saint Exupéry]
-In anything at all, perfection is finally attained not when there is no longer anything to add, but when there is no longer anything to take away, when a body has been stripped down to its nakedness.
+.From a French writer, poet and aviator:
+
+"In anything at all,
+perfection is finally attained not when there is no longer anything to add,
+but when there is no longer anything to take away,
+when a body has been stripped down to its nakedness."
+-- Antoine de Saint Exupéry, Terre des Hommes (1939)
+
+.From an abstract expressionist painter:
+
+"The ability to simplify means to eliminate the unnecessary so that the necessary may speak."
+-- Hans Hofmann
+
+.From a computer science professor:
+
+"If you cannot grok the overall structure of a program while taking a shower,
+you are not ready to code it."
+-- Richard E. Pattis
+
+.From a pioneer in computer science:
+
+"The purpose of abstraction is not to be vague,
+but to create a new semantic level in which one can be absolutely precise."
+-- Edsger W. Dijkstra, The Humble Programmer (1972)
+
+.From a software engineer:
+
+"Walking on water and developing software from a specification are easy if both are frozen."
+-- Edward V. Berard, Essays on object-oriented software engineering (1993)
 
 ---
 
@@ -139,5 +170,12 @@ include::Evaluation.adoc[leveloffset=+3]
 * [[[simplex]]] https://www.infoq.com/presentations/Simple-Made-Easy/
 
 +++
-<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This README is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc/4.0/88x31.png" />
+</a>
+<br />
+This README is licensed under a
+<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
+  Creative Commons Attribution-NonCommercial 4.0 International License
+</a>.
 +++
