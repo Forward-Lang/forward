@@ -120,6 +120,21 @@ Currently being inspired mainly by:
 * Numerical semantics of <<APL>>
 * Textual semantics of the unix shell.
 
+== <<Waterfall>> process | https://github.com/Bruno-366/forward/milestones?direction=asc&sort=title[Milestones]
+
+. Integration Requirements
+. Feature Design
+. Properties
+. Specification
+. Implementation
+. Verification
+. Maintenance 
+
+We are applying the above "waterfall" process to each Domain Specific Language,
+ in order to avoid <<analysis-paralysis>> and to have something to show.
+This means that forward as a programming language will grow incrementally,
+ as new vocabularies are added.
+
 
 include::Grammar.adoc[leveloffset=+1]
 
@@ -145,20 +160,6 @@ include::Grammar.adoc[leveloffset=+1]
 include::Parser.adoc[leveloffset=+3]
 include::Evaluation.adoc[leveloffset=+3]
 
-== <<Waterfall>> process | https://github.com/Bruno-366/forward/milestones?direction=asc&sort=title[Milestones]
-
-. Integration Requirements
-. Feature Design
-. Properties
-. Specification
-. Implementation
-. Verification
-. Maintenance 
-
-We are applying the above "waterfall" process to each Domain Specific Language,
- in order to avoid <<analysis-paralysis>> and to have something to show.
-This means that forward as a programming language will grow incrementally,
- as new vocabularies are added.
 
 [bibliography]
 == References
