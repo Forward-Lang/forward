@@ -1,4 +1,5 @@
 = forward
+:favicon: ./favicon/favicon.ico
 :toc:
 :toc-placement!:
 :toclevels: 3
