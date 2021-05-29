@@ -141,6 +141,7 @@ This means that forward as a programming language will grow incrementally,
 == Semantics
  
 Some general properties we want are:
+
 * decidability,
 * invertability (bijections),
 * tractable problem
