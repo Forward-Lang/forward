@@ -138,10 +138,14 @@ We are applying the above "waterfall" process to each Domain Specific Language,
 This means that forward as a programming language will grow incrementally,
  as new vocabularies are added.
 
-== Denotational semantics
+== Semantics
+ 
+Some general properties we want are:
+* decidability,
+* invertability (bijections),
+* tractable problem
 
-
-=== Informal definitions
+=== Informal denotational definitions
 
 * Dictionary
 * Atoms/Elements:
