@@ -21,8 +21,8 @@ include::{relfileprefix}README.adoc[tag=preamble]
 
 === Defining arity
 
- f(x) = x + 5           <1>
- g(x,y) = x + y         <2>
+ f(x) = x + 5          <1>
+ g(x,y) = x + y        <2>
  h(x1,x2...xn) = ∑ xn  <3>
 
 <1> function f of arity 1
@@ -31,8 +31,11 @@ include::{relfileprefix}README.adoc[tag=preamble]
 
 In a stack-based language:
 
- : a ( -- ) b c ;           <1>
- : a ( -- ) b c ;           <1>
- : a ( -- ) b c ;           <1>
+ : add  ( a b -- c ) + ;           <1>
+ : add5 ( a -- c ) 5 + ;           <2>
+
+<1> word `add` of arity 2
+<2> word `add5` of arity 1
+
 
 curried functions:
