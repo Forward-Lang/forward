@@ -7,7 +7,7 @@ include::{relfileprefix}README.adoc[tag=preamble]
 
 == {subtitle}
 
-== Signature (logic) - Wikipedia footnote:[<https://en.wikipedia.org/wiki/Signature_(logic)>]
+=== Signature (logic) - Wikipedia footnote:[<https://en.wikipedia.org/wiki/Signature_(logic)>]
 
 > Formally, a (single-sorted) signature can be defined as a triple σ = (Sfunc, Srel, ar)
 > Sfunc and Srel are disjoint sets
@@ -19,3 +19,20 @@ include::{relfileprefix}README.adoc[tag=preamble]
 > A signature with no function symbols is called a relational signature +
 > A signature with no relation symbols is called an algebraic signature
 
+=== Defining arity
+
+ f(x)           <1>
+ f(x,y)         <2>
+ f(x1,x2...xn)  <3>
+
+<1> function of arity 1
+<2> function of arity 2
+<3> function of arity n
+
+In a stack-based language:
+
+ : a ( -- ) b c ;           <1>
+ : a ( -- ) b c ;           <1>
+ : a ( -- ) b c ;           <1>
+
+curried functions:
