@@ -11,6 +11,7 @@ include::{relfileprefix}README.adoc[tag=preamble]
 * xref:1-test-comments.adoc[]
 * xref:2-composing-grammars.adoc[]
 * xref:3-grammar-subsets.adoc[]
+* xref:4-arity.adoc[]
 
 > This file should really be filled automatically, but oh well...
 
