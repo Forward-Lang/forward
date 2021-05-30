@@ -16,7 +16,7 @@ toc::[]
 
 === From Wikipedia:
 
-In the classic formalization of generative grammars first proposed by Noam Chomsky in the 1950s, a grammar 𝐆 consists of the following components:
+A grammar 𝐆 consists of the following components:
   footnote:[https://en.wikipedia.org/wiki/Formal_grammar#The_syntax_of_grammars]
 
 * A finite set 𝐍 of nonterminal symbols, that is disjoint with the strings formed from 𝐒.
