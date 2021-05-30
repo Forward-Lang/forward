@@ -134,7 +134,7 @@ Currently being inspired mainly by:
 . Maintenance 
 
 We are applying the above "waterfall" process to each Domain Specific Language,
- in order to avoid <<analysis-paralysis>> and to have something to show.
+ in order to somewhat avoid <<analysis-paralysis>> and to have something to show.
 This means that forward as a programming language will grow incrementally,
  as new vocabularies are added.
 
