@@ -1,4 +1,4 @@
-:subtitle: Composing grammars
+:subtitle: Production Rules
 :docinfo: shared
 :relfileprefix: ../
 include::{relfileprefix}README.adoc[tag=preamble]
