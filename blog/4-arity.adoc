@@ -1,0 +1,41 @@
+:subtitle: Arity
+:docinfo: shared
+:relfileprefix: ../
+include::{relfileprefix}README.adoc[tag=preamble]
+
+:relfileprefix:
+
+== {subtitle}
+
+=== Signature (logic) - Wikipedia footnote:[<https://en.wikipedia.org/wiki/Signature_(logic)>]
+
+> Formally, a (single-sorted) signature can be defined as a triple σ = (Sfunc, Srel, ar)
+> Sfunc and Srel are disjoint sets
+>
+> * function symbols (examples: +, ×, 0, 1)
+> * relation symbols or predicates (examples: ≤, ∈)
+> * a function ar: Sfunc ∪ Srel → ℕ which assigns a natural number called arity to every function or relation symbol
+
+> A signature with no function symbols is called a relational signature +
+> A signature with no relation symbols is called an algebraic signature
+
+=== Defining arity
+
+ f(x) = x + 5          <1>
+ g(x,y) = x + y        <2>
+ h(x1,x2...xn) = ∑ xn  <3>
+
+<1> function f of arity 1
+<2> function g of arity 2
+<3> function h of arity n
+
+In a stack-based language:
+
+ : add  ( a b -- c ) + ;           <1>
+ : add5 ( a -- c ) 5 + ;           <2>
+
+<1> word `add` of arity 2
+<2> word `add5` of arity 1
+
+
+curried functions:
