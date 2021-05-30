@@ -15,6 +15,7 @@ Bruno Arias <https://github.com/Bruno-366>
 :toclevels: 3
 
 link:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml[image:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml/badge.svg[asciidoctor-ghpages]]
+image:https://img.shields.io/tokei/lines/github/bruno-366/forward[Lines of code]
 
 A stack-based programming language.
 Powerful Enough, Simple, Correct.
