@@ -118,5 +118,6 @@ and 𝐒'' is the only starting symbol
 
 
 ****
-xref:2.1-incomplete-spec.adoc[include::2.1-incomplete-spec.adoc[lines=9..-1]]
+xref:2.1-incomplete-spec.adoc[]
+include::2.1-incomplete-spec.adoc[lines=9..-1]
 ****
