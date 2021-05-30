@@ -14,7 +14,9 @@ Just as the natural numbers alone don't do much,
  but addition over the natural numbers,
  all of the sudden has much more meaning/use. 
 
-> ie: The set of integers under addition (Z,+) forms an abelian group,
+.Integers under Addition
+[example]
+The set of integers under addition (Z,+) forms an abelian group,
  that has the property of closure, associativity and commutativity;
  as well as having an identity element and inverse element.
 
@@ -22,7 +24,7 @@ Additionally in the above notation,
  concatenation is implicit (by the juxtaposition of terminals/non-terminals)
  and alternation is sort of explicit (by defining another production rule with the same non-terminal on the LHS).
 
-> NB: the problem with alternation is that it makes the grammar ambiguous:
+NOTE: the problem with alternation is that it makes the grammar ambiguous:
  if I have two production rule with the same non-terminal on the LHS,
  which one should I take?
 Parsing expression grammar solve this by using ordered choice, ie pick the first matching choice.
