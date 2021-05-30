@@ -20,6 +20,7 @@ A stack-based programming language.
 Powerful Enough, Simple, Correct.
 
 Documentation:
+- link:https://github.com/Bruno-366/forward[Repo]
 - link:https://bruno-366.github.io/forward/[Website]
 - xref:blog/index.adoc#[Development Blog]
 - xref:knowledge-base.adoc#[Knowledge Base]
