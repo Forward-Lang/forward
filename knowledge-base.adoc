@@ -27,12 +27,21 @@ This book is concise and to the point,
 
 * [[[forth,Starting FORTH]]]
 ** book online: https://www.forth.com/starting-forth/
+
 * [[[SICP,Structure and Interpretation of Computer Programs]]]
 ** book online: https://mitpress.mit.edu/sites/default/files/sicp/index.html
 ** lectures: http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/
-* [[[LP,the Little Prover]]]
-** https://the-little-prover.github.io/
-* [[[LL,the little LISPer]]] renamed to the little Schemer
+
+* [[[htdp,How to Design Programs]]]
+** book online: http://htdp.org/
+
+[bibliography]
+.link:https://mitpress.mit.edu/contributors/daniel-p-friedman[Books by Daniel P. Friedman]
+
+* [[[LL,The Little LISPer]]] (renamed to The Little Schemer)
+* [[[LT,The Reasoned Schemer]]] Implement and use an elegant little programming language for logic programming
+* [[[LT,The Little Typer]]] An introduction to dependent types
+* [[[LP,The Little Prover]]] An introduction to writing proofs about computer programs
 
 toc::[]
 
