@@ -43,6 +43,13 @@ This book is concise and to the point,
 * [[[LT,The Little Typer]]] An introduction to dependent types
 * [[[LP,The Little Prover]]] An introduction to writing proofs about computer programs
 
+[bibliography]
+.link:https://softwarefoundations.cis.upenn.edu/[The Software Foundations series]
+
+* [[[SF1,Logical Foundations]]]
+* [[[SF2,Programming Language Foundations]]]
+* [[[SF6,Separation Logic Foundations]]]
+
 toc::[]
 
 [#big-design-up-front-wikipedia]
