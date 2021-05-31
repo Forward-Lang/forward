@@ -16,6 +16,24 @@ TIP: If you know of any other source that is freely available, can be accessed b
 and that would be useful as a knowledge source for this knowledge base,
 then feel free to open up an link:https://github.com/Bruno-366/forward/issues[issue] on forward's GitHub repository.
 
+== Recommended Books
+
+I would recommend <<forth>>, regardless of whether you're 5 or 80.
+This book is concise and to the point,
+ and introduces in a really intuitive way concepts whithin computing that aren't neccessarily obvious.
+
+[bibliography]
+.Links to the books:
+
+* [[[forth,Starting FORTH]]]
+** book online: https://www.forth.com/starting-forth/
+* [[[SICP,Structure and Interpretation of Computer Programs]]]
+** book online: https://mitpress.mit.edu/sites/default/files/sicp/index.html
+** lectures: http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/
+* [[[LP,the Little Prover]]]
+** https://the-little-prover.github.io/
+* [[[LL,the little LISPer]]] renamed to the little Schemer
+
 toc::[]
 
 [#big-design-up-front-wikipedia]
