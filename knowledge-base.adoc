@@ -31,6 +31,7 @@ This book is concise and to the point,
 * [[[htdp,How to Design Programs]]] http://htdp.org/
 * [[[nand2tetris,From Nand to Tetris]]] https://www.nand2tetris.org/course
   with lectures
+* [[[oberon,Project Oberon]]] http://www.projectoberon.com/  
 
 [bibliography]
 .link:https://mitpress.mit.edu/contributors/daniel-p-friedman[Books by Daniel P. Friedman]
