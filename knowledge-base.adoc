@@ -25,17 +25,12 @@ This book is concise and to the point,
 [bibliography]
 .Links to the books:
 
-* [[[forth,Starting FORTH]]]
-** book online: https://www.forth.com/starting-forth/
-
-* [[[SICP,Structure and Interpretation of Computer Programs]]]
-** book online: https://mitpress.mit.edu/sites/default/files/sicp/index.html
-** lectures: http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/
-
-* [[[htdp,How to Design Programs]]]
-** book online: http://htdp.org/
-
+* [[[forth,Starting FORTH]]] https://www.forth.com/starting-forth/
+* [[[SICP,Structure and Interpretation of Computer Programs]]] https://mitpress.mit.edu/sites/default/files/sicp/index.html
+  with link:http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/[lectures]
+* [[[htdp,How to Design Programs]]] http://htdp.org/
 * [[[nand2tetris,From Nand to Tetris]]] https://www.nand2tetris.org/course
+  with lectures
 
 [bibliography]
 .link:https://mitpress.mit.edu/contributors/daniel-p-friedman[Books by Daniel P. Friedman]
