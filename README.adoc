@@ -10,9 +10,11 @@ Bruno Arias <https://github.com/Bruno-366>
 :sectnums:
 :sectlinks:
 :sectanchors:
-:toc:
-:toc-placement!:
 :toclevels: 3
+:toc: left
+ifdef::env-github[]
+:toc: preamble
+endif::[]
 
 link:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml[image:https://github.com/Bruno-366/forward/actions/workflows/asciidoctor-ghpages.yml/badge.svg[asciidoctor-ghpages]]
 image:https://img.shields.io/tokei/lines/github/bruno-366/forward[Lines of code]
@@ -96,10 +98,6 @@ but to create a new semantic level in which one can be absolutely precise."
 
 "Walking on water and developing software from a specification are easy if both are frozen."
 -- Edward V. Berard, Essays on object-oriented software engineering (1993)
-
----
-
-toc::[]
 
 == Goals
 
