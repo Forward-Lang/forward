@@ -123,7 +123,7 @@ Currently being inspired mainly by:
 * Numerical semantics of <<APL>>
 * Textual semantics of the unix shell.
 
-== <<Waterfall>> process | https://github.com/Bruno-366/forward/milestones?direction=asc&sort=title[Milestones]
+== <<Waterfall>> process | https://github.com/Forward-Lang/forward/milestones?direction=asc&sort=title[Milestones]
 
 . Integration Requirements
 . Feature Design
