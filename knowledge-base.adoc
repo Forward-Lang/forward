@@ -14,7 +14,7 @@ and aligns with the FOSS spirit of being free (ie not behind a paywall) and libr
 
 TIP: If you know of any other source that is freely available, can be accessed by anyone,
 and that would be useful as a knowledge source for this knowledge base,
-then feel free to open up an link:https://github.com/Bruno-366/forward/issues[issue] on forward's GitHub repository.
+then feel free to open up an link:https://github.com/Forward-Lang/forward/issues[issue] on forward's GitHub repository.
 
 == Recommended Books
 
