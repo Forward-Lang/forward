@@ -18,14 +18,20 @@ then feel free to open up an link:https://github.com/Forward-Lang/forward/issues
 
 == Recommended Books
 
-I would recommend <<forth>>, regardless of whether you're 5 or 80.
+I would recommend <<sf>>, regardless of whether you're 5 or 80.
 This book is concise and to the point,
  and introduces in a really intuitive way concepts whithin computing that aren't neccessarily obvious.
+For historical background I would recommend <<POL>>,
+ written by Charles Moore slighty after he had created the first versions of forth.
+It covers some subjects not covered by <<sf>>.
+For instance,
+ I would argue that chapter 7 goes into territory that would nowadays be covered by books on operating system development.
 
 [bibliography]
 .Links to the books:
 
-* [[[forth,Starting FORTH]]] https://www.forth.com/starting-forth/
+* [[[sf,Starting FORTH]]] https://www.forth.com/starting-forth/
+* [[[POL,Programming a Problem-oriented Language]]] http://forth.org/POL.pdf
 * [[[SICP,Structure and Interpretation of Computer Programs]]] https://mitpress.mit.edu/sites/default/files/sicp/index.html
   with link:http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/[lectures]
 * [[[htdp,How to Design Programs]]] http://htdp.org/
