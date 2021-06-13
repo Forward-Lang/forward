@@ -30,14 +30,18 @@ For instance,
 [bibliography]
 .Links to the books:
 
-* [[[sf,Starting FORTH]]] https://www.forth.com/starting-forth/
-* [[[POL,Programming a Problem-oriented Language]]] http://forth.org/POL.pdf
 * [[[SICP,Structure and Interpretation of Computer Programs]]] https://mitpress.mit.edu/sites/default/files/sicp/index.html
   with link:http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/[lectures]
 * [[[htdp,How to Design Programs]]] http://htdp.org/
 * [[[nand2tetris,From Nand to Tetris]]] https://www.nand2tetris.org/course
   with lectures
 * [[[oberon,Project Oberon]]] http://www.projectoberon.com/  
+
+[bibliography]
+.Forth books:
+
+* [[[sf,Starting FORTH]]] https://www.forth.com/starting-forth/
+* [[[POL,Programming a Problem-oriented Language]]] http://forth.org/POL.pdf
 
 [bibliography]
 .link:https://mitpress.mit.edu/contributors/daniel-p-friedman[Books by Daniel P. Friedman]
