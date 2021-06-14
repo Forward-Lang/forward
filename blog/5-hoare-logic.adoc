@@ -1,0 +1,28 @@
+:subtitle: Hoare Logic
+:hardbreaks-option:
+:docinfo: shared
+:relfileprefix: ../
+include::{relfileprefix}README.adoc[tag=preamble]
+
+:relfileprefix:
+
+[source,factor]
+----
+: add5 ( a -- b ) 5 + ;
+----
+
+in forth everything between the parenthesis are just comments
+in factor they are sort-of type checked, just probably not the way you're used to.
+
+[source,factor]
+----
+: add5 ( num -- num ) 5 + ;
+----
+
+adding subtypes
+what if we could have refinement types? ie add predicates/conditions/constraints to the types?
+
+[source,factor]
+----
+: add5 ( num -- num > 5 ) 5 + ;
+----
