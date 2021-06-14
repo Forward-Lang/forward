@@ -1,10 +1,12 @@
 :subtitle: Hoare Logic
-:hardbreaks-option:
 :docinfo: shared
 :relfileprefix: ../
 include::{relfileprefix}README.adoc[tag=preamble]
 
 :relfileprefix:
+:hardbreaks-option:
+
+== {subtitle}
 
 [source,factor]
 ----
