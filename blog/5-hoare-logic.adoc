@@ -1,4 +1,4 @@
-:subtitle: Hoare Logic
+:subtitle: Hoare Logic and CoC
 :docinfo: shared
 :relfileprefix: ../
 include::{relfileprefix}README.adoc[tag=preamble]
@@ -7,6 +7,23 @@ include::{relfileprefix}README.adoc[tag=preamble]
 :hardbreaks-option:
 
 == {subtitle}
+
+First, let's get things out of the way:
+Haha, it sounds like whore logic and cock.
+Moving on...
+
+CoC is the Calculus of Contructions,
+and Hoare logic is named after its inventor Sir Tony Hoare.
+
+=== Hoare Logic/Triples
+
+Hoare triples consists of
+
+  pre-condition (implementation) post-condition
+  
+It is usually used in design by contract, by using asserts which are checked at runtime.
+
+=== Hoare Logic and Concatenative languages
 
 [source,factor]
 ----
@@ -28,3 +45,29 @@ what if we could have refinement types? ie add predicates/conditions/constraints
 ----
 : add5 ( num -- num > 5 ) 5 + ;
 ----
+
+=== Implementation: Hoare triples
+
+If I had to implemnt it I would make the triples explicit,
+ rather than embedded as comments with a specific syntax `( -- )`
+ 
+[source,factor]
+----
+! something like this:
+
+[ pre-condition ]
+[ implementation ]
+[ post-condition ]
+name DEFINE.
+
+! for example
+
+[ is-num? ]
+[ 5 + ]
+[ is-num? 5 greater-than ]
+add5 DEFINE.
+----
+
+=== CoC
+
+Calculus of Contructions is the type theory used by Coq
