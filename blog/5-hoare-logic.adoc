@@ -12,14 +12,17 @@ First, let's get things out of the way:
 Haha, it sounds like whore logic and cock.
 Moving on...
 
-CoC is the Calculus of Contructions,
-and Hoare logic is named after its inventor Sir Tony Hoare.
+CoC is the Calculus of Contructions,  footnote:[https://en.wikipedia.org/wiki/Calculus_of_constructions]
+and Hoare logic is named after its inventor Sir Tony Hoare.  footnote:[https://en.wikipedia.org/wiki/Hoare_logic]
 
 === Hoare Logic/Triples
 
-Hoare triples consists of
+Hoare triples consists of:
+a pre-condition,
+an implementation, and
+a post-condition.
 
-  pre-condition (implementation) post-condition
+  {P}C{Q}
   
 It is usually used in design by contract, by using asserts which are checked at runtime.
 
