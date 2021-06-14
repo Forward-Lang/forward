@@ -7,7 +7,6 @@
 Bruno Arias <https://github.com/Bruno-366>
 0.0, Fall 2021: Work in Progress
 :favicon: {relfileprefix}favicon/favicon.ico
-:reproducible:
 :sectlinks:
 :sectanchors:
 :toclevels: 3
@@ -16,6 +15,7 @@ ifdef::env-github[]
 :sectnums:
 endif::[]
 :toc: preamble
+:nofooter:
 
 link:https://github.com/Forward-Lang/forward/actions/workflows/asciidoctor-ghpages.yml[image:https://github.com/Forward-Lang/forward/actions/workflows/asciidoctor-ghpages.yml/badge.svg[asciidoctor-ghpages]]
 image:https://img.shields.io/tokei/lines/github/bruno-366/forward[Lines of code]
