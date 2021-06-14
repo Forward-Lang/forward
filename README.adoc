@@ -1,21 +1,21 @@
 :subtitle: A stack-based programming language.
 :relfileprefix:
+:sectnums:
 
 // tag::preamble[]
 
 = forward: {subtitle}
 Bruno Arias <https://github.com/Bruno-366>
 0.0, Fall 2021: Work in Progress
+:nofooter:
 :favicon: {relfileprefix}favicon/favicon.ico
 :sectlinks:
 :sectanchors:
 :toclevels: 3
 :toc: left
 ifdef::env-github[]
-:sectnums:
 endif::[]
 :toc: preamble
-:nofooter:
 
 link:https://github.com/Forward-Lang/forward/actions/workflows/asciidoctor-ghpages.yml[image:https://github.com/Forward-Lang/forward/actions/workflows/asciidoctor-ghpages.yml/badge.svg[asciidoctor-ghpages]]
 image:https://img.shields.io/tokei/lines/github/bruno-366/forward[Lines of code]
