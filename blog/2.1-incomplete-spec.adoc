@@ -8,6 +8,7 @@ include::{relfileprefix}README.adoc[tag=preamble]
 == {subtitle}
 
 I would actually argue that the definition from Wikipedia isn't complete.
+  footnote:[https://en.wikipedia.org/wiki/Formal_grammar]
 (𝐍, 𝚺, 𝐏, 𝐒) is just the data,
  → is the operator over that data. 
 Just as the natural numbers alone don't do much,
@@ -22,9 +23,18 @@ The set of integers under addition (Z,+) forms an abelian group,
  as well as having an identity element and inverse element.
 ====
 
-Additionally in the above notation,
- concatenation is implicit (by the juxtaposition of terminals/non-terminals)
- and alternation is sort of explicit (by defining another production rule with the same non-terminal on the LHS).
+Additionally in this notation:
+
+<1> concatenation is implicit (by the juxtaposition of terminals/non-terminals), and
+<2> alternation is sort of explicit (by defining another production rule with the same non-terminal on the LHS).
+
+----
+S → aaB            <1> <2>
+S → abc            <2>
+B → c
+----
+
+In BNF alternation is explicit (with `|`), while in EBNF both alternation and concatenation is explicit (with `|` and `,`).
 
 .Alternation and Ambiguity
 [NOTE]
@@ -35,6 +45,6 @@ The problem with alternation is that it makes the grammar ambiguous:
 Parsing expression grammar solve this by using ordered choice, ie pick the first matching choice.
 ====
 
-In BNF alternation is explicit (with `|`), while in EBNF both alternation and concatenation is explicit (with `|` and `,`).
-
 I would argue that there is yet another operator missing and that is the expansion of non-terminals on the RHS of a production rule.
+
+   P ⇒ Q ?
