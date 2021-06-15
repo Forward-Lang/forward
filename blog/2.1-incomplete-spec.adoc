@@ -51,7 +51,9 @@ I would argue that there is yet another operator missing and that is the expansi
 
 ---
 
-Thinking about it further → probably isn't an opertor, rather it is an relation.
+Thinking about it further;
+ → probably isn't an opertor,
+ rather it is an relation.
 Compare it to the equivalence relation `=` (ie, "equals") in normal algebra:
 
 .Equals in normal algebra
