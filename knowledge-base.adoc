@@ -1,5 +1,6 @@
 :subtitle: Knowledge base
-include::README.adoc[tag=preamble]
+:relfileprefix: ./
+include::{relfileprefix}README.adoc[tag=preamble]
 
 == {subtitle}
 
