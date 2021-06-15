@@ -48,3 +48,48 @@ Parsing expression grammar solve this by using ordered choice, ie pick the first
 I would argue that there is yet another operator missing and that is the expansion of non-terminals on the RHS of a production rule.
 
    P ⇒ Q ?
+
+---
+
+Thinking about it further → probably isn't an opertor, rather it is an relation.
+Compare it to the equivalence relation `=` (ie, "equals") in normal algebra:
+
+.Equals in normal algebra
+[example]
+----
+y = 1 + x    ⇒ 6
+x = 2 + 3    ⇒ 5
+----
+
+.Production rule in formal grammars
+[example]
+----
+S → aA   ⇒ abc
+A → bc   ⇒ bc
+----
+
+Luckily for us,
+ just because a symbol is a relation rather than an operator,
+ doesn't mean it doesn't have any properties.
+
+For equality:
+ footnote:[https://en.wikipedia.org/wiki/Equality_(mathematics)#Basic_properties]
+ 
+* Substitution property: For any quantities a and b and any expression F(x), if a = b, then F(a) = F(b) (provided that both sides are well-formed).
+** Some specific examples of this are:
+** For any real numbers a, b, and c, if a = b, then a + c = b + c (here, F(x) is x + c);
+** For any real numbers a, b, and c, if a = b, then a − c = b − c (here, F(x) is x − c);
+** For any real numbers a, b, and c, if a = b, then ac = bc (here, F(x) is xc);
+** For any real numbers a, b, and c, if a = b and c is not zero, then a/c = b/c (here, F(x) is x/c).
+* Reflexive property: For any quantity a, a = a.
+* Symmetric property: For any quantities a and b, if a = b, then b = a.
+* Transitive property: For any quantities a, b, and c, if a = b and b = c, then a = c.
+
+In a type-0 grammar:
+ footnote:[https://en.wikipedia.org/wiki/Chomsky_hierarchy#The_hierarchy]
+
+* `a → a` or `S → S` might be valid, which is the Reflexive property.
+* `S → a` and `a → S` might be valid, which is the Symmetric property.
+* `S → a` and `a → B` and `B → c` then `S → c` might be valid, which is the Transitive property.
+** `S → B` and `B → a` then `S → a`. This is valid even in type-3 grammars (regular grammars)
+
