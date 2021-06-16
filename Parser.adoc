@@ -2,7 +2,8 @@
 
 WARNING: work in progress
 
-[dot]
+[graphviz]
+[source,dot]
 ----
 digraph D {
   input -> "\"open quote" -> "\"close quote" -> string
