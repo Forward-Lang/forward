@@ -1,4 +1,5 @@
 = Grammar
+:source-highlighter: pygments
 
 WARNING: work in progress
 
