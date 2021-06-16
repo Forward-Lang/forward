@@ -2,9 +2,11 @@
 
 WARNING: work in progress
 
+// This diagram is rendered by asciidoctor-diagram
+// However using this would also work https://kroki.io/
+
 [ditaa]
 ----
-
 Word being defined
 +-------------------------+
 | : add5 ( x -- x ) 5 + ; | 
