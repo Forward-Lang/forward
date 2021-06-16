@@ -22,7 +22,7 @@ include::{relfileprefix}README.adoc[tag=preamble]
 
 === Defining arity
 
-[stem]
+[latexmath]
 ++++
 f(x) = x + 5 sqrt x          <1> \
 g(x,y) = x + y        <2> \
