@@ -3,7 +3,6 @@
 WARNING: work in progress
 
 [graphviz]
-[source,dot]
 ----
 digraph D {
   input -> "\"open quote" -> "\"close quote" -> string
