@@ -19,7 +19,7 @@ endif::[]
 :toc: preamble
 
 link:https://github.com/Forward-Lang/forward/actions/workflows/asciidoctor-ghpages.yml[image:https://github.com/Forward-Lang/forward/actions/workflows/asciidoctor-ghpages.yml/badge.svg[asciidoctor-ghpages]]
-image:https://img.shields.io/tokei/lines/github/bruno-366/forward[Lines of code]
+image:https://img.shields.io/tokei/lines/github/Forward-Lang/forward[Lines of code]
 
 A stack-based programming language.
 Powerful Enough, Simple, Correct.
