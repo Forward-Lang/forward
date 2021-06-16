@@ -25,14 +25,14 @@ The set of integers under addition (Z,+) forms an abelian group,
 
 Additionally in this notation:
 
-<1> concatenation is implicit (by the juxtaposition of terminals/non-terminals), and
-<2> alternation is sort of explicit (by defining another production rule with the same non-terminal on the LHS).
-
 ----
 S → aaB            <1> <2>
 S → abc            <2>
 B → c
 ----
+
+<1> concatenation is implicit (by the juxtaposition of terminals/non-terminals), and
+<2> alternation is sort of explicit (by defining another production rule with the same non-terminal on the LHS).
 
 In BNF alternation is explicit (with `|`), while in EBNF both alternation and concatenation is explicit (with `|` and `,`).
 
