@@ -2,7 +2,7 @@
 
 WARNING: work in progress
 
-[source,dot]
+[dot]
 ----
 digraph D {
   input -> "\"open quote" -> "\"close quote" -> string
@@ -13,7 +13,3 @@ digraph D {
   input -> "\" \"open space" -> "\" \"close space" -> word  
 }
 ----
-
-image:https://kroki.io/graphviz/svg/eNp1zkEKwjAUhOF9TzFk05VXcOUtWhfPNLTBksSXBBHp3X2YRKji9mc-mMnOTGHBCc8OsC7khMOxU6PywTjcsk9GSYEUvfpoapKxxJjYunkP-x_Y_4PAng5vemHSV5MqPhfcYuHETI9vrVBPx0D6cxrtd6nF3z1PwrcX9XhK3Q==[]
-
-
