@@ -48,3 +48,6 @@ jobs:
           # but just using the asciidoctor-revealjs command.
           # In order to generate only the slides.html instead of the regular html files, set this config to true.
           slides_skip_asciidoctor_build: false
+          # Any arbitrary shell command to be executed after the asciidoc build is complete
+          # and before committing changes on gh-pages branch. Optional
+          post_build: 'git add -f *.png *.svg'
