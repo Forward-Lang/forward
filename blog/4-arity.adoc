@@ -24,8 +24,8 @@ include::{relfileprefix}README.adoc[tag=preamble]
 
 [latexmath]
 ++++
-f(x) = x + 5 sqrt x          <1> \
-g(x,y) = x + y        <2> \
+f(x) = x + 5 \sqrt x    <1> 
+g(x,y) = x + y        <2> 
 h(x1,x2...xn) = ∑ xn  <3> 
 ++++
 
