@@ -50,7 +50,7 @@ S -> a
 forward's level 1 grammar, (using the <<BNF-playground>> based on <<Nearly>>):
 
 
-[source,python]
+[source,ebnf]
 ----
 /* limiting the syntax to the ASCII charset */
 
