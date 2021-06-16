@@ -20,6 +20,8 @@ endif::[]
 
 link:https://github.com/Forward-Lang/forward/actions/workflows/asciidoctor-ghpages.yml[image:https://github.com/Forward-Lang/forward/actions/workflows/asciidoctor-ghpages.yml/badge.svg[asciidoctor-ghpages]]
 image:https://img.shields.io/tokei/lines/github/Forward-Lang/forward[Lines of code]
+link:https://github.com/Forward-Lang/forward[image:https://tokei.rs/b1/github/Forward-Lang/forward[]]
+
 
 A stack-based programming language.
 Powerful Enough, Simple, Correct.
