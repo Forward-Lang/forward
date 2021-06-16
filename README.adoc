@@ -8,6 +8,7 @@
 Bruno Arias <https://github.com/Bruno-366>
 0.0, Fall 2021: Work in Progress
 :nofooter:
+:source-highlighter: pygments
 :favicon: {relfileprefix}favicon/favicon.ico
 :sectlinks:
 :sectanchors:
