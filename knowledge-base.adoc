@@ -63,6 +63,13 @@ Another useful book is <<mf>>, for those writing or porting an assembly forth,
 * [[[SF2,Programming Language Foundations]]]
 * [[[SF6,Separation Logic Foundations]]]
 
+
+[bibliography]
+.Recommended by https://guitarvydas.github.io/2021/03/06/Divide-and-Conquer-YAGNI.html
+* https://mitpress.mit.edu/books/realistic-compiler-generation
+* https://archive.org/details/technicalreportc118univ
+
+
 [#big-design-up-front-wikipedia]
 == Big Design Up Front - Wikipedia footnote:[https://en.wikipedia.org/wiki/Big_Design_Up_Front]
 
