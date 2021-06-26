@@ -151,6 +151,12 @@ Some general properties we want are:
 
 === Informal denotational definitions
 
+.From Maths 
+* Sets : For SQL databases
+* Formal Grammars : For tokenizing, parsing, compiling, transpiling
+* Matrixes : For parallelism
+
+.From Computer Science
 * Dictionary
 * Atoms/Elements:
 ** Booleans
