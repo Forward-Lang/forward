@@ -23,8 +23,7 @@ jobs:
       
     - name: asciidoctor-ghpages
       # You may pin to the exact commit or the version.
-      # uses: manoelcampos/asciidoctor-ghpages-action@488fb1539697be68af8ef8e0c7f97b1fc629e8b6
-      uses: manoelcampos/asciidoctor-ghpages-action@v2.0.3
+      uses: manoelcampos/asciidoctor-ghpages-action@v2.0.4
       with:
           # Extra parameters to passs to the asciidoctor command to customize the process of building adoc files
           asciidoctor_params: "-r asciidoctor-diagram" # add support for diagrams
