@@ -18,6 +18,7 @@ TIP: If you know of any other source that is freely available, can be accessed b
 and that would be useful as a knowledge source for this knowledge base,
 then feel free to open up an link:https://github.com/Forward-Lang/forward/issues[issue] on forward's GitHub repository.
 
+[bibliography%interactive]
 == Recommended Books
 
 I would recommend <<sf>>, regardless of whether you're 5 or 80.
@@ -31,7 +32,6 @@ For instance,
 Another useful book is <<mf>>, for those writing or porting an assembly forth,
  ie forths using assembly (or even machine-code) rather than a higher-level language. 
 
-[bibliography]
 .Links to the books:
 
 * [[[SICP,Structure and Interpretation of Computer Programs]]] https://mitpress.mit.edu/sites/default/files/sicp/index.html
@@ -41,14 +41,12 @@ Another useful book is <<mf>>, for those writing or porting an assembly forth,
   with lectures
 * [[[oberon,Project Oberon]]] http://www.projectoberon.com/  
 
-[bibliography]
 .Forth books:
 
-* [[[sf,Starting FORTH]]] https://www.forth.com/starting-forth/
+* [x] [[[sf,Starting FORTH]]] https://www.forth.com/starting-forth/
 * [[[POL,Programming a Problem-oriented Language]]] http://forth.org/POL.pdf
 * [[[mf,Moving Forth: a series on writing Forth kernels]]] http://www.bradrodriguez.com/papers/index.html
 
-[bibliography]
 .link:https://mitpress.mit.edu/contributors/daniel-p-friedman[Books by Daniel P. Friedman]
 
 * [[[LL,The Little LISPer]]] (renamed to The Little Schemer)
@@ -56,15 +54,12 @@ Another useful book is <<mf>>, for those writing or porting an assembly forth,
 * [[[LT,The Little Typer]]] An introduction to dependent types
 * [[[LP,The Little Prover]]] An introduction to writing proofs about computer programs
 
-[bibliography]
 .link:https://softwarefoundations.cis.upenn.edu/[The Software Foundations series]
 
 * [[[SF1,Logical Foundations]]]
 * [[[SF2,Programming Language Foundations]]]
 * [[[SF6,Separation Logic Foundations]]]
 
-
-[bibliography]
 .Recommended by https://guitarvydas.github.io/2021/03/06/Divide-and-Conquer-YAGNI.html
 * https://mitpress.mit.edu/books/realistic-compiler-generation
 * https://archive.org/details/technicalreportc118univ
