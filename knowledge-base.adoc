@@ -43,7 +43,9 @@ Another useful book is <<mf>>, for those writing or porting an assembly forth,
 
 .Forth books:
 
-* [x] [[[sf,Starting FORTH]]] https://www.forth.com/starting-forth/
+:done: pass:[<input type="checkbox" checked>]
+
+* {done} [[[sf,Starting FORTH]]] https://www.forth.com/starting-forth/
 * [[[POL,Programming a Problem-oriented Language]]] http://forth.org/POL.pdf
 * [[[mf,Moving Forth: a series on writing Forth kernels]]] http://www.bradrodriguez.com/papers/index.html
 
