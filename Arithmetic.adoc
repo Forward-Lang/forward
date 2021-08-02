@@ -29,7 +29,15 @@ symbol, name of binary operation, commutative? {fn_commute}, name of unary inver
 
 Subtraction and divistion as binary operations aren't commutative,
   ie `a - b ≠ b - a` and `a ÷ b ≠ b ÷ a`.
-That's why forward uses the unary operations (which are inverses).
+That's why forward uses the unary operations (which are inverses);
+so that we can't preserve the commutative property.
+
+Why do we want to preserve the commutative property?
+Because in stack-based languages,
+one thing that often bothers me is having to manipulate the stack
+so that things are in the right order.
+By having preserving the commutative property,
+we don't have to worry as much in what order things are on the stack.
 
 .interesting property of inverses
 [sidebar]
