@@ -52,7 +52,7 @@ Using commutative binary operations：
 | × | a | b |   ＝   | × | b | a |
 +-----------+       +-----------+
 
-Using non-commutative binary operations：
+Using non－commutative binary operations：
 
 +-----------+       +-----------+      +------------------+
 | − | a | b |   ≠   | − | b | a |  --> | - | swap | a | b |
@@ -85,6 +85,7 @@ reciprocal
 // Due to a limitation in ditaa:
 // I had to use ＝ instead of = and 
 // I had to use ： instead of :
+// I had to use －	instead of - in non-commutative
 // https://en.wikipedia.org/wiki/Halfwidth_and_Fullwidth_Forms_(Unicode_block)
 
 .interesting property of inverses
