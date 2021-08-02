@@ -88,7 +88,14 @@ reciprocal
 // I had to use －	instead of - in non-commutative
 // https://en.wikipedia.org/wiki/Halfwidth_and_Fullwidth_Forms_(Unicode_block)
 
-.interesting property of inverses
-[sidebar]
-negation "creates" the negative numbers, while
-reciprocal "creates" fractions
+.Interesting property of inverses:
+
+****
+
+https://en.wikipedia.org/wiki/List_of_types_of_numbers
+
+* negation "creates" the negative numbers from the Natural numbers ℕ {1,2,3,4,...}, while
+* reciprocal "creates" fractions from the Natural numbers 
+
+In other words, these two inverses break the closure property of addition and multiplication (respectively).
+****
