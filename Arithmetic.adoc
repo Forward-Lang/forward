@@ -104,25 +104,32 @@ In other words, these two inverses break the closure property of addition and mu
 Also, multiplication can be thought of as the repetitive application of addition.
 
 [example]
+----
 5 × 3 = 15
 0 + 5 + 5 + 5 = 15
+----
 
 [example]
+----
 8 × 2 = 16
 0 + 8 + 8 = 16
+----
 
-The same can be said of subtraction and division, ie
-division is the repetitive application of subtraction.
+The same cannot be said of subtraction and division, ie
+division is not the repetitive application of subtraction.
 
 [example]
+----
 15 ÷ 5 = 3
 15 + 5 + 5 + 5 = 0
+----
 
 [example]
+----
 16 ÷ 8 = 2
 16 - 8 - 8 = 0
+----
 
-// TODO: modulo and remainder
-
+However it does correspond to modulo and remainder
 
 ****
