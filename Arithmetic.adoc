@@ -39,6 +39,39 @@ so that things are in the right order.
 By having preserving the commutative property,
 we don't have to worry as much in what order things are on the stack.
 
+[ditaa]
+----
++-----------+       +-----------+
+| + | a | b |   =   | + | b | a |
++-----------+       +-----------+
+
++-----------+       +-----------+
+| × | a | b |   =   | × | b | a |
++-----------+       +-----------+
+
++-----------+       +-----------+
+| − | a | b |   ≠   | − | b | a |
++-----------+       +-----------+
+
++-----------+       +-----------+
+| ÷ | a | b |   ≠   | ÷ | b | a |
++-----------+       +-----------+
+
+Using unary inverses instead:
+
++-------+
+| − | a |
++-------+
+
++-------+
+| ÷ | a |
++-------+
+
+----
+
+
+
+
 .interesting property of inverses
 [sidebar]
 negation "creates" the negative numbers, while
