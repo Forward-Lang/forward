@@ -42,7 +42,7 @@ we don't have to worry as much in what order things are on the stack.
 [ditaa]
 ----
 
-Using commutative binary operations:
+Using commutative binary operations：
 
 +-----------+       +-----------+
 | + | a | b |   ＝   | + | b | a |
@@ -52,7 +52,7 @@ Using commutative binary operations:
 | × | a | b |   ＝   | × | b | a |
 +-----------+       +-----------+
 
-Using non-commutative binary operations:
+Using non-commutative binary operations：
 
 +-----------+       +-----------+      +------------------+
 | − | a | b |   ≠   | − | b | a |  --> | - | swap | a | b |
@@ -62,7 +62,7 @@ Using non-commutative binary operations:
 | ÷ | a | b |   ≠   | ÷ | b | a |  --> | ÷ | swap | a | b |
 +-----------+       +-----------+      +------------------+
 
-Using unary inverses instead:
+Using unary inverses instead：
 
 negation
 +-------+        +---------------+
@@ -74,10 +74,10 @@ negation
 
 reciprocal
 +-------+        +---------------+
-| ÷ | a |  -+->  | × | b | ÷ | a |      same as： b × (1/a) ＝ b / a
+| ÷ | a |  -+->  | × | b | ÷ | a |    same as： b × (1/a) ＝ b / a
 +-------+   |    +---------------+
             |    +---------------+
-            +->  | × | ÷ | a | b |      same as： (1/a) × b ＝ b / a
+            +->  | × | ÷ | a | b |    same as： (1/a) × b ＝ b / a
                  +---------------+
 
 ----
