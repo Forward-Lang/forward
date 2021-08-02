@@ -9,10 +9,10 @@ WARNING: work in progress
 // Unicode symbols:
 //   https://unicode-table.com/en/sets/mathematical-signs/
 
-.binary operation
+.binary operations
 
 ,===
-symbol,name, commutative? {fn_commute}
+symbol, name of binary operation, commutative? {fn_commute}
 
 +,addition, yes
 ×,multiplication, yes
