@@ -64,21 +64,22 @@ Using non-commutative binary operations:
 
 Using unary inverses instead:
 
-negation        same as：b + -a ＝ b - a
+negation        same as： b + -a ＝ b - a
 +-------+       +---------------+
 | − | a |  -->  | + | b | - | a |
 +-------+       +---------------+
- 
-reciprocal      same as：b × (1/a) ＝ b / a
+
+reciprocal      same as： b × (1/a) ＝ b / a
 +-------+       +---------------+
 | ÷ | a |  -->  | × | b | ÷ | a |
 +-------+       +---------------+
 
 ----
 
-> I had to use `≡` instead of `=`, due to a limitation in ditaa
-(the software that makes the above image)
-
+// Due to a limitation in ditaa:
+// I had to use ＝ instead of = and 
+// I had to use ： instead of :
+// https://en.wikipedia.org/wiki/Halfwidth_and_Fullwidth_Forms_(Unicode_block)
 
 .interesting property of inverses
 [sidebar]
