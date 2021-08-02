@@ -45,11 +45,11 @@ we don't have to worry as much in what order things are on the stack.
 Using commutative binary operations:
 
 +-----------+       +-----------+
-| + | a | b |   =   | + | b | a |
+| + | a | b |   ＝   | + | b | a |
 +-----------+       +-----------+
 
 +-----------+       +-----------+
-| × | a | b |   =   | × | b | a |
+| × | a | b |   ＝   | × | b | a |
 +-----------+       +-----------+
 
 Using non-commutative binary operations:
@@ -64,12 +64,12 @@ Using non-commutative binary operations:
 
 Using unary inverses instead:
 
-negation        same as: b + -a = b - a
+negation        same as：b + -a ＝ b - a
 +-------+       +---------------+
 | − | a |  -->  | + | b | - | a |
 +-------+       +---------------+
  
-reciprocal      same as: b × (1/a) = b / a
+reciprocal      same as：b × (1/a) ＝ b / a
 +-------+       +---------------+
 | ÷ | a |  -->  | × | b | ÷ | a |
 +-------+       +---------------+
