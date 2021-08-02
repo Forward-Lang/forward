@@ -1,0 +1,28 @@
+= Evaluation
+
+WARNING: work in progress
+
+// Unicode symbols:
+//   https://unicode-table.com/en/sets/mathematical-signs/
+
+.binary operation
+
+,===
+symbol,name
+
++,addition
+×,multiplication
+,===
+
+.unary inverses 
+
+:fn_neg: footnote:[https://en.wikipedia.org/wiki/Additive_inverse]
+:fn_div: footnote:[https://en.wikipedia.org/wiki/Multiplicative_inverse]
+
+,===
+symbol, name of binary operation, name of unary inverse 
+
+−, substraction, negation {fn_neg}
+÷, division, reciprocal {fn_div}
+,===
+

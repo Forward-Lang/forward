@@ -173,6 +173,7 @@ Some general properties we want are:
 include::Grammar.adoc[leveloffset=+3]
 include::Parser.adoc[leveloffset=+3]
 include::Evaluation.adoc[leveloffset=+3]
+include::Arithmetic.adoc[leveloffset=+3]
 
 
 [bibliography]
