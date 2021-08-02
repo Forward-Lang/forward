@@ -1,4 +1,8 @@
 = Evaluation
+:fn_commute: footnote:[https://en.wikipedia.org/wiki/Commutative_property]
+:fn_neg: footnote:[https://en.wikipedia.org/wiki/Additive_inverse]
+:fn_div: footnote:[https://en.wikipedia.org/wiki/Multiplicative_inverse]
+
 
 WARNING: work in progress
 
@@ -8,16 +12,13 @@ WARNING: work in progress
 .binary operation
 
 ,===
-symbol,name
+symbol,name, commutative? {fn_commute}
 
-+,addition
-×,multiplication
++,addition, yes
+×,multiplication, yes
 ,===
 
 .unary inverses 
-
-:fn_neg: footnote:[https://en.wikipedia.org/wiki/Additive_inverse]
-:fn_div: footnote:[https://en.wikipedia.org/wiki/Multiplicative_inverse]
 
 ,===
 symbol, name of binary operation, name of unary inverse 
