@@ -1,4 +1,4 @@
-= Evaluation
+= Arithmetic
 :fn_commute: footnote:[https://en.wikipedia.org/wiki/Commutative_property]
 :fn_neg: footnote:[https://en.wikipedia.org/wiki/Additive_inverse]
 :fn_div: footnote:[https://en.wikipedia.org/wiki/Multiplicative_inverse]
