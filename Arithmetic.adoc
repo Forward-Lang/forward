@@ -21,9 +21,17 @@ symbol,name, commutative? {fn_commute}
 .unary inverses 
 
 ,===
-symbol, name of binary operation, name of unary inverse 
+symbol, name of binary operation, commutative? {fn_commute}, name of unary inverse 
 
-−, substraction, negation {fn_neg}
-÷, division, reciprocal {fn_div}
+−, substraction, no, negation {fn_neg}
+÷, division, no, reciprocal {fn_div}
 ,===
 
+Subtraction and divistion as binary operations aren't commutative,
+  ie `a - b ≠ b - a` and `a ÷ b ≠ b ÷ a`.
+That's why forward uses the unary operations (which are inverses).
+
+.interesting property of inverses
+[sidebar]
+negation "creates" the negative numbers, while
+reciprocal "creates" fractions
