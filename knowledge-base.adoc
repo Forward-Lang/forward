@@ -19,6 +19,7 @@ TIP: If you know of any other source that is freely available, can be accessed b
 and that would be useful as a knowledge source for this knowledge base,
 then feel free to open up an link:https://github.com/Forward-Lang/forward/issues[issue] on forward's GitHub repository.
 
+[sidebar]
 [bibliography]
 == Recommended Books
 :SICP-bookhome: https://mitpress.mit.edu/sites/default/files/sicp/index.html
