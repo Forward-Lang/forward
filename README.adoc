@@ -25,7 +25,7 @@ link:https://github.com/Forward-Lang/forward[image:https://tokei.rs/b1/github/Fo
 A stack-based programming language.
 Powerful Enough, Simple, Correct.
 
-Documentation:
+Links:
 - link:https://github.com/Forward-Lang/forward/[Repo]
 - link:https://forward-lang.github.io/forward/[Website]
 - xref:blog/index.adoc#[Development Blog]
