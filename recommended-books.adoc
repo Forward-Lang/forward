@@ -69,3 +69,10 @@ Another useful book is <<mf>>, for those writing or porting an assembly forth,
 
 .Recommended by Bret Victor
 * http://worrydream.com/refs/Papert%20-%20Mindstorms%201st%20ed.pdf
+* Nonlinear Dynamics And Chaos: With Applications To Physics, Biology, Chemistry, And Engineering (Studies in Nonlinearity) 1st Edition
+* http://geocalc.clas.asu.edu/pdf/OerstedMedalLecture.pdf
+* Art of Doing Science and Engineering: Learning to Learn 1st Edition
+* And Suddenly the Inventor Appeared: TRIZ, the Theory of Inventive Problem Solving Paperback – May 1, 1996
+* Hacker's Delight 1st Edition
+* The Inmates Are Running the Asylum: Why High Tech Products Drive Us Crazy and How to Restore the Sanity 1st Edition
+* The Visual Display of Quantitative Information 2nd Edition
