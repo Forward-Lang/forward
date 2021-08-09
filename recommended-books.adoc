@@ -67,3 +67,5 @@ Another useful book is <<mf>>, for those writing or porting an assembly forth,
 * https://mitpress.mit.edu/books/realistic-compiler-generation
 * https://archive.org/details/technicalreportc118univ
 
+.Recommended by Bret Victor
+* http://worrydream.com/refs/Papert%20-%20Mindstorms%201st%20ed.pdf
