@@ -1,5 +1,6 @@
 :subtitle: Building Forward
 :relfileprefix: ../
+:dir: blog/
 include::{relfileprefix}README.adoc[tag=preamble]
 
 :relfileprefix:

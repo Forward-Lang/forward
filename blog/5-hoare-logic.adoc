@@ -1,6 +1,7 @@
 :subtitle: Hoare Logic and CoC
 :docinfo: shared
 :relfileprefix: ../
+:dir: blog/
 include::{relfileprefix}README.adoc[tag=preamble]
 
 :relfileprefix:

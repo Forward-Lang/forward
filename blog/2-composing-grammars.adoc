@@ -1,6 +1,7 @@
 :subtitle: Composing grammars
 :docinfo: shared
 :relfileprefix: ../
+:dir: blog/
 include::{relfileprefix}README.adoc[tag=preamble]
 
 :relfileprefix:
