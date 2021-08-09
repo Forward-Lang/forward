@@ -1,6 +1,7 @@
 :subtitle: A stack-based programming language.
 :relfileprefix:
 :sectnums:
+:dir:
 
 // tag::preamble[]
 
@@ -32,7 +33,7 @@ Links:
 - xref:knowledge-base.adoc#[Knowledge Base]
 - link:https://github.com/Forward-Lang/forward/blob/gh-pages/ebook.pdf[Ebook]
 
-link:https://github.com/Forward-Lang/forward/edit/main/{docname}.adoc[Edit this page on GitHub]
+link:https://github.com/Forward-Lang/forward/edit/main/{dir}{docname}.adoc[Edit this page on GitHub]
 
 // end::preamble[]
 
