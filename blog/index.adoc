@@ -1,4 +1,4 @@
-:subtitle: Posts
+:subtitle: Building Forward
 :relfileprefix: ../
 include::{relfileprefix}README.adoc[tag=preamble]
 
