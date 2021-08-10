@@ -58,7 +58,7 @@ here's the entire thing...
 ```factor
 :: xor ( a b -- out )
 a b not and
-a not b and
+b a not and
 or
 ;
 ```
