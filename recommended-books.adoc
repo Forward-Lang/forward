@@ -43,6 +43,9 @@ Another useful book is <<mf>>, for those writing or porting an assembly forth,
 
 * https://en.wikipedia.org/wiki/The_Mythical_Man-Month
 * https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar
+* https://en.wikipedia.org/wiki/Crossing_the_Chasm
+* https://en.wikipedia.org/wiki/Start_with_Why
+* https://en.wikipedia.org/wiki/Blue_Ocean_Strategy
 
 .Forth books:
 
