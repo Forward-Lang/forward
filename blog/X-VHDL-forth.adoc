@@ -1,1 +1,12 @@
+:subtitle: Boolean Algebras, VHDL, and forth
+:relfileprefix: ../
+:dir: blog/
+include::{relfileprefix}README.adoc[tag=preamble]
 
+:relfileprefix:
+
+== {subtitle}
+
+image:VHDL[]
+nand2tetris
+https://creativecommons.org/licenses/by-nc-sa/3.0/
