@@ -50,7 +50,10 @@ actually this is executable `factor` code, using
 link:https://docs.factorcode.org/content/article-locals-examples.html[lexical variables].
 
 ****
-here's the entire thing without using intermediate variables: 
+
+here's the entire thing...
+
+.without using intermediate variables: 
 
 ```factor
 :: xor ( a b -- out )
@@ -60,13 +63,30 @@ or
 ;
 ```
 
-here's the entire thing just using stack manipulation: 
+.without using any variables: 
 ```factor
-:: xor ( a b -- out )
-2dup                      ! ( a b -- a b a b )
-not and ! ( a b -- w1 )
-swap                      ! ( a b -- a b b a )
-not and ! ( b a -- w2 )
+: xor ( a b -- out )
+[      not and ]
+[ swap not and ]
+2bi
+or
+;
+```
+
+[%hardbreaks]
+Note that `a` and `b` dissapperead from the definition,
+and are just left in the the stack notation
+(equivalant to type notations in other languages)
+just using stack manipulation Dataflow combinators
+
+.without using quotations: 
+```factor
+: xor  ( a b -- out )
+2dup ! ( a b -- a b a b )
+not and    ! ( a b a b -- a b w1 )
+-rot                  ! ( a b w1 -- w1 a b )
+swap                            ! ( w1 a b -- w1 b a )
+not and                                   ! ( w1 b a -- w1 w2 )
 or
 ;
 ```
