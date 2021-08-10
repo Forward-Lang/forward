@@ -1,5 +1,8 @@
 :subtitle: Boolean Algebras, VHDL, and forth
 ifdef::env-github[:hardbreaks:]
+ifdef::env-github[:toc:]
+ifdef::env-github[:toclevels: 3]
+
 :relfileprefix: ../
 :dir: blog/
 include::{relfileprefix}README.adoc[tag=preamble]
