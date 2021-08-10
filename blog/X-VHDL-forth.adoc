@@ -38,7 +38,10 @@ b -> notb # NOT
 : xor ( a b -- out )
 a not
 b not
-and
-and
+
+a notb and
+nota b and
+
+w1 w2 or
 ;
 ```
