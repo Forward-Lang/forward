@@ -8,23 +8,24 @@ include::{relfileprefix}README.adoc[tag=preamble]
 == {subtitle}
 
 .nand2tetris Figure 1.6
-link:https://creativecommons.org/licenses/by-nc-sa/3.0/[CC BY-NC-SA 3.0]
+> link:https://creativecommons.org/licenses/by-nc-sa/3.0/[CC BY-NC-SA 3.0]
 
 image::VHDL.png[]
 
 
 .using graphiz
+> link:http://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0A%0Aa%20-%3E%20nota%20%23%20NOT%0Ab%20-%3E%20notb%20%23%20NOT%0A%0A%7Ba%20notb%7D%20-%3E%20w1%20%23%20AND%0A%7Bnota%20b%7D%20-%3E%20w2%20%23%20AND%0A%0A%7Bw1%20w2%7D%20-%3E%20out%20%23%20OR%0A%0A%7D%0A[graphiz playground]
 
 ```dot
-digraph {
+digraph G {
 
 a -> nota # NOT
 b -> notb # NOT
 
-[a notb] -> w1 # AND
-[nota a] -> w2 # AND
+{a notb} -> w1 # AND
+{nota b} -> w2 # AND
 
-[w1 w2] -> out # OR
+{w1 w2} -> out # OR
 
 }
 ```
