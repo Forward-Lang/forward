@@ -1,4 +1,5 @@
 :subtitle: Boolean Algebras, VHDL, and forth
+ifdef::env-github[:hardbreaks:]
 :relfileprefix: ../
 :dir: blog/
 include::{relfileprefix}README.adoc[tag=preamble]
@@ -82,8 +83,11 @@ type signatures/annotations in other languages, eg:
 xor :: a -> b -> out
 ```
 
-In this example we manipulated the stack using dataflow combinators.
-  footnote:[2bi: https://docs.factorcode.org/content/word-bi%2Ckernel.html]
+In this example we manipulated the stack using the dataflow combinator `2bi`,
+and the shuffle word `swap` (which has the stack effect `( a b -- b a )`)
+  footnote:[2bi: https://docs.factorcode.org/content/word-2bi%2Ckernel.html]
+  footnote:[shuffle words: https://docs.factorcode.org/content/article-shuffle-words.html]
+
 
 .without using quotations: 
 ```factor
@@ -103,7 +107,6 @@ We then use `-rot` to move `w1` out of the way for `[swap not and]`,
  only that this time they're not in a quotation.
 Think of `2bi` as a higher-order function,
  and by using `2dup ... -rot`
-  footnote:[shuffle words: https://docs.factorcode.org/content/article-shuffle-words.html]
  we remove the need for higher-order functions.
 I tried to align the stack annotations to make clearer what is going on.
 
