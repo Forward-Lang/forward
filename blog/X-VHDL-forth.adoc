@@ -7,6 +7,37 @@ include::{relfileprefix}README.adoc[tag=preamble]
 
 == {subtitle}
 
-image:VHDL[]
-nand2tetris
-https://creativecommons.org/licenses/by-nc-sa/3.0/
+.nand2tetris Figure 1.6
+link:https://creativecommons.org/licenses/by-nc-sa/3.0/[CC BY-NC-SA 3.0]
+
+image::VHDL.png[]
+
+
+.using graphiz
+
+```dot
+digraph {
+
+a -> nota # NOT
+b -> notb # NOT
+
+[a notb] -> w1 # AND
+[nota a] -> w2 # AND
+
+[w1 w2] -> out # OR
+
+}
+```
+
+.using a made-up DSL:
+
+> taking inspiration from graphiz and forth
+
+```factor
+: xor ( a b -- out )
+a not
+b not
+and
+and
+;
+```
