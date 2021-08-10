@@ -15,8 +15,9 @@ image::VHDL.png[]
 
 === HDL program
 
-.using graphiz
-> link:http://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0A%0Aa%20-%3E%20nota%20%23%20NOT%0Ab%20-%3E%20notb%20%23%20NOT%0A%0A%7Ba%20notb%7D%20-%3E%20w1%20%23%20AND%0A%7Bnota%20b%7D%20-%3E%20w2%20%23%20AND%0A%0A%7Bw1%20w2%7D%20-%3E%20out%20%23%20OR%0A%0A%7D%0A[graphiz playground]
+==== using graphiz
+
+link:http://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0A%0Aa%20-%3E%20nota%20%23%20NOT%0Ab%20-%3E%20notb%20%23%20NOT%0A%0A%7Ba%20notb%7D%20-%3E%20w1%20%23%20AND%0A%7Bnota%20b%7D%20-%3E%20w2%20%23%20AND%0A%0A%7Bw1%20w2%7D%20-%3E%20out%20%23%20OR%0A%0A%7D%0A[graphiz playground]
 
 [source,dot]
 ----
@@ -33,8 +34,9 @@ b -> notb # NOT
 }
 ----
 
-.using a made-up DSL:
-> taking inspiration from graphiz and forth
+==== using a made-up DSL
+
+taking inspiration from graphiz and forth
 
 [source,factor]
 ----
@@ -50,7 +52,10 @@ w1 w2  or  :> out
 ----
 
 actually this is executable `factor` code, using
-link:https://docs.factorcode.org/content/article-locals-examples.html[lexical variables].
+link:https://docs.factorcode.org/content/article-locals-examples.html[lexical variables],
+so it isn't super "made-up".
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 ****
 
@@ -79,7 +84,7 @@ or
 ;
 ----
 
-*****
+********
 
 Note that `a` and `b` disappeared from the definition,
 and are just left in the stack notation.
@@ -96,7 +101,7 @@ and the shuffle word `swap` (which has the stack effect `( a b -- b a )`)
   footnote:[2bi: https://docs.factorcode.org/content/word-2bi%2Ckernel.html]
   footnote:[shuffle words: https://docs.factorcode.org/content/article-shuffle-words.html]
 
-*****
+********
 
 .without using quotations: 
 
@@ -112,7 +117,7 @@ and the shuffle word `swap` (which has the stack effect `( a b -- b a )`)
 ;
 ----
 
-*****
+********
 
 Here, instead of using `2bi` we have to use `2dup` to duplicate `a` and `b`,
  since we're going to use them twice.
@@ -123,8 +128,13 @@ Think of `2bi` as a higher-order function,
  we remove the need for higher-order functions.
 I tried to align the stack annotations to make clearer what is going on.
 
-*****
+********
 
 ****
 
 === Test script
+
+[source,factor]
+----
+: xor ( a b -- out ) [ not and ] [ swap not and ] 2bi or ;
+----
