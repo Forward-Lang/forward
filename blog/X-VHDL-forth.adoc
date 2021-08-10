@@ -49,4 +49,28 @@ w1 w2  or  :> out
 actually this is executable `factor` code, using
 link:https://docs.factorcode.org/content/article-locals-examples.html[lexical variables].
 
+****
+here's the entire thing without using intermediate variables: 
+
+```factor
+:: xor ( a b -- out )
+a b not and
+a not b and
+or
+;
+```
+
+here's the entire thing just using stack manipulation: 
+```factor
+:: xor ( a b -- out )
+2dup                      ! ( a b -- a b a b )
+not and ! ( a b -- w1 )
+swap                      ! ( a b -- a b b a )
+not and ! ( b a -- w2 )
+or
+;
+```
+
+****
+
 === Test script
