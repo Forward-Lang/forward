@@ -35,13 +35,16 @@ b -> notb # NOT
 > taking inspiration from graphiz and forth
 
 ```factor
-: xor ( a b -- out )
-a not
-b not
+:: xor ( a b -- out )
+     a not :> nota
+     b not :> notb
 
-a notb and
-nota b and
+a notb and :> w1
+nota b and :> w2
 
-w1 w2 or
+w1 w2  or  :> out
 ;
 ```
+
+actually this is executable `factor` code, using
+link:https://docs.factorcode.org/content/article-locals-examples.html[lexical variables].
