@@ -16,6 +16,8 @@ include::{relfileprefix}README.adoc[tag=preamble]
 * xref:4-arity.adoc[]
 * xref:5-hoare-logic.adoc[]
 
+* xref:X-VHDL-forth.adoc[]
+
 > This file should really be filled automatically, but oh well...
 
 +++
