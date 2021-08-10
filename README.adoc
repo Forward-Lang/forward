@@ -29,9 +29,10 @@ Powerful Enough, Simple, Correct.
 Links:
 - link:https://github.com/Forward-Lang/forward/[Repo]
 - link:https://forward-lang.github.io/forward/[Website]
+- link:https://github.com/Forward-Lang/forward/blob/gh-pages/ebook.pdf[Ebook]
 - xref:blog/index.adoc#[Development Blog]
 - xref:knowledge-base.adoc#[Knowledge Base]
-- link:https://github.com/Forward-Lang/forward/blob/gh-pages/ebook.pdf[Ebook]
+- xref:recommended-books.adoc#[Reading list]
 
 link:https://github.com/Forward-Lang/forward/edit/main/{dir}{docname}.adoc[Edit this page on GitHub]
 
