@@ -73,23 +73,39 @@ or
 ;
 ```
 
-[%hardbreaks]
-Note that `a` and `b` dissapperead from the definition,
-and are just left in the the stack notation
-(equivalant to type notations in other languages)
-just using stack manipulation Dataflow combinators
+Note that `a` and `b` disappeared from the definition,
+and are just left in the stack notation.
+The stack notation can be thought of as being similar to
+type signatures/annotations in other languages, eg:
+
+```haskell
+xor :: a -> b -> out
+```
+
+In this example we manipulated the stack using dataflow combinators.
+  footnote:[2bi: https://docs.factorcode.org/content/word-bi%2Ckernel.html]
 
 .without using quotations: 
 ```factor
 : xor  ( a b -- out )
 2dup ! ( a b -- a b a b )
-not and    ! ( a b a b -- a b w1 )
--rot                  ! ( a b w1 -- w1 a b )
-swap                            ! ( w1 a b -- w1 b a )
-not and                                   ! ( w1 b a -- w1 w2 )
-or
+    not and ! ( a b a b -- a b w1 )
+-rot                   ! ( a b w1 -- w1 a b )
+    swap                         ! ( w1 a b -- w1 b a )
+    not and                                ! ( w1 b a -- w1 w2 )
+    or
 ;
 ```
+
+Here, instead of using `2bi` we have to use `2dup` to duplicate `a` and `b`,
+ since we're going to use them twice.
+We then use `-rot` to move `w1` out of the way for `[swap not and]`,
+ only that this time they're not in a quotation.
+Think of `2bi` as a higher-order function,
+ and by using `2dup ... -rot`
+  footnote:[shuffle words: https://docs.factorcode.org/content/article-shuffle-words.html]
+ we remove the need for higher-order functions.
+I tried to align the stack annotations to make clearer what is going on.
 
 ****
 
