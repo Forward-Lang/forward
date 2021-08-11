@@ -79,3 +79,5 @@ Another useful book is <<mf>>, for those writing or porting an assembly forth,
 * The Visual Display of Quantitative Information 2nd Edition
 * https://en.wikipedia.org/wiki/Systemantics
 * https://www.c82.net/euclid/#books
+
+.Recommended by http://salvi.chaosnet.org/texts/programming.html
