@@ -139,5 +139,31 @@ I tried to align the stack annotations to make clearer what is going on.
 
 [source,factor]
 ----
-: xor ( a b -- out ) [ not and ] [ swap not and ] 2bi or ;
+USING:
+math.combinatorics
+prettyprint
+kernel
+sequences
+continuations
+;
+
+IN: testing-xor
+
+: xor ( a b -- out ) 2dup swap [ not and ] 2bi@ or ;       ! <1>
+
+: possible-inputs ( -- seq )
+{ { f f }
+  { t f }
+  { f t }
+  { t t } }
+;
+
+! could more easily be defined as:
+! : possible-inputs2 ( -- seq ) { f t } 2 all-selections ; ! <2>
+
+: test-xor ( seq -- seq ) [ [ xor ] with-datastack ] map ; ! <3>
 ----
+
+<1> ++https://docs.factorcode.org/content/word-2bi__at__,kernel.html++
+<2> https://docs.factorcode.org/content/word-all-selections,math.combinatorics.html
+<3> https://docs.factorcode.org/content/word-map,sequences.html
