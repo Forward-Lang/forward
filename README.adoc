@@ -180,19 +180,19 @@ include::Evaluation.adoc[leveloffset=+3]
 include::Arithmetic.adoc[leveloffset=+3]
 
 
-[bibliography]
 == References
 
-* [[[Hoare-triples]]] https://en.wikipedia.org/wiki/Hoare_logic#Hoare_triple
-* [[[Waterfall]]] https://en.wikipedia.org/wiki/Waterfall_model#Model
-* [[[Dependent-types]]] https://en.wikipedia.org/wiki/Dependent_type
-* [[[factor]]] https://github.com/factor/factor/
-* [[[APL]]] https://tryapl.org/
-* [[[pharo]]] https://github.com/pharo-project/pharo
-* [[[r4]]] https://github.com/phreda4/r4
-* [[[chainsaw]]] The Unix shell is sometimes referred to as a chainsaw (see `rm -rf *`)
-* [[[simplex]]] https://www.infoq.com/presentations/Simple-Made-Easy/
-* [[[analysis-paralysis]]] xref:knowledge-base.adoc#analysis-paralysis-wikipedia[]
+[horizontal]
+[[Hoare-triples]]           Hoare triples :: https://en.wikipedia.org/wiki/Hoare_logic#Hoare_triple
+[[Waterfall]]             Waterfall model :: https://en.wikipedia.org/wiki/Waterfall_model#Model
+[[Dependent-types]]       Dependent types :: https://en.wikipedia.org/wiki/Dependent_type
+[[factor]]                         factor :: https://github.com/factor/factor/
+[[APL]]                               APL :: https://tryapl.org/
+[[pharo]]                           pharo :: https://github.com/pharo-project/pharo
+[[r4]]                                 r4 :: https://github.com/phreda4/r4
+[[chainsaw]]                     chainsaw :: The Unix shell is sometimes referred to as a chainsaw (see `rm -rf *`)
+[[simplex]]                       simplex :: https://www.infoq.com/presentations/Simple-Made-Easy/
+[[analysis-paralysis]] analysis paralysis :: xref:knowledge-base.adoc#analysis-paralysis-wikipedia[]
 
 +++
 <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
