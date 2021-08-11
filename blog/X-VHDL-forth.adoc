@@ -12,7 +12,7 @@ include::{relfileprefix}README.adoc[tag=preamble]
 == {subtitle}
 
 .nand2tetris Figure 1.6
-> link:https://creativecommons.org/licenses/by-nc-sa/3.0/[CC BY-NC-SA 3.0]
+link:https://creativecommons.org/licenses/by-nc-sa/3.0/[CC BY-NC-SA 3.0]
 
 image::VHDL.png[]
 
@@ -20,7 +20,7 @@ image::VHDL.png[]
 
 ==== using graphiz
 
-link:http://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0A%0Aa%20-%3E%20nota%20%23%20NOT%0Ab%20-%3E%20notb%20%23%20NOT%0A%0A%7Ba%20notb%7D%20-%3E%20w1%20%23%20AND%0A%7Bnota%20b%7D%20-%3E%20w2%20%23%20AND%0A%0A%7Bw1%20w2%7D%20-%3E%20out%20%23%20OR%0A%0A%7D%0A[graphiz playground]
+<<graphiz>>
 
 [source,dot]
 ----
@@ -99,10 +99,8 @@ type signatures/annotations in other languages, eg:
 xor :: a -> b -> out
 ----
 
-In this example we manipulated the stack using the dataflow combinator `2bi`,
-and the shuffle word `swap` (which has the stack effect `( a b -- b a )`)
-  footnote:[2bi: https://docs.factorcode.org/content/word-2bi%2Ckernel.html]
-  footnote:[shuffle words: https://docs.factorcode.org/content/article-shuffle-words.html]
+In this example we manipulated the stack using the dataflow combinator <<two-bi>>,
+and the <<shuffle-word>> `swap` (which has the stack effect `( a b -- b a )`)
 
 ********
 
@@ -139,15 +137,8 @@ I tried to align the stack annotations to make clearer what is going on.
 
 [source,factor]
 ----
-USING:
-math.combinatorics
-prettyprint
-kernel
-sequences
-continuations
-;
-
 IN: testing-xor
+USING: math.combinatorics prettyprint kernel sequences continuations ;
 
 : xor ( a b -- out ) 2dup swap [ not and ] 2bi@ or ;       ! <1>
 
@@ -164,6 +155,21 @@ IN: testing-xor
 : test-xor ( seq -- seq ) [ [ xor ] with-datastack ] map ; ! <3>
 ----
 
-<1> ++https://docs.factorcode.org/content/word-2bi__at__,kernel.html++
-<2> https://docs.factorcode.org/content/word-all-selections,math.combinatorics.html
-<3> https://docs.factorcode.org/content/word-map,sequences.html
+.new words:
+<1> <<two-bi-at>>
+<2> <<all-selections>>
+<3> <<map>>
+
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+
+[horizontal]
+[[graphiz]]     graphiz playground :: http://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0A%0Aa%20-%3E%20nota%20%23%20NOT%0Ab%20-%3E%20notb%20%23%20NOT%0A%0A%7Ba%20notb%7D%20-%3E%20w1%20%23%20AND%0A%7Bnota%20b%7D%20-%3E%20w2%20%23%20AND%0A%0A%7Bw1%20w2%7D%20-%3E%20out%20%23%20OR%0A%0A%7D%0A
+[[two-bi]]                    `2bi`:: https://docs.factorcode.org/content/word-2bi%2Ckernel.html
+[[shuffle-word]]       shuffle word:: https://docs.factorcode.org/content/article-shuffle-words.html
+[[two-bi-at]]                `2bi@`:: link:++https://docs.factorcode.org/content/word-2bi__at__,kernel.html++[]
+[[all-selections]] `all-selections`:: https://docs.factorcode.org/content/word-all-selections,math.combinatorics.html
+[[map]]                       `map`:: https://docs.factorcode.org/content/word-map,sequences.html
+
