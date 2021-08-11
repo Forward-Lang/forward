@@ -89,12 +89,12 @@ forward’s level 1 grammar, (using the <<scratchpad>> of <<jscoq>> based on <<c
 == Tools
 
 [horizontal]
-[[BNF-playground]] BNF-playground :: https://bnfplayground.pauliankline.com/
-[[Nearly]]                 Nearly :: https://nearley.js.org/
+[[BNF-playground]] BNF-playground:: https://bnfplayground.pauliankline.com/
+[[Nearly]]                 Nearly:: https://nearley.js.org/
                                      two cool things about nearley:
                                      . it can output railroad diagrams for documentation,
                                      . and it can be inverted to form generators which output random strings that match a grammar
-[[scratchpad]]         scratchpad :: https://jscoq.github.io/scratchpad.html
-[[jscoq]]                   jscoq :: https://github.com/jscoq/jscoq
-[[coq]]                       coq :: https://coq.inria.fr/
+[[scratchpad]]         scratchpad:: https://jscoq.github.io/scratchpad.html
+[[jscoq]]                   jscoq:: https://github.com/jscoq/jscoq
+[[coq]]                       coq:: https://coq.inria.fr/
 
