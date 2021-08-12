@@ -135,10 +135,10 @@ I tried to align the stack annotations to make clearer what is going on.
 
 === Test script
 
-[source,factor]
+[source,factor,line-comment=!]
 ----
 IN: testing-xor
-USING: math.combinatorics prettyprint kernel sequences continuations ;
+USING: math.combinatorics prettyprint kernel sequences continuations arrays ;
 
 : xor ( a b -- out ) 2dup swap [ not and ] 2bi@ or ;       ! <1>
 
@@ -152,13 +152,28 @@ USING: math.combinatorics prettyprint kernel sequences continuations ;
 ! could more easily be defined as:
 ! : possible-inputs2 ( -- seq ) { f t } 2 all-selections ; ! <2>
 
-: test-xor ( seq -- seq ) [ [ xor ] with-datastack ] map ; ! <3>
+: (test-xor) ( seq -- seq ) dup [ xor ] with-datastack 2array ;
+: test-xor ( seq -- seq ) [ (test-xor) ] map ;             ! <3>
+
+
+possible-inputs test-xor .
+----
+
+.output
+[source,factor,line-comment=!]
+----
+{
+    { { f f } { f } }
+    { { t f } { t } }
+    { { f t } { t } }
+    { { t t } { f } }
+}
 ----
 
 .new words:
 <1> <<two-bi-at>>
-<2> <<all-selections>>
-<3> <<map>>
+<2> <<all-selections>> using it to generate all possible combinations of `true` and `false`
+<3> <<map>>            using it to test `xor` on each input
 
 
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
