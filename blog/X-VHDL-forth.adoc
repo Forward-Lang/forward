@@ -136,6 +136,8 @@ I tried to align the stack annotations to make clearer what is going on.
 
 === Test script
 
+<<factor>>
+
 [source,factor,line-comment=!]
 ----
 IN: testing-xor
@@ -197,6 +199,7 @@ possible-inputs [ xor5 ] test .
 == Tools and words
 
 [horizontal]
+[[factor]]            factor playground:: https://www.tutorialspoint.com/execute_factor_online.php
 [[graphiz]]         graphiz playground :: http://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0A%0Aa%20-%3E%20nota%20%23%20NOT%0Ab%20-%3E%20notb%20%23%20NOT%0A%0A%7Ba%20notb%7D%20-%3E%20w1%20%23%20AND%0A%7Bnota%20b%7D%20-%3E%20w2%20%23%20AND%0A%0A%7Bw1%20w2%7D%20-%3E%20out%20%23%20OR%0A%0A%7D%0A
 [[lexical-variables]] lexical variables:: https://docs.factorcode.org/content/article-locals-examples.html
 [[two-bi]]                        `2bi`:: https://docs.factorcode.org/content/word-2bi%2Ckernel.html
