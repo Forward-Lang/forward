@@ -1,4 +1,5 @@
 :subtitle: Boolean Algebras, VHDL, and forth
+:icons: font 
 ifdef::env-github[:hardbreaks:]
 ifdef::env-github[:toc:]
 ifdef::env-github[:toclevels: 3]
@@ -177,9 +178,8 @@ possible-inputs [ xor ] test .
 <4> <<map>>            using it to test `xor` on each input, and capture the ouput
 
 
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-
+[appendix]
+== Tools and words
 
 [horizontal]
 [[graphiz]]     graphiz playground :: http://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0A%0Aa%20-%3E%20nota%20%23%20NOT%0Ab%20-%3E%20notb%20%23%20NOT%0A%0A%7Ba%20notb%7D%20-%3E%20w1%20%23%20AND%0A%7Bnota%20b%7D%20-%3E%20w2%20%23%20AND%0A%0A%7Bw1%20w2%7D%20-%3E%20out%20%23%20OR%0A%0A%7D%0A
@@ -189,4 +189,3 @@ possible-inputs [ xor ] test .
 [[all-selections]] `all-selections`:: https://docs.factorcode.org/content/word-all-selections,math.combinatorics.html
 [[curry]]                   `curry`:: https://docs.factorcode.org/content/word-curry,kernel.html
 [[map]]                       `map`:: https://docs.factorcode.org/content/word-map,sequences.html
-
