@@ -52,12 +52,12 @@ a notb and :> w1
 nota b and :> w2
 
 w1 w2  or  :> out
+
+out
 ;
 ----
 
-actually this is executable `factor` code, using
-link:https://docs.factorcode.org/content/article-locals-examples.html[lexical variables],
-so it isn't super "made-up".
+actually this is executable `factor` code, using <<lexical-variables>>, so it isn't super "made-up".
 
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
@@ -139,9 +139,20 @@ I tried to align the stack annotations to make clearer what is going on.
 [source,factor,line-comment=!]
 ----
 IN: testing-xor
-USING: math.combinatorics prettyprint kernel sequences continuations arrays ;
+USING: math.combinatorics prettyprint kernel sequences continuations arrays locals ;
 
-: xor ( a b -- out ) 2dup swap [ not and ] 2bi@ or ;       ! <1>
+:: xor1 ( a b -- out )
+     a not :> nota
+     b not :> notb
+a notb and :> w1
+nota b and :> w2
+w1 w2  or  :> out
+out
+;
+:: xor2 ( a b -- out ) a b not and b a not and or ;
+ : xor3 ( a b -- out ) [ not and ] [ swap not and ] 2bi or ;
+ : xor4 ( a b -- out ) 2dup not and -rot swap not and or ;
+ : xor5 ( a b -- out ) 2dup swap [ not and ] 2bi@ or ;       ! <1>
 
 : possible-inputs ( -- seq )
 { { f f }
@@ -156,11 +167,15 @@ USING: math.combinatorics prettyprint kernel sequences continuations arrays ;
 : (test) ( seq quot -- seq ) dupd with-datastack 2array ;
 : test ( seq quot -- seq ) [ (test) ] curry map ;          ! <3> <4>
 
-possible-inputs [ xor ] test .
+possible-inputs [ xor1 ] test .
+possible-inputs [ xor2 ] test .
+possible-inputs [ xor3 ] test .
+possible-inputs [ xor4 ] test .
+possible-inputs [ xor5 ] test .
 
 ----
 
-.output
+.output: same for all 5 `xor` implementations
 [source,factor,line-comment=!]
 ----
 {
@@ -182,10 +197,11 @@ possible-inputs [ xor ] test .
 == Tools and words
 
 [horizontal]
-[[graphiz]]     graphiz playground :: http://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0A%0Aa%20-%3E%20nota%20%23%20NOT%0Ab%20-%3E%20notb%20%23%20NOT%0A%0A%7Ba%20notb%7D%20-%3E%20w1%20%23%20AND%0A%7Bnota%20b%7D%20-%3E%20w2%20%23%20AND%0A%0A%7Bw1%20w2%7D%20-%3E%20out%20%23%20OR%0A%0A%7D%0A
-[[two-bi]]                    `2bi`:: https://docs.factorcode.org/content/word-2bi%2Ckernel.html
-[[shuffle-word]]       shuffle word:: https://docs.factorcode.org/content/article-shuffle-words.html
-[[two-bi-at]]                `2bi@`:: link:++https://docs.factorcode.org/content/word-2bi__at__,kernel.html++[]
-[[all-selections]] `all-selections`:: https://docs.factorcode.org/content/word-all-selections,math.combinatorics.html
-[[curry]]                   `curry`:: https://docs.factorcode.org/content/word-curry,kernel.html
-[[map]]                       `map`:: https://docs.factorcode.org/content/word-map,sequences.html
+[[graphiz]]         graphiz playground :: http://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0A%0Aa%20-%3E%20nota%20%23%20NOT%0Ab%20-%3E%20notb%20%23%20NOT%0A%0A%7Ba%20notb%7D%20-%3E%20w1%20%23%20AND%0A%7Bnota%20b%7D%20-%3E%20w2%20%23%20AND%0A%0A%7Bw1%20w2%7D%20-%3E%20out%20%23%20OR%0A%0A%7D%0A
+[[lexical-variables]] lexical variables:: https://docs.factorcode.org/content/article-locals-examples.html
+[[two-bi]]                        `2bi`:: https://docs.factorcode.org/content/word-2bi%2Ckernel.html
+[[shuffle-word]]           shuffle word:: https://docs.factorcode.org/content/article-shuffle-words.html
+[[two-bi-at]]                    `2bi@`:: link:++https://docs.factorcode.org/content/word-2bi__at__,kernel.html++[]
+[[all-selections]]     `all-selections`:: https://docs.factorcode.org/content/word-all-selections,math.combinatorics.html
+[[curry]]                       `curry`:: https://docs.factorcode.org/content/word-curry,kernel.html
+[[map]]                           `map`:: https://docs.factorcode.org/content/word-map,sequences.html
