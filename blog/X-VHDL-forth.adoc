@@ -152,11 +152,11 @@ USING: math.combinatorics prettyprint kernel sequences continuations arrays ;
 ! could more easily be defined as:
 ! : possible-inputs2 ( -- seq ) { f t } 2 all-selections ; ! <2>
 
-: (test-xor) ( seq -- seq ) dup [ xor ] with-datastack 2array ;
-: test-xor ( seq -- seq ) [ (test-xor) ] map ;             ! <3>
+: (test) ( seq quot -- seq ) dupd with-datastack 2array ;
+: test ( seq quot -- seq ) [ (test) ] curry map ;          ! <3> <4>
 
+possible-inputs [ xor ] test .
 
-possible-inputs test-xor .
 ----
 
 .output
@@ -173,7 +173,8 @@ possible-inputs test-xor .
 .new words:
 <1> <<two-bi-at>>
 <2> <<all-selections>> using it to generate all possible combinations of `true` and `false`
-<3> <<map>>            using it to test `xor` on each input
+<3> <<curry>>          using it to pass `xor` to `map` which in turn passes `xor` to `(test)`
+<4> <<map>>            using it to test `xor` on each input, and capture the ouput
 
 
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -186,5 +187,6 @@ possible-inputs test-xor .
 [[shuffle-word]]       shuffle word:: https://docs.factorcode.org/content/article-shuffle-words.html
 [[two-bi-at]]                `2bi@`:: link:++https://docs.factorcode.org/content/word-2bi__at__,kernel.html++[]
 [[all-selections]] `all-selections`:: https://docs.factorcode.org/content/word-all-selections,math.combinatorics.html
+[[curry]]                   `curry`:: https://docs.factorcode.org/content/word-curry,kernel.html
 [[map]]                       `map`:: https://docs.factorcode.org/content/word-map,sequences.html
 
