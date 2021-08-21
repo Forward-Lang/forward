@@ -199,12 +199,15 @@ include::Arithmetic.adoc[leveloffset=+3]
 [[simplex]]                       simplex:: https://www.infoq.com/presentations/Simple-Made-Easy/
 [[analysis-paralysis]] analysis paralysis:: xref:knowledge-base.adoc#analysis-paralysis-wikipedia[]
 
+[colophon]
+== Colophon
+
 +++
 <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
   <img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc/4.0/88x31.png" />
 </a>
 <br />
-This README is licensed under a
+This content is licensed under a
 <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
   Creative Commons Attribution-NonCommercial 4.0 International License
 </a>.
