@@ -150,6 +150,12 @@ This means that forward as a programming language will grow incrementally,
 Trying to have one https://github.com/Forward-Lang/forward/milestones?direction=asc&sort=title[Milestone]
  for each step in the process
 
+ifdef::env-github[]
+== Continue Reading
+
+see:
+endif::[]
+include::book/Semantics.adoc[]
 
 [appendix]
 == References
