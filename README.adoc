@@ -130,7 +130,7 @@ Currently being inspired mainly by:
 * Numerical semantics of <<APL>>
 * Textual semantics of the unix shell.
 
-== <<Waterfall>> process | https://github.com/Forward-Lang/forward/milestones?direction=asc&sort=title[Milestones]
+== Waterfall process
 
 . Integration Requirements
 . Feature Design
@@ -140,10 +140,13 @@ Currently being inspired mainly by:
 . Verification
 . Maintenance 
 
-We are applying the above "waterfall" process to each Domain Specific Language,
+We are applying the above "<<waterfall>>" process to each Domain Specific Language,
  in order to somewhat avoid <<analysis-paralysis>> and to have something to show.
 This means that forward as a programming language will grow incrementally,
  as new vocabularies are added.
+ 
+Trying to have one https://github.com/Forward-Lang/forward/milestones?direction=asc&sort=title[Milestone]
+ for each step in the process
 
 == Semantics
  
@@ -184,7 +187,7 @@ include::Arithmetic.adoc[leveloffset=+3]
 
 [horizontal]
 [[Hoare-triples]]           Hoare triples:: https://en.wikipedia.org/wiki/Hoare_logic#Hoare_triple
-[[Waterfall]]             Waterfall model:: https://en.wikipedia.org/wiki/Waterfall_model#Model
+[[waterfall]]             Waterfall model:: https://en.wikipedia.org/wiki/Waterfall_model#Model
 [[Dependent-types]]       Dependent types:: https://en.wikipedia.org/wiki/Dependent_type
 [[factor]]                         factor:: https://github.com/factor/factor/
 [[APL]]                               APL:: https://tryapl.org/
