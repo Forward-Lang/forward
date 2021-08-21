@@ -150,39 +150,12 @@ This means that forward as a programming language will grow incrementally,
 Trying to have one https://github.com/Forward-Lang/forward/milestones?direction=asc&sort=title[Milestone]
  for each step in the process
 
-== Semantics
- 
-Some general properties we want are:
+ifdef::env-github[]
+== Continue Reading
 
-* decidability,
-* invertability (bijections),
-* tractable problem
-
-=== Informal denotational definitions
-
-.From Maths 
-* Sets : For SQL databases
-* Formal Grammars : For tokenizing, parsing, compiling, transpiling
-* Matrixes : For parallelism
-
-.From Computer Science
-* Dictionary
-* Atoms/Elements:
-** Booleans
-** Characters
-** Numbers
-* Arrays
-** Bitarrays
-** Strings
-** Vectors
-** Matrixes
-
-=== Formal definitions
-
-include::Grammar.adoc[leveloffset=+3]
-include::Parser.adoc[leveloffset=+3]
-include::Evaluation.adoc[leveloffset=+3]
-include::Arithmetic.adoc[leveloffset=+3]
+see:
+endif::[]
+include::book/Semantics.adoc[]
 
 [appendix]
 == References
