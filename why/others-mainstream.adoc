@@ -1,0 +1,25 @@
+= Present language paradigm: and it’s constructs 
+
+1. Imperative: 
+    * if else then
+    * while, do until, for loops
+2. Functional
+    * map, filter, reduce
+    * curry, partial application 
+3. Object oriented 
+
+= Implementing these constructs: from scratch 
+
+* if else then: short circuit
+* loops: goto or recursion
+* map, filter, reduce: recursion
+* curry, partial application
+
+= Present programming languages: and their applications
+
+1. Imperative: 
+    * C
+2. Functional
+    * JavaScript 
+3. Object oriented 
+    * JavaScript 
