@@ -48,7 +48,7 @@ if true then doThis() else doThat();
 ----
 
 
-= Implementing Imperative constructs: from scratch 
+=== Implementing Imperative constructs: from scratch 
 
 .if else then: short circuit
 [source,bash]
@@ -76,6 +76,107 @@ true && echo "it is true" || echo "it is not true"
 // javascript
 true && doThis() || doThat();
 ----
+
+== Functional
+
+    * map, filter, reduce
+    * curry, partial application 
+
+
+[source,bash]
+----
+# bash
+if true then echo "it is true"; else echo "it is not true";
+for i in 1 2 3 4 5; echo $i; done
+while true; do echo "this is an infinite loop"; done
+----
+
+[source,javascript]
+----
+// javascript
+if true then doThis() else doThat();
+----
+
+
+=== Implementing Functional constructs: from scratch 
+
+.if else then: short circuit
+[source,bash]
+----
+# bash
+true && echo "it is true" || echo "it is not true"
+----
+
+[source,javascript]
+----
+// javascript
+true && doThis() || doThat();
+----
+
+.loops: goto or recursion
+
+[source,bash]
+----
+# bash
+true && echo "it is true" || echo "it is not true"
+----
+
+[source,javascript]
+----
+// javascript
+true && doThis() || doThat();
+----
+
+== Object-Oriented
+
+    * map, filter, reduce
+    * curry, partial application 
+
+
+[source,bash]
+----
+# bash
+if true then echo "it is true"; else echo "it is not true";
+for i in 1 2 3 4 5; echo $i; done
+while true; do echo "this is an infinite loop"; done
+----
+
+[source,javascript]
+----
+// javascript
+if true then doThis() else doThat();
+----
+
+
+=== Implementing Object-Oriented constructs: from scratch 
+
+.if else then: short circuit
+[source,bash]
+----
+# bash
+true && echo "it is true" || echo "it is not true"
+----
+
+[source,javascript]
+----
+// javascript
+true && doThis() || doThat();
+----
+
+.loops: goto or recursion
+
+[source,bash]
+----
+# bash
+true && echo "it is true" || echo "it is not true"
+----
+
+[source,javascript]
+----
+// javascript
+true && doThis() || doThat();
+----
+
 
 = Present programming languages: and their applications
 
