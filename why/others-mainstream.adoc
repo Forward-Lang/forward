@@ -29,14 +29,25 @@ We are also going to implement these constructs from scratch
 
 == Imperative
 
-    * if else then
-    * while, do until, for loops
-
+.if else then
 
 [source,bash]
 ----
 # bash
 if true then echo "it is true"; else echo "it is not true";
+----
+
+[source,javascript]
+----
+// javascript
+if true then doThis() else doThat();
+----
+
+.while, do until, for loops
+
+[source,bash]
+----
+# bash
 for i in 1 2 3 4 5; echo $i; done
 while true; do echo "this is an infinite loop"; done
 ----
@@ -44,7 +55,6 @@ while true; do echo "this is an infinite loop"; done
 [source,javascript]
 ----
 // javascript
-if true then doThis() else doThat();
 ----
 
 
