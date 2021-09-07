@@ -1,4 +1,7 @@
-= Present language paradigm: and it’s constructs 
+= Present programming language paradigm: and it’s constructs 
+
+The three main programming language paradigm in widespread use today are:
+Imperative, Functional, and Object oriented code.
 
 1. Imperative: 
     * if else then
