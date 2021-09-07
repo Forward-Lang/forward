@@ -3,7 +3,7 @@
 
 The three main programming paradigms in widespread use today are:
 
-. Imperative: 
+. Imperative
 . Functional
 . Object oriented 
 
