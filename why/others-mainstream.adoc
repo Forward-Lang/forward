@@ -1,4 +1,5 @@
 = Programming Paradigms: and their constructs 
+:toc:
 
 The three main programming paradigms in widespread use today are:
 
@@ -7,7 +8,8 @@ The three main programming paradigms in widespread use today are:
 . Object oriented 
 
 Each paradigm has different a different approach to how they solve problems.
-Here's a summary of the main concepts related to each paradigm:
+
+.Here's a summary of the main concepts related to each paradigm:
 
 1. Imperative: 
     * if else then
@@ -16,6 +18,13 @@ Here's a summary of the main concepts related to each paradigm:
     * map, filter, reduce
     * curry, partial application 
 3. Object oriented 
+
+We are also going to implement these constructs from scratch
+
+* if else then: short circuit
+* loops: goto or recursion
+* map, filter, reduce: recursion
+* curry, partial application
 
 
 == Imperative
@@ -29,22 +38,44 @@ Here's a summary of the main concepts related to each paradigm:
 # bash
 if true then echo "it is true"; else echo "it is not true";
 for i in 1 2 3 4 5; echo $i; done
+while true; do echo "this is an infinite loop"; done
 ----
 
 [source,javascript]
 ----
 // javascript
-if true then doThis() else doThat;
+if true then doThis() else doThat();
 ----
 
 
+= Implementing Imperative constructs: from scratch 
 
-= Implementing these constructs: from scratch 
+.if else then: short circuit
+[source,bash]
+----
+# bash
+true && echo "it is true" || echo "it is not true"
+----
 
-* if else then: short circuit
-* loops: goto or recursion
-* map, filter, reduce: recursion
-* curry, partial application
+[source,javascript]
+----
+// javascript
+true && doThis() || doThat();
+----
+
+.loops: goto or recursion
+
+[source,bash]
+----
+# bash
+true && echo "it is true" || echo "it is not true"
+----
+
+[source,javascript]
+----
+// javascript
+true && doThis() || doThat();
+----
 
 = Present programming languages: and their applications
 
