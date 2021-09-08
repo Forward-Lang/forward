@@ -51,9 +51,31 @@ while_loop () { echo "yes" && true && while_loop; }             # <2>
 #    * map, filter, reduce
 #    * curry, partial application 
 
-if true then echo "it is true"; else echo "it is not true";
-for i in 1 2 3 4 5; echo $i; done
-while true; do echo "this is an infinite loop"; done
+
+"""
+One
+Two
+Three
+Four
+Five
+Six
+"""
+tr a-z A-Z # <1>
+grep --invert-match 'O|S' # <2>
+alias ls="ls -l --color=always --almost-all --group-directories-first --human-readable --inode --sort=time" # <3>
+shopt -s expand_aliases
+
+# (1) map lower-case letters to upper-case letters
+# (2) filter away lines containing 'O' or 'S'
+# (3) partially apply flags to ls
+
+shopt -s expand_aliases
+alias grep="grep --extended-regexp"
+
+echo One Two Three Four Five Six | # no
+               tr a-z' ' A-Z'\n' | # yes
+       grep --invert-match 'O|S'   # yep
+
 
 # === Implementing Functional constructs: from scratch 
 
