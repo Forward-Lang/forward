@@ -38,12 +38,16 @@ while (true) { console.log("this is an infinite loop"); } // <2>
 // === Implementing Imperative constructs: from scratch 
 
 true && doThis() || doThat();              // <1>
-while_loop () { echo "yes" && true && while_loop; }             // <2>
-  for_loop () { let i++; echo $i; test $i -eq 5 || for_loop; }  // <3>
+echo = (x) => { console.log(x); return true; };
+function while_loop() { echo("yes") && true && while_loop(); }    // <2>
+function   for_loop(i) { i++; echo(i); (i == 5) || for_loop(i); } // <3>
+while_loop()
+for_loop(0)
 
 // (1) if else then, implemented with short circuit
 // (2) while loop implemented with recursion
 // (3)   for loop implemented with recursion
+
 
 // == Functional
 
