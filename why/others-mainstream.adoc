@@ -48,9 +48,12 @@ if true then doThis() else doThat();
 [source,bash]
 ----
 # bash
-for i in 1 2 3 4 5; echo $i; done
+for i in 1 2 3 4 5; do echo $i; done
+until true; do echo "this is never executed"; done   # <1>
 while true; do echo "this is an infinite loop"; done
 ----
+
+<1> the `until true` loop can be thought of as a `while not` loop 
 
 [source,javascript]
 ----
