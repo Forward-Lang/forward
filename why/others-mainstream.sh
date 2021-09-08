@@ -20,20 +20,17 @@ while_loop () { echo "yes" && true && while_loop; }             # <2>
 
 # == Functional constructs
 
-#    * map, filter, reduce
-#    * curry, partial application 
-
-
-"""
-One
-Two
-Three
-Four
-Five
-Six
-"""
-tr a-z A-Z # <1>
-grep --invert-match 'O|S' # <2>
+{
+  tr a-z A-Z \
+| grep --invert-match 'O|S'; # <2>
+} <<- EOF
+	One
+	Two
+	Three
+	Four
+	Five
+	Six
+EOF
 alias ls="ls -l --color=always --almost-all --group-directories-first --human-readable --inode --sort=time" # <3>
 shopt -s expand_aliases
 
@@ -45,8 +42,8 @@ shopt -s expand_aliases
 alias grep="grep --extended-regexp"
 
 echo One Two Three Four Five Six | # no
-               tr a-z' ' A-Z'\n' | # yes
-       grep --invert-match 'O|S'   # yep
+tr a-z' ' A-Z'\n'                | # yes
+grep --invert-match 'O|S'          # yep
 
 
 # == Functional constructs from scratch 
