@@ -1,6 +1,4 @@
 # = Programming Paradigms: and their constructs 
-# :toc:
-# :source-highlighter: pygments
 #
 # The three main programming paradigms in widespread use today are:
 #
@@ -50,110 +48,39 @@ true && echo "it is true" || echo "it is not true"
 
 # == Functional
 
-    * map, filter, reduce
-    * curry, partial application 
+#    * map, filter, reduce
+#    * curry, partial application 
 
-
-[source,bash]
-----
-# bash
 if true then echo "it is true"; else echo "it is not true";
 for i in 1 2 3 4 5; echo $i; done
 while true; do echo "this is an infinite loop"; done
-----
 
-[source,javascript]
-----
-// javascript
-if true then doThis() else doThat();
-----
+# === Implementing Functional constructs: from scratch 
 
+# .if else then: short circuit
 
-=== Implementing Functional constructs: from scratch 
-
-.if else then: short circuit
-[source,bash]
-----
-# bash
 true && echo "it is true" || echo "it is not true"
-----
 
-[source,javascript]
-----
-// javascript
-true && doThis() || doThat();
-----
+# .loops: goto or recursion
 
-.loops: goto or recursion
-
-[source,bash]
-----
-# bash
 true && echo "it is true" || echo "it is not true"
-----
 
-[source,javascript]
-----
-// javascript
-true && doThis() || doThat();
-----
+# == Object-Oriented
 
-== Object-Oriented
+#    * map, filter, reduce
+#    * curry, partial application 
 
-    * map, filter, reduce
-    * curry, partial application 
-
-
-[source,bash]
-----
-# bash
 if true then echo "it is true"; else echo "it is not true";
 for i in 1 2 3 4 5; echo $i; done
 while true; do echo "this is an infinite loop"; done
-----
 
-[source,javascript]
-----
-// javascript
-if true then doThis() else doThat();
-----
+# === Implementing Object-Oriented constructs: from scratch 
 
+# .if else then: short circuit
 
-=== Implementing Object-Oriented constructs: from scratch 
-
-.if else then: short circuit
-[source,bash]
-----
-# bash
 true && echo "it is true" || echo "it is not true"
-----
 
-[source,javascript]
-----
-// javascript
-true && doThis() || doThat();
-----
+# .loops: goto or recursion
 
-.loops: goto or recursion
-
-[source,bash]
-----
-# bash
 true && echo "it is true" || echo "it is not true"
-----
 
-[source,javascript]
-----
-// javascript
-true && doThis() || doThat();
-----
-
-
-= Present programming languages: and their applications
-
-1. Imperative: 
-    * C
-2. Functional
-    * JavaScript 
-3. Object oriented 
-    * JavaScript 
