@@ -50,10 +50,11 @@ if true then doThis() else doThat();
 # bash
 for i in 1 2 3 4 5; do echo $i; done
 until true; do echo "this is never executed"; done   # <1>
-while true; do echo "this is an infinite loop"; done
+while true; do echo "this is an infinite loop"; done # <2>
 ----
 
-<1> the `until true` loop can be thought of as a `while not` loop 
+<1> the `until true` loop can be thought of as a `while false` loop 
+<1> the `while true` loop can be thought of as a `until false` loop 
 
 [source,javascript]
 ----
