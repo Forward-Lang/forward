@@ -51,12 +51,16 @@ for_loop(0)
 
 // == Functional
 
-//    * map, filter, reduce
+const numbers = [1, 2, 3, 4, 5];
+echo(numbers.map(i => i * 3));          // <1>
+echo(numbers.filter(i => i % 2));       // <2>
+echo(numbers.reduce((a,b) => a + b ));  // <3>
+
+// (1) map
+// (2) filter
+// (3) reduce
 //    * curry, partial application 
 
-if true then echo "it is true"; else echo "it is not true";
-for i in 1 2 3 4 5; echo $i; done
-while true; do echo "this is an infinite loop"; done
 
 // === Implementing Functional constructs: from scratch 
 
