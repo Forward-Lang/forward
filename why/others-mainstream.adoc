@@ -47,7 +47,7 @@ we are going to present these constructs in bash and javascript.
 [source,bash]
 ----
 # bash
-if true then echo "it is true"; else echo "it is not true";
+if true; then echo "it is true"; else echo "it is not true"; fi
 ----
 
 [source,javascript]
