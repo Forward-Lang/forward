@@ -27,6 +27,17 @@ We are also going to implement these constructs from scratch
 * curry, partial application
 
 
+****
+we are going to present these constructs in bash and javascript.
+
+* https://learnxinyminutes.com/docs/javascript/
+* https://learnxinyminutes.com/docs/bash/
+* https://replit.com/languages/bash
+* https://replit.com/languages/javascript
+
+****
+
+
 == Imperative
 
 .if else then
