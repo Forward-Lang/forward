@@ -38,11 +38,13 @@ while true; do echo "this is an infinite loop"; done # <2>
 
 # === Implementing Imperative constructs: from scratch 
 
-true && echo "it is true" || echo "it is not true" # <1>
-for i in 1 2 3 4 5; do echo $i; done
+true && echo "it is true" || echo "it is not true"              # <1>
+while_loop () { echo "yes" && true && while_loop; }             # <2>
+  for_loop () { let i++; echo $i; test $i -eq 5 || for_loop; }  # <3>
 
-# (1) if else then: short circuit
-# (2) loops: goto or recursion
+# (1) if else then, implemented with short circuit
+# (2) while loop implemented with recursion
+# (3)   for loop implemented with recursion
 
 # == Functional
 
