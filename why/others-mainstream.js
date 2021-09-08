@@ -29,16 +29,15 @@
 // == Imperative
 
 if true; then echo "it is true"; else echo "it is not true"; fi
-for i in 1 2 3 4 5; do echo $i; done
-until true; do echo "this is never executed"; done   // <1>
-while true; do echo "this is an infinite loop"; done // <2>
+for (var i of [1, 2, 3, 4, 5]) { console.log(i); }
+while (true) { console.log("this is an infinite loop"); } // <2>
 
 // (1) the `until true` loop can be thought of as a `while false` loop 
 // (2) the `while true` loop can be thought of as a `until false` loop 
 
 // === Implementing Imperative constructs: from scratch 
 
-true && echo "it is true" || echo "it is not true"              // <1>
+true && doThis() || doThat();              // <1>
 while_loop () { echo "yes" && true && while_loop; }             // <2>
   for_loop () { let i++; echo $i; test $i -eq 5 || for_loop; }  // <3>
 
