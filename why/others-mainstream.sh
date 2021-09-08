@@ -34,17 +34,15 @@ until true; do echo "this is never executed"; done   # <1>
 while true; do echo "this is an infinite loop"; done # <2>
 
 # (1) the `until true` loop can be thought of as a `while false` loop 
-# (1) the `while true` loop can be thought of as a `until false` loop 
-
+# (2) the `while true` loop can be thought of as a `until false` loop 
 
 # === Implementing Imperative constructs: from scratch 
 
-# .if else then: short circuit
-true && echo "it is true" || echo "it is not true"
+true && echo "it is true" || echo "it is not true" # <1>
+for i in 1 2 3 4 5; do echo $i; done
 
-# .loops: goto or recursion
-
-true && echo "it is true" || echo "it is not true"
+# (1) if else then: short circuit
+# (2) loops: goto or recursion
 
 # == Functional
 
