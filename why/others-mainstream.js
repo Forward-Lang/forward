@@ -28,7 +28,7 @@
 //
 // == Imperative
 
-if true; then echo "it is true"; else echo "it is not true"; fi
+if (true) { console.log("it is true"); } else { console.log("it is not true"); } 
 for (var i of [1, 2, 3, 4, 5]) { console.log(i); }
 while (true) { console.log("this is an infinite loop"); } // <2>
 
