@@ -20,30 +20,23 @@ while_loop () { echo "yes" && true && while_loop; }             # <2>
 
 # == Functional constructs
 
-{
+alias grep="grep --extended-regexp"
+
+{ # <1> <2>
   tr a-z A-Z \
-| grep --invert-match 'O|S'; # <2>
-} <<- EOF
-	One
-	Two
-	Three
-	Four
-	Five
-	Six
-EOF
-alias ls="ls -l --color=always --almost-all --group-directories-first --human-readable --inode --sort=time" # <3>
+| tr ' ' "\n" \
+| grep --invert-match 'O|S'; # <3>
+} <<< "One Two Three Four Five Six"
+
 shopt -s expand_aliases
 
 # (1) map lower-case letters to upper-case letters
-# (2) filter away lines containing 'O' or 'S'
-# (3) partially apply flags to ls
+# (2) replace space with newlines
+# (3) filter away lines containing 'O' or 'S'
 
-shopt -s expand_aliases
-alias grep="grep --extended-regexp"
+alias ls="ls -l --color=always --almost-all --group-directories-first --human-readable --inode --sort=time" # <4>
 
-echo One Two Three Four Five Six | # no
-tr a-z' ' A-Z'\n'                | # yes
-grep --invert-match 'O|S'          # yep
+# (4) partially apply flags to ls
 
 
 # == Functional constructs from scratch 
