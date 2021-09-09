@@ -39,6 +39,14 @@ we are going to present these constructs in bash and javascript.
 
 ****
 
+== Heading
+
+include::others-mainstream.js[]
+
+include::others-mainstream.sh[]
+
+include::others-mainstream.lua[]
+
 
 == Imperative
 
