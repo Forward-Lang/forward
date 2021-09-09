@@ -26,24 +26,7 @@ while_loop()
 
 -- == Functional constructs
 
-alias grep="grep --extended-regexp"
-
-{ # <1> <2>
-  tr a-z A-Z \
-| tr ' ' "\n" \
-| grep --invert-match 'O|S'; # <3>
-} <<< "One Two Three Four Five Six"
-
-shopt -s expand_aliases
-
--- (1) map lower-case letters to upper-case letters
--- (2) replace space with newlines
--- (3) filter away lines containing 'O' or 'S'
-
-alias ls="ls -l --color=always --almost-all --group-directories-first --human-readable --inode --sort=time" # <4>
-
--- (4) partially apply flags to ls
-
+-- lua doesn't implement map, reduce, filter by default
 
 -- == Functional constructs from scratch 
 
