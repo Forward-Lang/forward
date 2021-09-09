@@ -46,7 +46,7 @@
   function for_loop () {
     let i++;
     say $i;
-    test $i -eq 5 || for_loop;
+    test $i == 5 || for_loop;
   }
     for_loop # <1>
   while_loop # <2>
