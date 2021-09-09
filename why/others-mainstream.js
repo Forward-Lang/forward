@@ -1,42 +1,64 @@
+// == Basics
+
+// tag::anonFunction[]
+   say = (x) => { console.log(x); return true; };
+// end::anonFunction[]
+
 // == Imperative
 
 // tag::ifElse[]
-   if (true) { console.log("it is true"); } else { console.log("it is not true"); } 
+   if (true) {
+      say("it is true"); 
+   } else { 
+      say("it is not true"); 
+   } 
 // end::ifElse[]
 
 // tag::loops[]
-   for (var i of [1, 2, 3, 4, 5]) { console.log(i); }
-   while (true) { console.log("this is an infinite loop"); }
+   for (var i of [1, 2, 3, 4, 5]) {
+      say(i);
+   }
+
+   while (true) { 
+      say("this is an infinite loop");
+   }
 // end::loops[]
 
 // == Imperative constructs from scratch 
 
 // tag::short[]
-   echo = (x) => { console.log(x); return true; };
-   true && echo("it is true") || echo("it is not true")              // <1>
-   // (1) if else then, implemented with short circuit
+   true && say("it is true") || say("it is not true")
 // end::short[]
 
 // tag::recursion[]
-   echo = (x) => { console.log(x); return true; };
-   function while_loop() { echo("yes") && true && while_loop(); }    // <2>
-   function   for_loop(i) { i++; echo(i); (i == 5) || for_loop(i); } // <3>
-   while_loop()
-   for_loop(0)
-   // (2) while loop implemented with recursion
-   // (3)   for loop implemented with recursion
+   function while_loop() {
+      say("yes") && true && while_loop();
+   }
+
+   function   for_loop(i) { 
+      i++; 
+      say(i);
+      (i == 5) || for_loop(i);
+   }
+
+   for_loop(0)  // <1>
+   while_loop() // <2>
+   // (1) execute for-loop first
+   // (2) since the while loop will enter an infinite loop,
+   //     you will need to cancel the execution by pressing CTRL-C
 // end::recursion[]
 
 // == Functional
 
-const numbers = [1, 2, 3, 4, 5];
-echo(numbers.map(i => i * 3));          // <1>
-echo(numbers.filter(i => i % 2));       // <2>
-echo(numbers.reduce((a,b) => a + b ));  // <3>
-
-// (1) map
-// (2) filter
-// (3) reduce
+// tag::mapReduce[]
+   const numbers = [1, 2, 3, 4, 5];
+   say(numbers.map(i => i * 3));          // <1>
+   say(numbers.filter(i => i % 2));       // <2>
+   say(numbers.reduce((a,b) => a + b ));  // <3>
+   // (1) map
+   // (2) filter
+   // (3) reduce
+// end::mapReduce[]
 
 //    * curry, partial application 
 
