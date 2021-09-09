@@ -35,7 +35,7 @@
       say("yes") && true && while_loop();
    }
 
-   function   for_loop(i) { 
+   function for_loop(i) { 
       i++; 
       say(i);
       (i == 5) || for_loop(i);
@@ -44,7 +44,7 @@
    for_loop(0)  // <1>
    while_loop() // <2>
    // (1) execute for-loop first
-   // (2) since the while loop will enter an infinite loop,
+   // (2) since the while-loop will enter an infinite loop,
    //     you will need to cancel the execution by pressing CTRL-C
 // end::recursion[]
 
@@ -52,12 +52,10 @@
 
 // tag::mapReduce[]
    const numbers = [1, 2, 3, 4, 5];
-   say(numbers.map(i => i * 3));          // <1>
-   say(numbers.filter(i => i % 2));       // <2>
-   say(numbers.reduce((a,b) => a + b ));  // <3>
-   // (1) map
-   // (2) filter
-   // (3) reduce
+
+   say(numbers.map(i => i * 3));
+   say(numbers.filter(i => i % 2));
+   say(numbers.reduce((a,b) => a + b ));
 // end::mapReduce[]
 
 //    * curry, partial application 
