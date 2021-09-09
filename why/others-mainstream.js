@@ -7,7 +7,7 @@ while (true) { console.log("this is an infinite loop"); } // <2>
 // (1) the `until true` loop can be thought of as a `while false` loop 
 // (2) the `while true` loop can be thought of as a `until false` loop 
 
-// === Implementing Imperative constructs: from scratch 
+// == Imperative constructs from scratch 
 
 true && doThis() || doThat();              // <1>
 echo = (x) => { console.log(x); return true; };
@@ -20,7 +20,6 @@ for_loop(0)
 // (2) while loop implemented with recursion
 // (3)   for loop implemented with recursion
 
-
 // == Functional
 
 const numbers = [1, 2, 3, 4, 5];
@@ -31,34 +30,18 @@ echo(numbers.reduce((a,b) => a + b ));  // <3>
 // (1) map
 // (2) filter
 // (3) reduce
+
 //    * curry, partial application 
 
+// == Functional constructs from scratch 
 
-// === Implementing Functional constructs: from scratch 
-
-// .if else then: short circuit
-
-true && echo "it is true" || echo "it is not true"
-
-// .loops: goto or recursion
-
-true && echo "it is true" || echo "it is not true"
 
 // == Object-Oriented
 
-//    * map, filter, reduce
-//    * curry, partial application 
+//    * properties, methods
 
-if true then echo "it is true"; else echo "it is not true";
-for i in 1 2 3 4 5; echo $i; done
-while true; do echo "this is an infinite loop"; done
+myObject = { myProperty: "name", myMethod: (x) => "name"; }
 
-// === Implementing Object-Oriented constructs: from scratch 
 
-// .if else then: short circuit
+// == Object-Oriented constructs from scratch 
 
-true && echo "it is true" || echo "it is not true"
-
-// .loops: goto or recursion
-
-true && echo "it is true" || echo "it is not true"
