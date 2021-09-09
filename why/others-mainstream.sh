@@ -23,7 +23,7 @@
   while_loop () { echo "yes" && true && while_loop; }             # <1>
     for_loop () { let i++; echo $i; test $i -eq 5 || for_loop; }  # <2>
     for_loop # <3>
-  while_loop # <4> 
+  while_loop # <4>
   # (1) while loop implemented with recursion
   # (2)   for loop implemented with recursion
   # (3) execute for loop first
