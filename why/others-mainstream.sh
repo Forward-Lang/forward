@@ -10,42 +10,42 @@
 
 # tag::ifElse[]
   if true; then
-     echo "it is true";
+     say "it is true";
   else
-     echo "it is not true";
+     say "it is not true";
   fi
 # end::ifElse[]
 
 # tag::loops[]
   for i in 1 2 3 4 5; do
-     echo $i;
+     say $i;
   done
   
   # the `until true` loop can be thought of as a `while false` loop 
   until true; do
-     echo "this is never executed";
+     say "this is never executed";
   done
   
   # the `while true` loop can be thought of as a `until false` loop 
   while true; do
-     echo "this is an infinite loop";
+     say "this is an infinite loop";
   done
 # end::loops[]
 
 # == Imperative constructs from scratch 
 
 # tag::short[]
-  true && echo "it is true" || echo "it is not true"
+  true && say "it is true" || say "it is not true"
 # end::short[]
 
 # tag::recursion[]
   function while_loop () {
-    echo "yes" && true && while_loop;
+    say "yes" && true && while_loop;
   }
   
   function for_loop () {
     let i++;
-    echo $i;
+    say $i;
     test $i -eq 5 || for_loop;
   }
     for_loop # <1>
