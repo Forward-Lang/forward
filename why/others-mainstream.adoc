@@ -48,19 +48,19 @@ we are going to present these constructs in bash and javascript.
 [source,javascript]
 ----
 // javascript
-include::others-mainstream.js[tag=ifElse]
+include::others-mainstream.js[tag=ifElse,indent=0]
 ----
 
 [source,shell]
 ----
 # bash
-include::others-mainstream.sh[tag=ifElse]
+include::others-mainstream.sh[tag=ifElse,indent=0]
 ----
 
 [source,lua]
 ----
 -- lua
-include::others-mainstream.lua[tag=ifElse]
+include::others-mainstream.lua[tag=ifElse,indent=0]
 ----
 
 === while, do until, for loops
@@ -68,19 +68,19 @@ include::others-mainstream.lua[tag=ifElse]
 [source,javascript]
 ----
 // javascript
-include::others-mainstream.js[tag=loops]
+include::others-mainstream.js[tag=loops,indent=0]
 ----
 
 [source,shell]
 ----
 # bash
-include::others-mainstream.sh[tag=loops]
+include::others-mainstream.sh[tag=loops,indent=0]
 ----
 
 [source,lua]
 ----
 -- lua
-include::others-mainstream.lua[tag=loops]
+include::others-mainstream.lua[tag=loops,indent=0]
 ----
 
 == Imperative constructs from scratch 
@@ -90,19 +90,19 @@ include::others-mainstream.lua[tag=loops]
 [source,javascript]
 ----
 // javascript
-include::others-mainstream.js[tag=short]
+include::others-mainstream.js[tag=short,indent=0]
 ----
 
 [source,shell]
 ----
 # bash
-include::others-mainstream.sh[tag=short]
+include::others-mainstream.sh[tag=short,indent=0]
 ----
 
 [source,lua]
 ----
 -- lua
-include::others-mainstream.lua[tag=short]
+include::others-mainstream.lua[tag=short,indent=0]
 ----
 
 === loops: goto or recursion
@@ -110,19 +110,19 @@ include::others-mainstream.lua[tag=short]
 [source,javascript]
 ----
 // javascript
-include::others-mainstream.js[tag=recursion]
+include::others-mainstream.js[tag=recursion,indent=0]
 ----
 
 [source,shell]
 ----
 # bash
-include::others-mainstream.sh[tag=recursion]
+include::others-mainstream.sh[tag=recursion,indent=0]
 ----
 
 [source,lua]
 ----
 -- lua
-include::others-mainstream.lua[tag=recursion]
+include::others-mainstream.lua[tag=recursion,indent=0]
 ----
 
 == Functional constructs
@@ -132,19 +132,19 @@ include::others-mainstream.lua[tag=recursion]
 [source,javascript]
 ----
 // javascript
-include::others-mainstream.js[tag=mapReduce]
+include::others-mainstream.js[tag=mapReduce,indent=0]
 ----
 
 [source,shell]
 ----
 # bash
-include::others-mainstream.sh[tag=mapReduce]
+include::others-mainstream.sh[tag=mapReduce,indent=0]
 ----
 
 [source,lua]
 ----
 -- lua
-include::others-mainstream.lua[tag=mapReduce]
+include::others-mainstream.lua[tag=mapReduce,indent=0]
 ----
     
 === curry, partial application 
@@ -152,19 +152,19 @@ include::others-mainstream.lua[tag=mapReduce]
 [source,javascript]
 ----
 // javascript
-include::others-mainstream.js[tag=partial]
+include::others-mainstream.js[tag=partial,indent=0]
 ----
 
 [source,shell]
 ----
 # bash
-include::others-mainstream.sh[tag=partial]
+include::others-mainstream.sh[tag=partial,indent=0]
 ----
 
 [source,lua]
 ----
 -- lua
-include::others-mainstream.lua[tag=partial]
+include::others-mainstream.lua[tag=partial,indent=0]
 ----
 
 == Functional constructs from scratch 
