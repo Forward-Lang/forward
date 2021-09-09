@@ -30,14 +30,17 @@ We are also going to implement these constructs from scratch
 
 
 ****
-we are going to present these constructs in bash and javascript.
+we are going to present these constructs in javascript, bash and lua.
 
-* https://learnxinyminutes.com/docs/javascript/
-* https://learnxinyminutes.com/docs/bash/
-* https://learnxinyminutes.com/docs/lua/
-* https://replit.com/languages/bash
-* https://replit.com/languages/javascript
-* https://replit.com/languages/lua
+* javascript
+  https://learnxinyminutes.com/docs/javascript/[cheatsheet] 
+  https://replit.com/languages/javascript[online] 
+* bash
+  https://learnxinyminutes.com/docs/bash/[cheatsheet] 
+  https://replit.com/languages/bash[online] 
+* lua
+  https://learnxinyminutes.com/docs/lua/[cheatsheet] 
+  https://replit.com/languages/lua[online] 
 
 ****
 
