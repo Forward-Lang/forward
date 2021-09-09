@@ -11,15 +11,16 @@
 -- == Imperative constructs
 
 -- tag::ifElse[]
-   if true
-   then say("it is true");
-   else say("it is not true");
+   if true then
+      say("it is true");
+   else
+      say("it is not true");
    end
 -- end::ifElse[]
 
 -- tag::loops[]
-   for i = 1,5
-   do say(i);
+   for i = 1,5 do
+      say(i);
    end
 
    -- execute once, stop when true
@@ -28,8 +29,8 @@
    until true
 
    -- execute only if true
-   while true
-   do say("this is an infinite loop");
+   while true do
+      say("this is an infinite loop");
    end
 -- end::loops[]
 
