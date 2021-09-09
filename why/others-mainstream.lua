@@ -11,7 +11,7 @@ while true do print("this is an infinite loop"); end  -- <2>
 -- == Imperative constructs from scratch 
 
 print(true and "it is true" or "it is not true")              -- <1>
-function while_loop () print("yes"); return true and while_loop(); end            -- <2>
+function while_loop () print("yes"); return true and while_loop(); end        -- <2>
 function for_loop (i) i = i+1; print(i); return (i == 5) or for_loop(i); end  -- <3>
 for_loop(0)
 while_loop()
