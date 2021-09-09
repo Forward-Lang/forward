@@ -19,7 +19,8 @@ while_loop()
 -- (1) if else then, implemented with short circuit
 --     print in lua is evaluated as a falsey value,
 --     so the following would print both "it is true" and "it is not true":
---     return true and print("it is true") or print("it is not true") 
+--       return true and print("it is true") or print("it is not true") 
+--     the return statement is required since lua distinguishes between statements and expressions
 -- (2) while loop implemented with recursion
 -- (3)   for loop implemented with recursion
 
