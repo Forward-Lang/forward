@@ -1,33 +1,56 @@
+# == Basics
+
+# tag::function[]
+  function say () {
+    echo $1;
+  }
+# end::function[]
+
 # == Imperative constructs
 
 # tag::ifElse[]
-  if true; then echo "it is true"; else echo "it is not true"; fi
+  if true;
+  then echo "it is true";
+  else echo "it is not true";
+  fi
 # end::ifElse[]
 
 # tag::loops[]
-  for i in 1 2 3 4 5; do echo $i; done
-  until true; do echo "this is never executed"; done   # <1>
-  while true; do echo "this is an infinite loop"; done # <2>
-  # (1) the `until true` loop can be thought of as a `while false` loop 
-  # (2) the `while true` loop can be thought of as a `until false` loop 
+  for i in 1 2 3 4 5;
+  do echo $i;
+  done
+  
+  # the `until true` loop can be thought of as a `while false` loop 
+  until true;
+  do echo "this is never executed";
+  done
+  
+  # the `while true` loop can be thought of as a `until false` loop 
+  while true;
+  do echo "this is an infinite loop";
+  done
 # end::loops[]
 
 # == Imperative constructs from scratch 
 
 # tag::short[]
-  true && echo "it is true" || echo "it is not true"              # <1>
-  # (1) if else then, implemented with short circuit
+  true && echo "it is true" || echo "it is not true"
 # end::short[]
 
 # tag::recursion[]
-  while_loop () { echo "yes" && true && while_loop; }             # <1>
-    for_loop () { let i++; echo $i; test $i -eq 5 || for_loop; }  # <2>
-    for_loop # <3>
-  while_loop # <4>
-  # (1) while loop implemented with recursion
-  # (2)   for loop implemented with recursion
-  # (3) execute for loop first
-  # (4) since the while loop will enter an infinite loop,
+  function while_loop () {
+    echo "yes" && true && while_loop;
+  }
+  
+  function for_loop () {
+    let i++;
+    echo $i;
+    test $i -eq 5 || for_loop;
+  }
+    for_loop # <1>
+  while_loop # <2>
+  # (1) execute for loop first
+  # (2) since the while loop will enter an infinite loop,
   #     you will need to cancel the execution by pressing CTRL-C
 # end::recursion[]
 
