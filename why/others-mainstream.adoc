@@ -34,92 +34,95 @@ we are going to present these constructs in bash and javascript.
 
 * https://learnxinyminutes.com/docs/javascript/
 * https://learnxinyminutes.com/docs/bash/
+* https://learnxinyminutes.com/docs/lua/
 * https://replit.com/languages/bash
 * https://replit.com/languages/javascript
+* https://replit.com/languages/lua
 
 ****
-
-== Heading
-
-[source,javascript]
-----
-include::others-mainstream.js[]
-----
-
-[source,shell]
-----
-include::others-mainstream.sh[]
-----
-
-[source,lua]
-----
-include::others-mainstream.lua[]
-----
 
 == Imperative
 
 .if else then
 
-[source,bash]
-----
-# bash
-if true; then echo "it is true"; else echo "it is not true"; fi
-----
-
 [source,javascript]
 ----
 // javascript
-if true then doThis() else doThat();
+include::others-mainstream.js[tag=ifElse]
+----
+
+[source,shell]
+----
+# bash
+include::others-mainstream.sh[tag=ifElse]
+----
+
+[source,lua]
+----
+-- lua
+include::others-mainstream.lua[tag=ifElse]
 ----
 
 .while, do until, for loops
 
-[source,bash]
-----
-# bash
-for i in 1 2 3 4 5; do echo $i; done
-until true; do echo "this is never executed"; done   # <1>
-while true; do echo "this is an infinite loop"; done # <2>
-----
-
-<1> the `until true` loop can be thought of as a `while false` loop 
-<1> the `while true` loop can be thought of as a `until false` loop 
-
 [source,javascript]
 ----
 // javascript
-for (var i of [1, 2, 3, 4, 5]) { console.log(i); } 
-while (true) { console.log("this is an infinite loop"); }
+include::others-mainstream.js[tag=loops]
 ----
 
+[source,shell]
+----
+# bash
+include::others-mainstream.sh[tag=loops]
+----
+
+[source,lua]
+----
+-- lua
+include::others-mainstream.lua[tag=loops]
+----
 
 === Implementing Imperative constructs: from scratch 
 
 .if else then: short circuit
-[source,bash]
-----
-# bash
-true && echo "it is true" || echo "it is not true"
-----
 
 [source,javascript]
 ----
 // javascript
-true && doThis() || doThat();
+include::others-mainstream.js[tag=short]
+----
+
+[source,shell]
+----
+# bash
+include::others-mainstream.sh[tag=short]
+----
+
+[source,lua]
+----
+-- lua
+include::others-mainstream.lua[tag=short]
 ----
 
 .loops: goto or recursion
 
-[source,bash]
-----
-# bash
-true && echo "it is true" || echo "it is not true"
-----
-
 [source,javascript]
 ----
 // javascript
-true && doThis() || doThat();
+include::others-mainstream.js[tag=recursion]
+----
+
+[source,shell]
+----
+# bash
+include::others-mainstream.sh[tag=recursion]
+----
+
+[source,lua]
+----
+-- lua
+include::others-mainstream.lua[tag=recursion]
 ----
 
 == Functional
