@@ -16,7 +16,7 @@
    // (1) if else then, implemented with short circuit
 // end::short[]
 
-// end::recursion[]
+// tag::recursion[]
    echo = (x) => { console.log(x); return true; };
    function while_loop() { echo("yes") && true && while_loop(); }    // <2>
    function   for_loop(i) { i++; echo(i); (i == 5) || for_loop(i); } // <3>
