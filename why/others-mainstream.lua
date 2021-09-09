@@ -2,17 +2,18 @@
 
 if true then print("it is true"); else print("it is not true"); end
 for i = 1,5 do print(i); end
-until true; do echo "this is never executed"; end   # <1>
-while true; do echo "this is an infinite loop"; end # <2>
+repeat print("this is executed once"); until true     -- <1>
+while true do print("this is an infinite loop"); end  -- <2>
 
--- (1) the `until true` loop can be thought of as a `while false` loop 
--- (2) the `while true` loop can be thought of as a `until false` loop 
+-- (1) execute once, stop when true
+-- (2) execute only if true 
 
 -- == Imperative constructs from scratch 
 
-true && echo "it is true" || echo "it is not true"              # <1>
-function while_loop () { echo "yes" && true && while_loop; }             # <2>
-function  for_loop () { let i++; echo $i; test $i -eq 5 || for_loop; }  # <3>
+print(true and "it is true" or "it is not true")              -- <1>
+function while_loop () print("yes") and true and while_loop(); end            -- <2>
+function for_loop (i) i = i+1; print(i); return (i == 5) or for_loop(i); end  -- <3>
+for_loop(0)
 
 -- (1) if else then, implemented with short circuit
 -- (2) while loop implemented with recursion
