@@ -22,7 +22,12 @@ endif::[]
 :toc: preamble
 
 link:https://github.com/Forward-Lang/forward/actions/workflows/asciidoctor-ghpages.yml[image:https://github.com/Forward-Lang/forward/actions/workflows/asciidoctor-ghpages.yml/badge.svg[asciidoctor-ghpages]]
-link:https://github.com/Forward-Lang/forward[image:https://tokei.rs/b1/github/Forward-Lang/forward[]]
+image:https://img.shields.io/github/repo-size/forward-lang/forward[GitHub repo size]
+image:https://tokei.rs/b1/github/Forward-Lang/forward?category=lines[]
+image:https://tokei.rs/b1/github/Forward-Lang/forward?category=blanks[]
+image:https://tokei.rs/b1/github/Forward-Lang/forward?category=code[]
+image:https://tokei.rs/b1/github/Forward-Lang/forward?category=comments[]
+image:https://tokei.rs/b1/github/Forward-Lang/forward?category=files[]
 
 A stack-based programming language.
 Powerful Enough, Simple, Correct.
