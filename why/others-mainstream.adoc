@@ -1,6 +1,7 @@
 = Programming Paradigms: and their constructs 
 :toc:
 :source-highlighter: pygments
+:icons: font
 
 The three main programming paradigms in widespread use today are:
 
