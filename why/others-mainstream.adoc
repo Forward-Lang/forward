@@ -199,8 +199,16 @@ include::others-mainstream.lua[tag=partial,indent=0]
 
 == Functional constructs from scratch 
 
+=== map, reduce, filter: recursion
+
+=== partial application: pattern-matching or currying 
+
 
 == Object-Oriented constructs
+
+=== properties and methods
+
+=== inheritance
 
 == Object-Oriented constructs from scratch 
 
