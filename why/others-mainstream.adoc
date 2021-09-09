@@ -5,49 +5,50 @@
 
 The three main programming paradigms in widespread use today are:
 
-. Imperative
-. Functional
-. Object oriented 
+. Imperative programming
+. Functional programming
+. Object-oriented programming
 
 Each paradigm has different a different approach to how they solve problems.
-
-.Here's a summary of the main concepts related to each paradigm:
-
-1. Imperative: 
-    * if else then
-    * while, do until, for loops
-2. Functional
-    * map, filter, reduce
-    * curry, partial application 
-3. Object oriented 
-
-We are also going to implement these constructs from scratch
-
-* if else then: short circuit
-* loops: goto or recursion
-* map, filter, reduce: recursion
-* curry, partial application
-
+We are going to go over some concepts that are central to each paradigm.
+We are also going to implement these constructs from scratch.
+We are just looking at the semantics of the programming languages.
+Other aspects of software developement aren't going to be covered here.
+This includes aspects such as agile vs waterfall vs scrum, or dynamic typing vs static typing.
 
 ****
-We are going to present these constructs in javascript, bash and lua.
+.semantics vs syntax
+
+I have tried to minimize any syntactical differences between the languages.
+This way, we can focus on the semantical differences between the languages.
+
+But, what does syntax and semantics mean?
+A quick explaination is that the semantics of a language is the underlying meaning of a language.
+For example, in these all have similar semantics:
+
+English greeting:: "hello"
+Spanish greeting:: "hola"
+French greeting:: "bonjour"
+Chinese greeting:: "你好"
+
+****
+
+We are going to present these constructs in `javascript`, `bash` and `lua`.
 I recommend checking out the following resources;
 
-* javascript:
+* `javascript`:
   https://learnxinyminutes.com/docs/javascript/[cheatsheet] for a 5-10 minute introduction or memory aide.
   https://replit.com/languages/javascript[online] interpreter, to run javascript code.
-* bash:
+* `bash`:
   https://learnxinyminutes.com/docs/bash/[cheatsheet] for a 5-10 minute introduction or memory aide.
   https://replit.com/languages/bash[online] interpreter, to run bash code.
-* lua:
+* `lua`:
   https://learnxinyminutes.com/docs/lua/[cheatsheet] for a 5-10 minute introduction or memory aide.
   https://replit.com/languages/lua[online] interpreter, to run lua code.
   
 The cheatsheets are going to cover stuff that are more specific to each language.
 We, on the other hand, are going to use the languages to highlight concepts.
 These concepts are common among several programming languages, not just the ones mentioned here.
-
-****
 
 == Basics: functions and variables
 
