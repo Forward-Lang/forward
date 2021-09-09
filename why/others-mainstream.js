@@ -1,31 +1,3 @@
-// = Programming Paradigms: and their constructs 
-//
-// The three main programming paradigms in widespread use today are:
-//
-// . Imperative
-// . Functional
-// . Object oriented 
-//
-// Each paradigm has different a different approach to how they solve problems.
-//
-// .Here's a summary of the main concepts related to each paradigm:
-//
-// 1. Imperative: 
-//    * if else then
-//    * while, do until, for loops
-// 2. Functional
-//    * map, filter, reduce
-//    * curry, partial application 
-// 3. Object oriented 
-//
-// We are also going to implement these constructs from scratch
-//
-// * if else then: short circuit
-// * loops: goto or recursion
-// * map, filter, reduce: recursion
-// * curry, partial application
-//
-//
 // == Imperative
 
 if (true) { console.log("it is true"); } else { console.log("it is not true"); } 
