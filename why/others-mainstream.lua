@@ -1,9 +1,9 @@
 -- == Imperative constructs
 
-if true; then echo "it is true"; else echo "it is not true"; fi
-for i in 1 2 3 4 5; do echo $i; done
-until true; do echo "this is never executed"; done   # <1>
-while true; do echo "this is an infinite loop"; done # <2>
+if true then print("it is true"); else print("it is not true"); end
+for i = 1,5 do print(i); end
+until true; do echo "this is never executed"; end   # <1>
+while true; do echo "this is an infinite loop"; end # <2>
 
 -- (1) the `until true` loop can be thought of as a `while false` loop 
 -- (2) the `while true` loop can be thought of as a `until false` loop 
@@ -11,8 +11,8 @@ while true; do echo "this is an infinite loop"; done # <2>
 -- == Imperative constructs from scratch 
 
 true && echo "it is true" || echo "it is not true"              # <1>
-while_loop () { echo "yes" && true && while_loop; }             # <2>
-  for_loop () { let i++; echo $i; test $i -eq 5 || for_loop; }  # <3>
+function while_loop () { echo "yes" && true && while_loop; }             # <2>
+function  for_loop () { let i++; echo $i; test $i -eq 5 || for_loop; }  # <3>
 
 -- (1) if else then, implemented with short circuit
 -- (2) while loop implemented with recursion
