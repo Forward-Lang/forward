@@ -41,12 +41,20 @@ we are going to present these constructs in bash and javascript.
 
 == Heading
 
+[source,javascript]
+----
 include::others-mainstream.js[]
+----
 
+[source,shell]
+----
 include::others-mainstream.sh[]
+----
 
+[source,lua]
+----
 include::others-mainstream.lua[]
-
+----
 
 == Imperative
 
