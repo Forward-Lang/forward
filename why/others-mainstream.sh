@@ -9,25 +9,26 @@
 # == Imperative constructs
 
 # tag::ifElse[]
-  if true;
-  then echo "it is true";
-  else echo "it is not true";
+  if true; then
+     echo "it is true";
+  else
+     echo "it is not true";
   fi
 # end::ifElse[]
 
 # tag::loops[]
-  for i in 1 2 3 4 5;
-  do echo $i;
+  for i in 1 2 3 4 5; do
+     echo $i;
   done
   
   # the `until true` loop can be thought of as a `while false` loop 
-  until true;
-  do echo "this is never executed";
+  until true; do
+     echo "this is never executed";
   done
   
   # the `while true` loop can be thought of as a `until false` loop 
-  while true;
-  do echo "this is an infinite loop";
+  while true; do
+     echo "this is an infinite loop";
   done
 # end::loops[]
 
