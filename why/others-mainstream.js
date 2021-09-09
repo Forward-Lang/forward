@@ -12,7 +12,8 @@
 // == Imperative constructs from scratch 
 
 // tag::short[]
-   true && doThis() || doThat();              // <1>
+   echo = (x) => { console.log(x); return true; };
+   true && echo("it is true") || echo("it is not true")              // <1>
    // (1) if else then, implemented with short circuit
 // end::short[]
 
