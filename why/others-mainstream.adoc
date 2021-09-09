@@ -41,6 +41,27 @@ we are going to present these constructs in bash and javascript.
 
 ****
 
+== Basics: functions and variables
+
+[source,javascript]
+----
+// javascript
+include::others-mainstream.js[tag=function,indent=0]
+include::others-mainstream.js[tag=anonFunction,indent=0]
+----
+
+[source,shell]
+----
+# bash
+include::others-mainstream.sh[tag=function,indent=0]
+----
+
+[source,lua]
+----
+-- lua
+include::others-mainstream.lua[tag=function,indent=0]
+----
+
 == Imperative constructs
 
 === if else then
