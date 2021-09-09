@@ -2,7 +2,6 @@
 :toc:
 :source-highlighter: pygments
 
-
 The three main programming paradigms in widespread use today are:
 
 . Imperative
@@ -34,193 +33,146 @@ we are going to present these constructs in bash and javascript.
 
 * https://learnxinyminutes.com/docs/javascript/
 * https://learnxinyminutes.com/docs/bash/
+* https://learnxinyminutes.com/docs/lua/
 * https://replit.com/languages/bash
 * https://replit.com/languages/javascript
+* https://replit.com/languages/lua
 
 ****
 
-== Heading
+== Imperative constructs
+
+=== if else then
 
 [source,javascript]
 ----
-include::others-mainstream.js[]
+// javascript
+include::others-mainstream.js[tag=ifElse]
 ----
 
 [source,shell]
 ----
-include::others-mainstream.sh[]
+# bash
+include::others-mainstream.sh[tag=ifElse]
 ----
 
 [source,lua]
 ----
-include::others-mainstream.lua[]
+-- lua
+include::others-mainstream.lua[tag=ifElse]
 ----
 
-== Imperative
-
-.if else then
-
-[source,bash]
-----
-# bash
-if true; then echo "it is true"; else echo "it is not true"; fi
-----
+=== while, do until, for loops
 
 [source,javascript]
 ----
 // javascript
-if true then doThis() else doThat();
+include::others-mainstream.js[tag=loops]
 ----
 
-.while, do until, for loops
-
-[source,bash]
+[source,shell]
 ----
 # bash
-for i in 1 2 3 4 5; do echo $i; done
-until true; do echo "this is never executed"; done   # <1>
-while true; do echo "this is an infinite loop"; done # <2>
+include::others-mainstream.sh[tag=loops]
 ----
 
-<1> the `until true` loop can be thought of as a `while false` loop 
-<1> the `while true` loop can be thought of as a `until false` loop 
+[source,lua]
+----
+-- lua
+include::others-mainstream.lua[tag=loops]
+----
+
+== Imperative constructs from scratch 
+
+=== if else then: short circuit
 
 [source,javascript]
 ----
 // javascript
-for (var i of [1, 2, 3, 4, 5]) { console.log(i); } 
-while (true) { console.log("this is an infinite loop"); }
+include::others-mainstream.js[tag=short]
 ----
 
-
-=== Implementing Imperative constructs: from scratch 
-
-.if else then: short circuit
-[source,bash]
+[source,shell]
 ----
 # bash
-true && echo "it is true" || echo "it is not true"
+include::others-mainstream.sh[tag=short]
 ----
+
+[source,lua]
+----
+-- lua
+include::others-mainstream.lua[tag=short]
+----
+
+=== loops: goto or recursion
 
 [source,javascript]
 ----
 // javascript
-true && doThis() || doThat();
+include::others-mainstream.js[tag=recursion]
 ----
 
-.loops: goto or recursion
-
-[source,bash]
+[source,shell]
 ----
 # bash
-true && echo "it is true" || echo "it is not true"
+include::others-mainstream.sh[tag=recursion]
 ----
+
+[source,lua]
+----
+-- lua
+include::others-mainstream.lua[tag=recursion]
+----
+
+== Functional constructs
+
+=== map, filter, reduce
 
 [source,javascript]
 ----
 // javascript
-true && doThis() || doThat();
+include::others-mainstream.js[tag=mapReduce]
 ----
 
-== Functional
-
-    * map, filter, reduce
-    * curry, partial application 
-
-
-[source,bash]
+[source,shell]
 ----
 # bash
-if true then echo "it is true"; else echo "it is not true";
-for i in 1 2 3 4 5; echo $i; done
-while true; do echo "this is an infinite loop"; done
+include::others-mainstream.sh[tag=mapReduce]
 ----
+
+[source,lua]
+----
+-- lua
+include::others-mainstream.lua[tag=mapReduce]
+----
+    
+=== curry, partial application 
 
 [source,javascript]
 ----
 // javascript
-if true then doThis() else doThat();
+include::others-mainstream.js[tag=partial]
 ----
 
-
-=== Implementing Functional constructs: from scratch 
-
-.if else then: short circuit
-[source,bash]
+[source,shell]
 ----
 # bash
-true && echo "it is true" || echo "it is not true"
+include::others-mainstream.sh[tag=partial]
 ----
 
-[source,javascript]
+[source,lua]
 ----
-// javascript
-true && doThis() || doThat();
-----
-
-.loops: goto or recursion
-
-[source,bash]
-----
-# bash
-true && echo "it is true" || echo "it is not true"
+-- lua
+include::others-mainstream.lua[tag=partial]
 ----
 
-[source,javascript]
-----
-// javascript
-true && doThis() || doThat();
-----
-
-== Object-Oriented
-
-    * map, filter, reduce
-    * curry, partial application 
+== Functional constructs from scratch 
 
 
-[source,bash]
-----
-# bash
-if true then echo "it is true"; else echo "it is not true";
-for i in 1 2 3 4 5; echo $i; done
-while true; do echo "this is an infinite loop"; done
-----
+== Object-Oriented constructs
 
-[source,javascript]
-----
-// javascript
-if true then doThis() else doThat();
-----
+== Object-Oriented constructs from scratch 
 
-
-=== Implementing Object-Oriented constructs: from scratch 
-
-.if else then: short circuit
-[source,bash]
-----
-# bash
-true && echo "it is true" || echo "it is not true"
-----
-
-[source,javascript]
-----
-// javascript
-true && doThis() || doThat();
-----
-
-.loops: goto or recursion
-
-[source,bash]
-----
-# bash
-true && echo "it is true" || echo "it is not true"
-----
-
-[source,javascript]
-----
-// javascript
-true && doThis() || doThat();
-----
 
 
 = Present programming languages: and their applications

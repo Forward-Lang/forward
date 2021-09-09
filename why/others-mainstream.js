@@ -1,24 +1,30 @@
 // == Imperative
 
-if (true) { console.log("it is true"); } else { console.log("it is not true"); } 
-for (var i of [1, 2, 3, 4, 5]) { console.log(i); }
-while (true) { console.log("this is an infinite loop"); } // <2>
+// tag::ifElse[]
+   if (true) { console.log("it is true"); } else { console.log("it is not true"); } 
+// end::ifElse[]
 
-// (1) the `until true` loop can be thought of as a `while false` loop 
-// (2) the `while true` loop can be thought of as a `until false` loop 
+// tag::loops[]
+   for (var i of [1, 2, 3, 4, 5]) { console.log(i); }
+   while (true) { console.log("this is an infinite loop"); }
+// end::loops[]
 
 // == Imperative constructs from scratch 
 
-true && doThis() || doThat();              // <1>
-echo = (x) => { console.log(x); return true; };
-function while_loop() { echo("yes") && true && while_loop(); }    // <2>
-function   for_loop(i) { i++; echo(i); (i == 5) || for_loop(i); } // <3>
-while_loop()
-for_loop(0)
+// tag::short[]
+   true && doThis() || doThat();              // <1>
+   // (1) if else then, implemented with short circuit
+// end::short[]
 
-// (1) if else then, implemented with short circuit
-// (2) while loop implemented with recursion
-// (3)   for loop implemented with recursion
+// tag::recursion[]
+   echo = (x) => { console.log(x); return true; };
+   function while_loop() { echo("yes") && true && while_loop(); }    // <2>
+   function   for_loop(i) { i++; echo(i); (i == 5) || for_loop(i); } // <3>
+   while_loop()
+   for_loop(0)
+   // (2) while loop implemented with recursion
+   // (3)   for loop implemented with recursion
+// end::recursion[]
 
 // == Functional
 
