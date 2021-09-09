@@ -1,21 +1,42 @@
+-- == Basics
+
+-- tag::function[]
+   function say(text)
+     print(text);
+     return true;
+   end
+-- end::function[]
+
+
 -- == Imperative constructs
 
 -- tag::ifElse[]
-   if true then print("it is true"); else print("it is not true"); end
+   if true
+   then say("it is true");
+   else say("it is not true");
+   end
 -- end::ifElse[]
 
 -- tag::loops[]
-   for i = 1,5 do print(i); end
-   repeat print("this is executed once"); until true     -- <1>
-   while true do print("this is an infinite loop"); end  -- <2>
-   -- (1) execute once, stop when true
-   -- (2) execute only if true
+   for i = 1,5
+   do say(i);
+   end
+
+   -- execute once, stop when true
+   repeat
+     say("this is executed once");
+   until true
+
+   -- execute only if true
+   while true
+   do say("this is an infinite loop");
+   end
 -- end::loops[]
 
 -- == Imperative constructs from scratch 
 
 -- tag::short[]
-   print(true and "it is true" or "it is not true")              -- <1>
+   say(true and "it is true" or "it is not true")              -- <1>
    -- (1) if else then, implemented with short circuit
    --     print in lua is evaluated as a falsey value,
    --     so the following would print both "it is true" and "it is not true":
@@ -24,12 +45,22 @@
 -- end::short[]
 
 -- tag::recursion[]
-   function while_loop () print("yes"); return true and while_loop(); end        -- <2>
-   function for_loop (i) i = i+1; print(i); return (i == 5) or for_loop(i); end  -- <3>
-   for_loop(0)
-   while_loop()
-   -- (2) while loop implemented with recursion
-   -- (3)   for loop implemented with recursion
+   function while_loop ()
+     say("yes");
+     return true and while_loop();
+   end
+
+   function for_loop (i)
+     i = i+1;
+     say(i);
+     return (i == 5) or for_loop(i);
+   end
+
+   for_loop(0)   -- <1>
+   while_loop()  -- <2>
+   -- (1) execute for-loop first
+   -- (2) since the while-loop will enter an infinite loop,
+   --     you will need to cancel the execution by pressing CTRL-C
 -- end::recursion[]
 
 -- == Functional constructs
