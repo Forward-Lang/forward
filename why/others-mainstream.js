@@ -1,7 +1,14 @@
 // == Basics
 
+// tag::function[]
+   function say(text) {
+      console.log(text);
+      return true;
+   }
+// end::function[]
+
 // tag::anonFunction[]
-   say = (x) => { console.log(x); return true; };
+   say2 = (x) => { console.log(x); return true; };
 // end::anonFunction[]
 
 // == Imperative
