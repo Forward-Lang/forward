@@ -212,6 +212,7 @@ include::others-mainstream.lua[tag=partial,indent=0]
 
 == Object-Oriented constructs from scratch 
 
+=== properties and methods: dictionaries
 
 
 = Present programming languages: and their applications
