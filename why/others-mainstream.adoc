@@ -30,17 +30,22 @@ We are also going to implement these constructs from scratch
 
 
 ****
-we are going to present these constructs in javascript, bash and lua.
+We are going to present these constructs in javascript, bash and lua.
+I recommend checking out the following resources;
 
-* javascript
-  https://learnxinyminutes.com/docs/javascript/[cheatsheet] 
-  https://replit.com/languages/javascript[online] 
-* bash
-  https://learnxinyminutes.com/docs/bash/[cheatsheet] 
-  https://replit.com/languages/bash[online] 
-* lua
-  https://learnxinyminutes.com/docs/lua/[cheatsheet] 
-  https://replit.com/languages/lua[online] 
+* javascript:
+  https://learnxinyminutes.com/docs/javascript/[cheatsheet] for a 5-10 minute introduction or memory aide.
+  https://replit.com/languages/javascript[online] interpreter, to run javascript code.
+* bash:
+  https://learnxinyminutes.com/docs/bash/[cheatsheet] for a 5-10 minute introduction or memory aide.
+  https://replit.com/languages/bash[online] interpreter, to run bash code.
+* lua:
+  https://learnxinyminutes.com/docs/lua/[cheatsheet] for a 5-10 minute introduction or memory aide.
+  https://replit.com/languages/lua[online] interpreter, to run lua code.
+  
+The cheatsheets are going to cover stuff that are more specific to each language.
+We, on the other hand, are going to use the languages to highlight concepts.
+These concepts are common among several programming languages, not just the ones mentioned here.
 
 ****
 
