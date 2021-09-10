@@ -24,7 +24,6 @@
   for ((i=1; i <= 5; i++)); do
      say $i;
   done
-
   
   # the `until true` loop can be thought of as a `while false` loop 
   until true; do
