@@ -102,7 +102,7 @@ include::others-mainstream.lua[tag=function,indent=0]
 These functions take as input some text, and return the boolean value `True`.
 Boolean variables can only have one of two values: `True` or `False`.
 We are going to use this `say` function in the upcoming examples,
-and the `True` value is going to be especially useful for us in the section "<<if-else-then-short-circuit>>".
+and the `True` value is going to be especially useful for us in the section "<<if else then: short circuit>>".
 There we will reimplement the `if ... then ... else ...` construct using short-circuit which depends on `say` returning a `True` value.
 
 === Statements vs expressions
