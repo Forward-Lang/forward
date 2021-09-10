@@ -2,6 +2,7 @@
 :toc:
 :source-highlighter: pygments
 :icons: font
+:stem:
 
 The three main programming paradigms in widespread use today are:
 
@@ -52,6 +53,19 @@ These concepts are common among several programming languages, not just the ones
 
 == Basics: functions and variables
 
+The most fundemental feature in by far the vast majority of programming languages is functions.
+Functions take inputs and output something in return.
+You probably recognize this from maths.
+
+[math]
+----
+f(x) = sqrt(1+x^2)
+----
+
+In the above example, we assume that both the inputs and outputs are numbers.
+In programming we regularly work with a far more diverse range of "things".
+Here's an example:
+
 [source,javascript]
 ----
 // javascript
@@ -70,6 +84,9 @@ include::others-mainstream.sh[tag=function,indent=0]
 -- lua
 include::others-mainstream.lua[tag=function,indent=0]
 ----
+
+These functions take as input some text, and return the boolean value `True`.
+Boolean variables can only have one of two values: `True` or `False`.
 
 == Imperative constructs
 
