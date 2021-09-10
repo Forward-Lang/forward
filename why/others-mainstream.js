@@ -26,6 +26,11 @@
       say(i);
    }
 
+   for (var i = 1; i <= 5; i++) {
+      say(i);
+   }
+
+
    while (true) { 
       say("this is an infinite loop");
    }
