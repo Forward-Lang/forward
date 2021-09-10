@@ -58,9 +58,9 @@ Functions take inputs and output something in return.
 You probably recognize this from maths.
 
 [math]
-----
+++++
 f(x) = sqrt(1+x^2)
-----
+++++
 
 In the above example, we assume that both the inputs and outputs are numbers.
 In programming we regularly work with a far more diverse range of "things".
