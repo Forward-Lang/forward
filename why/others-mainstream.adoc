@@ -70,7 +70,6 @@ Here's an example:
 ----
 // javascript
 include::others-mainstream.js[tag=function,indent=0]
-include::others-mainstream.js[tag=anonFunction,indent=0]
 ----
 
 [source,shell]
@@ -90,6 +89,21 @@ Boolean variables can only have one of two values: `True` or `False`.
 We are going to use this `say` function in the upcoming examples,
 and the `True` value is going to be especially useful for us in the section "<<if-else-then-short-circuit>>".
 There we will reimplement the `if ... then ... else ...` construct using short-circuit which depends on `say` returning a `True` value.
+
+=== Statements vs expressions
+
+[source,javascript]
+----
+// javascript
+include::others-mainstream.js[tag=anonFunction,indent=0]
+----
+
+[source,lua]
+----
+-- lua
+include::others-mainstream.lua[tag=anonFunction,indent=0]
+----
+
 
 == Imperative constructs
 
