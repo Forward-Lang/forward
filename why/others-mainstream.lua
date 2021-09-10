@@ -7,6 +7,9 @@
    end
 -- end::function[]
 
+-- tag::anonFunction[]
+   say = function (text) print(text); return true; end
+-- end::anonFunction[]
 
 -- == Imperative constructs
 
