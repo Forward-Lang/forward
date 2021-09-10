@@ -26,7 +26,7 @@ This includes aspects such as agile vs waterfall vs scrum, or dynamic typing vs 
 .semantics vs syntax
 
 I have tried to minimize any syntactical differences between the languages.
-This way, we can focus on the semantical differences between the languages.
+This way, we can focus on the semantical similarities between the languages.
 
 But, what does syntax and semantics mean?
 A quick explaination is that the semantics of a language is the underlying meaning of a language.
@@ -36,6 +36,16 @@ English greeting:: "hello"
 Spanish greeting:: "hola"
 French greeting:: "bonjour"
 Chinese greeting:: "你好"
+
+Syntax is a bit harder to explain.
+In programming languages, when we talk about syntactical differences,
+we are mainly talking about superficial differences in how a programming language structures itself.
+Here are some examples of some made up syntaxes, with the same semantics:
+
+A syntax using Curly brackets :: `function () { ... }`
+A syntax based on Mathematics :: `f(x) = ...`
+A syntax using keywords :: `function () do ... end`
+A syntax using prefix notation :: `(function () ... )`
 
 ****
 
