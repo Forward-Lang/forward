@@ -57,7 +57,7 @@ The most fundemental feature in by far the vast majority of programming language
 Functions take inputs and output something in return.
 You probably recognize this from maths.
 
-[math]
+[stem]
 ++++
 f(x) = sqrt(1+x^2)
 ++++
