@@ -137,6 +137,32 @@ include::others-mainstream.lua[tag=loops,indent=0]
 
 === if else then: short circuit
 
+`if ... else ... then ...`, implemented with short circuit evaluation.
+Understanding this depends on you also understanding to a certain extent boolean expressions.
+So here is a quick recap:
+
+,===
+input: A, input: B, A and B
+
+True    , True    , True    
+True    , False   , False   
+False   , True    , False   
+False   , False   , False   
+,===
+
+`A and B` is `True` if and only if both `A` and `B` are `True`
+
+,===
+input: A, input: B, A or B
+
+True    , True    , True    
+True    , False   , True       
+False   , True    , True       
+False   , False   , False   
+,===
+
+`A or B` is `True` if either `A` or `B` are `True`
+
 [source,javascript]
 ----
 // javascript
@@ -148,6 +174,9 @@ include::others-mainstream.js[tag=short,indent=0]
 # bash
 include::others-mainstream.sh[tag=short,indent=0]
 ----
+
+In a lot of programming languages `AND` is represented by `&&`,
+while `OR` is represented by `||`.
 
 [source,lua]
 ----
