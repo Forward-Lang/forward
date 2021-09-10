@@ -155,6 +155,8 @@ include::others-mainstream.lua[tag=loops,indent=0]
 Understanding this depends on you also understanding to a certain extent boolean expressions.
 So here is a quick recap:
 
+.`A and B` is `True` if and only if both `A` and `B` are `True`
+
 ,===
 input: A, input: B, A and B
 
@@ -164,7 +166,7 @@ False   , True    , False
 False   , False   , False   
 ,===
 
-`A and B` is `True` if and only if both `A` and `B` are `True`
+.`A or B` is `True` if either `A` or `B` are `True`
 
 ,===
 input: A, input: B, A or B
@@ -175,7 +177,8 @@ False   , True    , True
 False   , False   , False   
 ,===
 
-`A or B` is `True` if either `A` or `B` are `True`
+In a lot of programming languages `AND` is represented by `&&`,
+while `OR` is represented by `||`:
 
 [source,javascript]
 ----
@@ -189,8 +192,8 @@ include::others-mainstream.js[tag=short,indent=0]
 include::others-mainstream.sh[tag=short,indent=0]
 ----
 
-In a lot of programming languages `AND` is represented by `&&`,
-while `OR` is represented by `||`.
+Luckily in some programming languages `AND` is represented by `and`,
+while `OR` is represented by `or`:
 
 [source,lua]
 ----
