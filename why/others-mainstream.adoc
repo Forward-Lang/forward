@@ -4,6 +4,11 @@
 :icons: font
 :stem:
 
+++++
+<script src="https://hypothes.is/embed.js" async></script>
+++++
+
+
 The three main programming paradigms in widespread use today are:
 
 . Imperative programming
