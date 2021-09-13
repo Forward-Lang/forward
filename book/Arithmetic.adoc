@@ -3,8 +3,21 @@
 :fn_neg: footnote:[https://en.wikipedia.org/wiki/Additive_inverse]
 :fn_div: footnote:[https://en.wikipedia.org/wiki/Multiplicative_inverse]
 
-
 WARNING: work in progress
+
+****
+.5 Whys:
+[qanda]
+Why postfix?::
+Its easier to parse than infix, and easier evaluate than prefix since all the arguments have been evaluated already.
+Why a formal grammar?::
+...
+Why commutative operators?::
+reduces stack shuffling
+Why focus on inverses?::
+makes it easier to implement reversible computing
+****
+
 
 // Unicode symbols:
 //   https://unicode-table.com/en/sets/mathematical-signs/
@@ -52,6 +65,11 @@ Using commutative binary operations：
 | × | a | b |   ＝   | × | b | a |
 +-----------+       +-----------+
 
+----
+
+[ditaa]
+----
+
 Using non－commutative binary operations：
 
 +-----------+       +-----------+      +------------------+
@@ -61,6 +79,11 @@ Using non－commutative binary operations：
 +-----------+       +-----------+      +------------------+
 | ÷ | a | b |   ≠   | ÷ | b | a |  --> | ÷ | swap | a | b |
 +-----------+       +-----------+      +------------------+
+
+----
+
+[ditaa]
+----
 
 Using unary inverses instead：
 
