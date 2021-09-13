@@ -137,6 +137,29 @@ Currently being inspired mainly by:
 * Numerical semantics of <<APL>>
 * Textual semantics of the unix shell.
 
+=== Features: minimalism
+
+> At the moment I'm partially trolling here, but not by much...
+
+.Expected feature set:
+* doesn't have `goto` statements
+* doesn't have `if` or `case` statements, implemented by pattern matching instead
+* doesn't have `for`,`while`,`until` loops, implemented by recursion instead
+* doesn't have objects, implemented by dictionaries and anonymous functions instead
+* doesn't have classes, implemented by types instead
+
+.(I lied)
+* doesn't have pattern matching, implemented by dictionaries instead
+* doesn't have recursion, implemention is vectorized already
+* doesn't have types, implemented by compile-time pre- and post-conditions instead
+
+.Consequences:
+* does have a point-free style of programming, leading to concatetative programs that focus on composition
+* does have a powerful parsing vocabulary based on the pattern matching abilities
+* does have in-built design by contract, using Hoare-triples
+* does have hyperoperators, which due to careful design allows reversible computing
+
+
 == Waterfall process
 
 . Integration Requirements
