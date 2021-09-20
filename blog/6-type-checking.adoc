@@ -57,24 +57,26 @@ We are telling the computer that we expect it to take as input `1` thing and out
 :phrase add5print five add number2string print ;
 ```
 
-==== Number checking: anonymous phrases
+==== Number checking: two words
 
-.type stack
 There are three cases to consider in this example.
 
 :hardbreaks:
 . The stacks effects of two words match up.
   For example: `add` outputs a `1` thing,
-  and `number2string` takes as input a `1` thing
+  and `number2string` takes as input a `1` thing.
+  This is great!
 . There is a stack under-supply.  
-  For example: `add` takes as input `2` things,
-  while `five` just outputs `1` thing.
+  For example: `five` just outputs `1` thing,
+  while `add` takes as input `2` things.
   If we ran `five add` we would get a stack under-supply (`1 != 2`).
-  If we ran instead `five five add` then things would match up (`2 == 2`) 
+  This is an error.
 . There is a stack over-supply.
   For example: `number2string` takes as input `1` thing,
   while `five five` outputs `2` things (the number 5 twice).
   This is not a problem, since what isn't used up remains on the stack for the next word. (`2 == 1`)
+
+==== Number checking: anonymous phrases
 
 
 ==== Number checking: named phrases
