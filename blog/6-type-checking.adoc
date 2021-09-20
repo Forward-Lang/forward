@@ -1,0 +1,23 @@
+= Name vs property checking
+There are some terms related to what I'm about to discuss that don't quite capture the orthogonality that I'm trying to portray here.
+Statuc vs dynamic typing, duck typing, dependent types, property checking.
+
+.Name checking
+```factor
+( Number Number -- Number )
+: add + ;
+```
+
+.Property checking
+```factor
+( isNumber? isNumber? -- isNumber? )
+: add + ;
+```
+
+.Depedent Property checking
+```factor
+( isNumber? isNumber? -- isNumber? )
+: add + ;
+```
+
+dependent, because it actually depends on the arguments
