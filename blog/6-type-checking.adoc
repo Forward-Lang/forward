@@ -146,9 +146,9 @@ A[o], B[i], A[o]-B[i], B[o], C[i], B[o]-C[i], results ABC
 1,1, 0 (match)       ,1,0,+1 (over-supply) ,over-supply
 0,1,-1 (under-supply),1,1, 0 (match)       ,under-supply
 0,1,-1 (under-supply),0,1,-1 (under-supply),under-supply
-0,1,-1 (under-supply),1,0,+1 (over-supply) ,under-supply
+0,1,-1 (under-supply),1,0,+1 (over-supply) ,under-supply <<fn3>[[f3]]
 1,0,+1 (over-supply) ,1,1, 0 (match)       ,over-supply
-1,0,+1 (over-supply) ,0,1,-1 (under-supply),match       
+1,0,+1 (over-supply) ,0,1,-1 (under-supply),match       <<fn2>>[[f2]]
 1,0,+1 (over-supply) ,1,0,+1 (over-supply) ,over-supply
 ,===
 
@@ -158,7 +158,9 @@ A[o], B[i], A[o]-B[i], B[o], C[i], B[o]-C[i], results ABC
 .. if `results BC` is `0`, then `results ABC` is `+1`.
 .. if `results BC` is `+1`, then `results ABC` is `+1`.
 .. if `results BC` is `under-supply`, then:
-... `results ABC` is `over-supply` or `under-supply` or `match`. 
+... `results ABC` is `over-supply` or `under-supply` or `match`.  [[fn2]] <<f2,*>> see here
+
+[[fn3]] <<f3,*>> The one thing prevent it from being `+`, since it is not commutative.
 
 
 ==== Number checking: anonymous phrases
