@@ -109,7 +109,7 @@ word A's output, Word B's input, results AB, word B's output, Word C's input, re
 0,1,under-supply,1,0,over-supply ,under-supply
 1,0,over-supply ,1,1,match       ,over-supply
 1,0,over-supply ,0,1,under-supply,match       <<fn1>>[[f1]]
-1,0,over-supply ,0,1,over-supply ,over-supply
+1,0,over-supply ,1,0,over-supply ,over-supply
 ,===
 
 
@@ -139,7 +139,7 @@ We are going to compare the output of `word A` with the input of `Word B`, by su
 Applying this concept to more than two words:
 
 ,===
-A[o], B[i], A-B, B[o], C[i], B-C, results ABC
+A[o], B[i], A[o]-B[i], B[o], C[i], B[o]-C[i], results ABC
 
 1,1, 0 (match)       ,1,1, 0 (match)        ,match
 1,1, 0 (match)       ,0,1,-1 (under-supply),under-supply
@@ -149,7 +149,7 @@ A[o], B[i], A-B, B[o], C[i], B-C, results ABC
 0,1,-1 (under-supply),1,0,+1 (over-supply) ,under-supply
 1,0,+1 (over-supply) ,1,1, 0 (match)       ,over-supply
 1,0,+1 (over-supply) ,0,1,-1 (under-supply),match       
-1,0,+1 (over-supply) ,0,1,+1 (over-supply) ,over-supply
+1,0,+1 (over-supply) ,1,0,+1 (over-supply) ,over-supply
 ,===
 
 . if `results AB` is `0` then `results ABC` is whatever `results BC` is.
