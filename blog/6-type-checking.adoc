@@ -65,16 +65,42 @@ There are three cases to consider in this example.
 . The stacks effects of two words match up.
   For example: `add` outputs a `1` thing,
   and `number2string` takes as input a `1` thing.
-  This is great!
+  This is great! (`1 >= 1` is `true`)
 . There is a stack under-supply.  
   For example: `five` just outputs `1` thing,
   while `add` takes as input `2` things.
-  If we ran `five add` we would get a stack under-supply (`1 != 2`).
+  If we ran `five add` we would get a stack under-supply (`1 >= 2` is `false`).
   This is an error.
 . There is a stack over-supply.
   For example: `number2string` takes as input `1` thing,
   while `five five` outputs `2` things (the number 5 twice).
-  This is not a problem, since what isn't used up remains on the stack for the next word. (`2 == 1`)
+  This is not a problem, since what isn't used up remains on the stack for the next word. (`2 >= 1` is `true`)
+  
+.summary
+
+,===
+word A's output, Word B's input, results
+
+1,1,match
+0,1,under-supply
+1,0,over-supply
+,===
+  
+==== Number checking: three words
+
+.summary
+
+,===
+word A's output, Word B's input, word B's output, Word C's input, results
+
+1,1,1,match
+0,1,1,under-supply
+1,0,1,over-supply
+1,1,0,match
+0,1,0,under-supply
+1,0,0,over-supply
+,===
+
 
 ==== Number checking: anonymous phrases
 
