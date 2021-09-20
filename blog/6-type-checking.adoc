@@ -17,8 +17,7 @@ so you that can run them yourself and experiment with them
 === Name checking
 
 Name checking is the simplest form of type checking, I could think of.
-There are five cases to consider in this example.
-I'll start with the simplest one, but first I need to introduce some concepts to make this discussion easier.
+However, first I need to introduce some concepts to make this discussion easier.
 
 primitive:: a piece of executablt code that is in-built,
 and whose correct implementation is something the rest of the code-base assumes & depends on.
@@ -26,11 +25,51 @@ and whose correct implementation is something the rest of the code-base assumes 
 phrase:: a piece of executablt code that is built from primitives.
 We have to tell the computer how we expect our written code to behave.
 
+word:: a phrase or a primitive
+
+.primitives
 In the example below, `five`, `add`, `number2string`, and `print` are primitives.
 We expect them to be already implemented, but more importantly,
 we expect their type annotations to be correct.
 So if `number2string` says it has a type effect of `Number -- String`,
 I am going to trust it and not concern myself with how that is so.
+
+.phrase
+
+.type stack
+There are five cases to consider in this example.
+
+. The stacks effects of two words match up.
+  For example: `add` outputs a `Number`,
+  and `number2string` takes as input a `Number`
+. There is a stack under-supply.  
+  For example: `add` takes as input two `Number`​s,
+  while `five` just outputs one `Number`.
+  If we ran `five add` we would get a stack under-supply (`[ -- Number ] [ Number Number -- Number ]`).
+  If we ran instead `five five add` then things would match up (`[ -- Number ] [ -- Number ] [ Number Number -- Number ]`) 
+. There is a stack over-supply.
+. Type checking a phrase
+  `add5print` has the type annotation `[ Number -- ]`,
+  to check whether or not this annotation is correct,
+  we will 
+  `[ -- Number ] [ Number Number -- Number ] [ Number -- String ] [ String -- ]`
+
+
+[draw]
+----
+IF type-stack A == type-stack B
+THEN drop
+
+five add
+type-stack A       type-stack B       result:
+Number        =    Number                    
+                   Number             Number
+
+five five add
+type-stack A       type-stack B       result:
+Number        =    Number                    
+Number        =    Number                    
+----
 
 ```factor
 
