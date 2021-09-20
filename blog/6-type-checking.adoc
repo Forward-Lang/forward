@@ -32,6 +32,32 @@ anonymous phrase:: a phrase that isn't given a name.
 
 word:: a phrase or a primitive
 
+.primitives
+In the example below, `five`, `add`, `number2string`, and `print` are primitives.
+We expect them to be already implemented, but more importantly,
+we expect their type annotations to be correct.
+So if `add` says it takes `2` inputs and outputs `1` thing,
+I am going to trust it and not concern myself with how that is so.
+
+.phrase
+In the example below, `add5print` is a phrase.
+We are telling the computer that we expect it to take as input `1` thing and output `0` things.
+
+```factor
+: type:five                 [ 0 ] [ 1 ] ; ! <2>
+: type:add                  [ 2 ] [ 1 ] ; ! <1> <2>
+: type:number2string        [ 1 ] [ 1 ] ; ! <1>
+: type:print                [ 1 ] [ 0 ] ;        ! <1>
+
+:primitve add + ;
+:primitve five 5 ;
+:primitve print . ;
+
+: type:add5print            [ 1 ] [ 0 ] ;
+:phrase add5print five add number2string print ;
+```
+
+
 ==== Number checking: anonymous phrases
 
 ==== Number checking: named phrases
