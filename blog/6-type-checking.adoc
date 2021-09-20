@@ -1,4 +1,14 @@
-= Name vs property checking
+:subtitle: Name vs property checking
+:docinfo: shared
+:relfileprefix: ../
+:dir: blog/
+include::{relfileprefix}README.adoc[tag=preamble]
+
+:relfileprefix:
+:hardbreaks-option:
+
+== {subtitle}
+
 There are some terms related to what I'm about to discuss that don't quite capture the orthogonality that I'm trying to portray here.
 Statuc vs dynamic typing, duck typing, dependent types, property checking.
 
