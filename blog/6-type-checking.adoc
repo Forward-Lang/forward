@@ -91,14 +91,17 @@ word A's output, Word B's input, results
 .summary
 
 ,===
-word A's output, Word B's input, word B's output, Word C's input, results
+word A's output, Word B's input, results AB, word B's output, Word C's input, results BC, results ABC
 
-1,1,1,match
-0,1,1,under-supply
-1,0,1,over-supply
-1,1,0,match
-0,1,0,under-supply
-1,0,0,over-supply
+1,1,match       ,1,1,match       ,match
+1,1,match       ,0,1,under-supply,under-supply
+1,1,match       ,1,0,over-supply ,over-supply
+0,1,under-supply,1,1,match       ,under-supply
+0,1,under-supply,0,1,under-supply,under-supply
+0,1,under-supply,1,0,over-supply ,under-supply
+1,0,over-supply ,1,1,match       ,over-supply
+1,0,over-supply ,0,1,under-supply,match
+1,0,over-supply ,0,1,over-supply ,over-supply
 ,===
 
 
