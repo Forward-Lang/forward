@@ -1,5 +1,6 @@
 = Type checking
 :toc: preamble
+:toclevels: 3
 :subtitle: Name vs Property Checking
 :docinfo: shared
 :relfileprefix: ../
@@ -129,18 +130,26 @@ match:: 0
 over-supply:: positive
 under-supply:: negative
 
-We are going to compare `word A`'s output with `Word B`'s input,
-by subtracting those numbers. If they `match`, ie are equal,
-then we should get the number `0`.
-represent 
+We are going to compare the output of `word A` with the input of `Word B`, by subtracting those numbers.
+
+. If they `match`, ie are equal (`A[o] == B[i]`), then we should get the number `0`. (eg: `1 - 1 = 0`)
+. If there is an `under-supply`, because `A[o] < B[i]` then we should get a negative number. (eg: `0 - 1 = -1`)
+. If there is an `over-supply`, because `A[o] > B[i]` then we should get a positive number. (eg: `1 - 0 = 1`)
+
+Applying this concept to more than two words:
 
 ,===
-word A's output, Word B's input, results = A-B
+A[o], B[i], A-B, B[o], C[i], B-C, results ABC
 
-0,0,0 (match)
-1,1,0 (match)
-0,1,-1 (under-supply)
-1,0,+1 (over-supply)
+1,1, 0 (match)       ,1,1, 0 (match)        ,match
+1,1, 0 (match)       ,0,1,-1 (under-supply),under-supply
+1,1, 0 (match)       ,1,0,+1 (over-supply) ,over-supply
+0,1,-1 (under-supply),1,1, 0 (match)       ,under-supply
+0,1,-1 (under-supply),0,1,-1 (under-supply),under-supply
+0,1,-1 (under-supply),1,0,+1 (over-supply) ,under-supply
+1,0,+1 (over-supply) ,1,1, 0 (match)       ,over-supply
+1,0,+1 (over-supply) ,0,1,-1 (under-supply),match       
+1,0,+1 (over-supply) ,0,1,+1 (over-supply) ,over-supply
 ,===
 
 . if `results AB` is `0` then `results ABC` is whatever `results BC` is.
