@@ -81,14 +81,17 @@ There are three cases to consider in this example.
 ,===
 word A's output, Word B's input, results
 
-1,1,match
-0,1,under-supply
-1,0,over-supply
+1,2,match
+1,2,under-supply
+2,1,over-supply
 ,===
   
 ==== Number checking: three words
 
-.summary
+This time, we are going to present the possible combinations of input & output first.
+Additionally, we will use the numbers `1` and `0`, instead of `2` and `1`, for simplicity's sake.
+
+.overview
 
 ,===
 word A's output, Word B's input, results AB, word B's output, Word C's input, results BC, results ABC
@@ -100,10 +103,18 @@ word A's output, Word B's input, results AB, word B's output, Word C's input, re
 0,1,under-supply,0,1,under-supply,under-supply
 0,1,under-supply,1,0,over-supply ,under-supply
 1,0,over-supply ,1,1,match       ,over-supply
-1,0,over-supply ,0,1,under-supply,match
+1,0,over-supply ,0,1,under-supply,match       <<fn1>>[[f1]]
 1,0,over-supply ,0,1,over-supply ,over-supply
 ,===
 
+
+. if `results AB` is `match` then `results ABC` is whatever `results BC` is.
+. if `results AB` is `under-supply` then `results ABC` is `under-supply`, because we never get past the error.
+. if `results AB` is `over-supply` then:
+.. if `results BC` is `match`, then `results ABC` is `over-supply`.
+.. if `results BC` is `over-supply`, then `results ABC` is `over-supply`.
+.. if `results BC` is `under-supply`, then:
+... `results ABC` is `over-supply` or `under-supply` or `match`. [[fn1]] <<f1,*>> see here
 
 ==== Number checking: anonymous phrases
 
