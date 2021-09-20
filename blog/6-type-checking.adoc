@@ -39,20 +39,26 @@ I am going to trust it and not concern myself with how that is so.
 .type stack
 There are five cases to consider in this example.
 
+:hardbreaks:
 . The stacks effects of two words match up.
   For example: `add` outputs a `Number`,
   and `number2string` takes as input a `Number`
 . There is a stack under-supply.  
   For example: `add` takes as input two `Number`​s,
   while `five` just outputs one `Number`.
-  If we ran `five add` we would get a stack under-supply (`[ -- Number ] [ Number Number -- Number ]`).
-  If we ran instead `five five add` then things would match up (`[ -- Number ] [ -- Number ] [ Number Number -- Number ]`) 
+  If we ran `five add` we would get a stack under-supply (`Number != Number Number`).
+  If we ran instead `five five add` then things would match up (`Number Number == Number Number`) 
 . There is a stack over-supply.
+  For example: `number2string` takes as input one `Number`,
+  while `five five` outputs two `Number`​s (the number 5 twice).
+  This is not a problem, since what isn't used up remains on the stack for the next word. (`Number`, `Number == Number`)
 . Type checking a phrase
   `add5print` has the type annotation `[ Number -- ]`,
   to check whether or not this annotation is correct,
   we will 
   `[ -- Number ] [ Number Number -- Number ] [ Number -- String ] [ String -- ]`
+
+:!hardbreaks:
 
 
 [draw]
