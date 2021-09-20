@@ -5,26 +5,67 @@
 include::{relfileprefix}README.adoc[tag=preamble]
 
 :relfileprefix:
-:hardbreaks-option:
 
 == {subtitle}
 
 There are some terms related to what I'm about to discuss that don't quite capture the orthogonality that I'm trying to portray here.
 Statuc vs dynamic typing, duck typing, dependent types, property checking.
 
-.Name checking
-```factor
-( Number Number -- Number )
-: add + ;
-```
+> I'm going to demonstrate these concepts using executable factor code,
+so you that can run them yourself and experiment with them 
 
-.Property checking
+=== Name checking
+
+Name checking is the simplest form of type checking, I could think of.
+There are five cases to consider in this example.
+I'll start with the simplest one, but first I need to introduce some concepts to make this discussion easier.
+
+primitive:: a piece of executablt code that is in-built,
+and whose correct implementation is something the rest of the code-base assumes & depends on.
+
+phrase:: a piece of executablt code that is built from primitives.
+We have to tell the computer how we expect our written code to behave.
+
+In the example below, `five`, `add`, `number2string`, and `print` are primitives.
+We expect them to be already implemented, but more importantly,
+we expect their type annotations to be correct.
+So if `number2string` says it has a type effect of `Number -- String`,
+I am going to trust it and not concern myself with how that is so.
+
+```factor
+
+: type:five                 [ -- Number ] ; ! <2>
+: type:add    [ Number Number -- Number ] ; ! <1> <2>
+: type:number2string [ Number -- String ] ; ! <1>
+: type:print         [ String -- ] ;        ! <1>
+
+:primitve add + ;
+:primitve five 5 ;
+:primitve print . ;
+
+: type:add5print      [ Number -- ] ;
+:phrase add5print five add number2string print ;
+```
+:hardbreaks:
+
+<1> `add number2string print` results in the type stack the following values:
+    `[ Number Number -- Number ] [ Number -- String ] [ String -- ]`
+    You'll see that `Number = Number` and `String = String`
+    
+<2> then there are the cases when the type stack doesn't match up exactly.
+    if we execute `add` on an empty stack we will get a stack underflow, because
+    it expects two numbers and we have given it nothing.
+
+:!hardbreaks:
+
+
+=== Property checking
 ```factor
 ( isNumber? isNumber? -- isNumber? )
 : add + ;
 ```
 
-.Depedent Property checking
+=== Depedent Property checking
 ```factor
 ( isNumber? isNumber? -- isNumber? )
 : add + ;
