@@ -125,6 +125,11 @@ match:: 0
 over-supply:: positive
 under-supply:: negative
 
+We are going to compare `word A`'s output with `Word B`'s input,
+by subtracting those numbers. If they `match`, ie are equal,
+then we should get the number `0`.
+represent 
+
 ,===
 word A's output, Word B's input, results = A-B
 
