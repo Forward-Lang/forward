@@ -17,10 +17,6 @@ so you that can run them yourself and experiment with them
 === Number checking
 Number checking is the simplest form of type checking, I could think of.
 We just check that the number of argments on the stack match.
-
-=== Name checking
-
-Name checking is the simplest form of type checking, I could think of.
 However, first I need to introduce some concepts to make this discussion easier.
 
 primitive:: a piece of executablt code that is in-built,
@@ -29,8 +25,22 @@ and whose correct implementation is something the rest of the code-base assumes 
 phrase:: a piece of executablt code that is built from primitives.
 We have to tell the computer how we expect our written code to behave.
 
+named phrase:: a phrase that we give a name to, so that we may use it again.
+This is equivalent to assigning an anonymous function to a variable in other programming languages. 
+
+anonymous phrase:: a phrase that isn't given a name.
+
 word:: a phrase or a primitive
 
+==== Number checking: anonymous phrases
+
+==== Number checking: named phrases
+
+
+
+=== Name checking
+
+Name checking is the simplest form of type checking, I could think of.
 .primitives
 In the example below, `five`, `add`, `number2string`, and `print` are primitives.
 We expect them to be already implemented, but more importantly,
