@@ -127,7 +127,7 @@ Number        =    Number
 : add + ;
 ```
 
-=== Depedent Property checking
+=== dependent Property checking
 ```factor
 ( isNumber? isNumber? -- isNumber? )
 : add + ;
