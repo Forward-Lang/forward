@@ -41,6 +41,7 @@ word:: a phrase or a primitive
 === Name checking
 
 Name checking is the simplest form of type checking, I could think of.
+
 .primitives
 In the example below, `five`, `add`, `number2string`, and `print` are primitives.
 We expect them to be already implemented, but more importantly,
